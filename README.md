@@ -56,7 +56,7 @@ This is an application built to upgrade the work flow of a business that's still
 
 <h3><b>**4SN**</b></h3>
 
-1. [@Black_Demon223](https://twitter.com/@Black_Demon223) - nethun223@gmail.com
+1. [Nethun Ranasingha](https://twitter.com/@Black_Demon223) - nethun223@gmail.com
 2. Sahansa - methjaya252@gmail.com
 3. Sanidu - dlsanupama@students.nsbm.ac.lk
 4. Kithsara - sksenathkithsara@gmail.com
