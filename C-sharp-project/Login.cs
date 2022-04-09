@@ -21,5 +21,20 @@ namespace C_sharp_project
         {
 
         }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void login_usr_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_paddusr_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
