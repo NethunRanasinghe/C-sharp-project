@@ -60,10 +60,12 @@
             // login_split.Panel1
             // 
             this.login_split.Panel1.Controls.Add(this.login_title);
+            this.login_split.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.login_split_Panel1_Paint);
             // 
             // login_split.Panel2
             // 
             this.login_split.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("login_split.Panel2.BackgroundImage")));
+            this.login_split.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.login_split.Panel2.Controls.Add(this.login_paddusr);
             this.login_split.Panel2.Controls.Add(this.login_phelp);
             this.login_split.Panel2.Controls.Add(this.login_lbllogin);
@@ -81,17 +83,18 @@
             // login_title
             // 
             this.login_title.AutoSize = true;
-            this.login_title.BackColor = System.Drawing.Color.White;
+            this.login_title.BackColor = System.Drawing.Color.Transparent;
             this.login_title.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_title.Location = new System.Drawing.Point(42, 9);
             this.login_title.Name = "login_title";
-            this.login_title.Size = new System.Drawing.Size(429, 92);
+            this.login_title.Size = new System.Drawing.Size(417, 90);
             this.login_title.TabIndex = 15;
             this.login_title.Text = "Ranasinghe Saw Mills and \r\n          Timber Stores";
             // 
             // login_paddusr
             // 
             this.login_paddusr.BackColor = System.Drawing.Color.Transparent;
+            this.login_paddusr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_paddusr.Image = ((System.Drawing.Image)(resources.GetObject("login_paddusr.Image")));
             this.login_paddusr.Location = new System.Drawing.Point(371, 501);
             this.login_paddusr.Name = "login_paddusr";
@@ -103,12 +106,14 @@
             // login_phelp
             // 
             this.login_phelp.BackColor = System.Drawing.Color.Transparent;
+            this.login_phelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_phelp.Image = ((System.Drawing.Image)(resources.GetObject("login_phelp.Image")));
             this.login_phelp.Location = new System.Drawing.Point(447, 501);
             this.login_phelp.Name = "login_phelp";
             this.login_phelp.Size = new System.Drawing.Size(40, 40);
             this.login_phelp.TabIndex = 24;
             this.login_phelp.TabStop = false;
+            this.login_phelp.Click += new System.EventHandler(this.login_phelp_Click);
             // 
             // login_lbllogin
             // 
@@ -125,12 +130,14 @@
             // 
             this.login_lblfpw.AutoSize = true;
             this.login_lblfpw.BackColor = System.Drawing.Color.Transparent;
+            this.login_lblfpw.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_lblfpw.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_lblfpw.Location = new System.Drawing.Point(331, 298);
             this.login_lblfpw.Name = "login_lblfpw";
             this.login_lblfpw.Size = new System.Drawing.Size(134, 20);
             this.login_lblfpw.TabIndex = 22;
             this.login_lblfpw.Text = "Forgot Password ?";
+            this.login_lblfpw.Click += new System.EventHandler(this.login_lblfpw_Click);
             // 
             // login_btnclear
             // 
@@ -140,6 +147,7 @@
             this.login_btnclear.TabIndex = 21;
             this.login_btnclear.Text = "Clear";
             this.login_btnclear.UseVisualStyleBackColor = true;
+            this.login_btnclear.Click += new System.EventHandler(this.login_btnclear_Click);
             // 
             // login_btnlogin
             // 
@@ -154,6 +162,7 @@
             // 
             this.login_txtpw.Location = new System.Drawing.Point(199, 243);
             this.login_txtpw.Name = "login_txtpw";
+            this.login_txtpw.PasswordChar = '*';
             this.login_txtpw.Size = new System.Drawing.Size(266, 27);
             this.login_txtpw.TabIndex = 19;
             // 
