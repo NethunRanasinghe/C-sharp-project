@@ -216,9 +216,9 @@
             this.ttlprftrt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ttlprftrt.ForeColor = System.Drawing.Color.Lime;
             this.ttlprftrt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ttlprftrt.Location = new System.Drawing.Point(349, 15);
+            this.ttlprftrt.Location = new System.Drawing.Point(329, 15);
             this.ttlprftrt.Name = "ttlprftrt";
-            this.ttlprftrt.Size = new System.Drawing.Size(70, 44);
+            this.ttlprftrt.Size = new System.Drawing.Size(87, 44);
             this.ttlprftrt.TabIndex = 7;
             this.ttlprftrt.Text = "12%";
             this.ttlprftrt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -283,6 +283,7 @@
             this.button5.TabIndex = 8;
             this.button5.Text = "Profit Loss";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dateTimePicker2
             // 
@@ -314,6 +315,7 @@
             this.genlstmnth.TabIndex = 5;
             this.genlstmnth.Text = "Last Month";
             this.genlstmnth.UseVisualStyleBackColor = false;
+            this.genlstmnth.Click += new System.EventHandler(this.genlstmnth_Click);
             // 
             // genthsmnth
             // 
@@ -326,6 +328,7 @@
             this.genthsmnth.TabIndex = 4;
             this.genthsmnth.Text = "This Month";
             this.genthsmnth.UseVisualStyleBackColor = false;
+            this.genthsmnth.Click += new System.EventHandler(this.genthsmnth_Click);
             // 
             // genlstwk
             // 
@@ -338,6 +341,7 @@
             this.genlstwk.TabIndex = 3;
             this.genlstwk.Text = "Last Week";
             this.genlstwk.UseVisualStyleBackColor = false;
+            this.genlstwk.Click += new System.EventHandler(this.genlstwk_Click);
             // 
             // gentdy
             // 

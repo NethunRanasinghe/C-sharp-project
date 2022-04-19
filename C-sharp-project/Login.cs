@@ -74,5 +74,11 @@ namespace C_sharp_project
             ProfitNloss obj  = new ProfitNloss();
             obj.Show();       
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ProfitNloss obj = new ProfitNloss();
+            obj.Show();
+        }
     }
 }
