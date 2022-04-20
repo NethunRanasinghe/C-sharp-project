@@ -17,10 +17,35 @@ namespace C_sharp_project
         //today
         private string dtdo = DateTime.Now.ToString("d");
         private string ydt = DateTime.Now.AddDays(-1).ToString("d");
+        private string tdy_sql1()
+        {
+            return "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + dtdo + "'ORDER BY profit DESC";
+        }
+        private string tdy_sql2()
+        {
+            return "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + ydt + "'ORDER BY profit DESC";
+        }
+        private string tdy_sql3()
+        {
+            return "Select * From sellinfo WHERE date='" + dtdo + "'";
+        }
+
 
         //last 7 days
         string dtmin6dys = DateTime.Now.AddDays(-6).ToString("d");
         string dtmin12dys = DateTime.Now.AddDays(-12).ToString("d");
+        private string lst7dys_sql1()
+        {
+            return "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtmin6dys + "' AND '" + dtdo + "' ORDER BY profit DESC";
+        }
+        private string lst7dys_sql2()
+        {
+            return "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtmin12dys + "' AND '" + dtmin6dys + "'  ORDER BY profit DESC";
+        }
+        private string lst7dys_sql3()
+        {
+            return "Select * From sellinfo WHERE date BETWEEN '" + dtmin6dys + "' AND '" + dtdo + "' ";
+        }
 
         //this month
         int thsmnth = Convert.ToInt32(DateTime.Now.Month);
@@ -43,7 +68,6 @@ namespace C_sharp_project
 
 
 
-
         public ProfitNloss()
         {
             InitializeComponent();
@@ -61,7 +85,7 @@ namespace C_sharp_project
 
         private void gentdy_Click(object sender, EventArgs e)
         {
-            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + dtdo + "'ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + ydt + "'ORDER BY profit DESC", "Select * From sellinfo WHERE date='" + dtdo + "'");
+            strctre(tdy_sql1(),tdy_sql2(),tdy_sql3());
           /*  int x = 0;
             double ttlsell = 0;
             double ttlval=0;
@@ -210,7 +234,7 @@ namespace C_sharp_project
 
         private void genlstwk_Click(object sender, EventArgs e)
         {
-            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtmin6dys + "' AND '" + dtdo + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtmin12dys + "' AND '" + dtmin6dys + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE date BETWEEN '" + dtmin6dys + "' AND '" + dtdo + "' ");
+            strctre(lst7dys_sql1(), lst7dys_sql2(), lst7dys_sql3());
 
 
          /*   int x = 0;
@@ -830,7 +854,7 @@ namespace C_sharp_project
             double ytdsell = 0;
             double ytdval = 0;
             double ytdothrcsts = 0;
-            ProfitNlossClasses.DBConn obj = new ProfitNlossClasses.DBConn();
+            DBConn obj = new DBConn();
             try
             {
                 SqlConnection connection = new SqlConnection(obj.getdbconn());

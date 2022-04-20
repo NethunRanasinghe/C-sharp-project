@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace C_sharp_project.ProfitNlossClasses
+namespace C_sharp_project
 {
     internal class FirstBlock
     {
