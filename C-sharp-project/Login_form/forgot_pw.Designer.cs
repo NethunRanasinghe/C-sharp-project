@@ -149,8 +149,8 @@
             // fpw_picback
             // 
             this.fpw_picback.BackColor = System.Drawing.Color.Transparent;
-            this.fpw_picback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fpw_picback.BackgroundImage")));
             this.fpw_picback.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fpw_picback.Image = global::C_sharp_project.Properties.Resources.back;
             this.fpw_picback.Location = new System.Drawing.Point(460, 438);
             this.fpw_picback.Name = "fpw_picback";
             this.fpw_picback.Size = new System.Drawing.Size(40, 40);
@@ -162,8 +162,8 @@
             // fpw_pichelp
             // 
             this.fpw_pichelp.BackColor = System.Drawing.Color.Transparent;
-            this.fpw_pichelp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fpw_pichelp.BackgroundImage")));
             this.fpw_pichelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fpw_pichelp.Image = global::C_sharp_project.Properties.Resources.login_help;
             this.fpw_pichelp.Location = new System.Drawing.Point(534, 438);
             this.fpw_pichelp.Name = "fpw_pichelp";
             this.fpw_pichelp.Size = new System.Drawing.Size(40, 40);
@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::C_sharp_project.Properties.Resources.login_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(606, 514);
             this.Controls.Add(this.fpw_btncpw);

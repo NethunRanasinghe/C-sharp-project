@@ -17,6 +17,7 @@ namespace C_sharp_project
         int fpw_val = 1;
         string connection_string = "server=localhost; user id=root; database=rsmt_management_system";
 
+
         public forgot_pw()
         {
             InitializeComponent();
@@ -133,8 +134,10 @@ namespace C_sharp_project
             }
         }
 
-        private void fpw_btnrqcode_Click(object sender, EventArgs e)
+        private void fpw_btnrqcode_Click(object sender, EventArgs e) 
         {
+            Email_Templates objemail_templates = new Email_Templates();
+
             if (email_check() == 1)
             {
                 Random rnd = new Random();
@@ -142,11 +145,12 @@ namespace C_sharp_project
                 string gmail = fpw_txtemail.ToString();
 
                 string sub = "Password Reset Code";
-                string bod = "A password change request has been made.\nUse this code to proceed.\nCode : " + generated_code.ToString();
+                string bod = objemail_templates.password_reset_template(generated_code);
+
                 string dlog = "Check your inbox for the code !";
 
                 Email_Auth objemail = new Email_Auth();
-                objemail.send_code(generated_code, gmail, sub, bod, dlog);
+                objemail.send_code(gmail, sub, bod, dlog);
             }
             else
             {
