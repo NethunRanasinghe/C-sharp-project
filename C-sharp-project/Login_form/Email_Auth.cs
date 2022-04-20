@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,7 +14,7 @@ namespace C_sharp_project
     {
         private int num = 0;
         private string wdialog;
-        public void send_code(int code, string email, string subject, string body, string dialog)
+        public void send_code(string email, string subject, string body, string dialog)
         {
             wdialog = dialog;
 
@@ -39,6 +40,7 @@ namespace C_sharp_project
                 MailMessage Message = new MailMessage()
                 {
                     From = FromEmail,
+                    IsBodyHtml = Regex.IsMatch(body, @"<\s*([^ >]+)[^>]*>.*?<\s*/\s*\1\s*>"),
                     Subject = subject,
                     Body = body,
                 };

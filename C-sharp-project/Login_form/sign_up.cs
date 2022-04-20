@@ -221,13 +221,14 @@ namespace C_sharp_project
             Random rnd = new Random();
             generated_code = rnd.Next(100000, 1000000);
             string gmail = "nethun223@gmail.com";
+            Email_Templates objemail_templates = new Email_Templates();
 
             string sub = "New User Request Code";
-            string bod = "New User has requested to Create an account !.\nSend him / her this code for him / her to proceed.\nCode : " + generated_code.ToString();
+            string bod = objemail_templates.new_user_auth_template(generated_code);
             string dlog = "Contact Admin to get the code.";
 
             Email_Auth objemail = new Email_Auth();
-            objemail.send_code(generated_code, gmail, sub, bod, dlog);
+            objemail.send_code(gmail, sub, bod, dlog);
 
         }
 
