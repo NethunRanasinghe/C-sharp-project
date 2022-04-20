@@ -14,6 +14,36 @@ namespace C_sharp_project
 {
     public partial class ProfitNloss : Form
     {
+        //today
+        private string dtdo = DateTime.Now.ToString("d");
+        private string ydt = DateTime.Now.AddDays(-1).ToString("d");
+
+        //last 7 days
+        string dtmin6dys = DateTime.Now.AddDays(-6).ToString("d");
+        string dtmin12dys = DateTime.Now.AddDays(-12).ToString("d");
+
+        //this month
+        int thsmnth = Convert.ToInt32(DateTime.Now.Month);
+        int lstmnth = Convert.ToInt32(DateTime.Now.AddMonths(-1).Month);
+
+        //last month
+        int twomnthsbfr = Convert.ToInt32(DateTime.Now.AddMonths(-2).Month);
+
+        //custom date
+        private string dtpicker1()
+        {
+            string dtleft = dateTimePicker1.Value.ToString("d");
+            return dtleft;
+        }
+        private string dtpicker2()
+        {
+            string dtright = dateTimePicker2.Value.ToString("d");
+            return dtright;
+        }
+
+
+
+
         public ProfitNloss()
         {
             InitializeComponent();
@@ -31,7 +61,8 @@ namespace C_sharp_project
 
         private void gentdy_Click(object sender, EventArgs e)
         {
-            int x = 0;
+            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + dtdo + "'ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + ydt + "'ORDER BY profit DESC", "Select * From sellinfo WHERE date='" + dtdo + "'");
+          /*  int x = 0;
             double ttlsell = 0;
             double ttlval=0;
             double ttlothrcsts = 0;
@@ -174,12 +205,15 @@ namespace C_sharp_project
             catch (SqlException ea)
             {
                 Console.WriteLine(ea.ToString());
-            }
+            }*/
         }
 
         private void genlstwk_Click(object sender, EventArgs e)
         {
-            int x = 0;
+            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtmin6dys + "' AND '" + dtdo + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtmin12dys + "' AND '" + dtmin6dys + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE date BETWEEN '" + dtmin6dys + "' AND '" + dtdo + "' ");
+
+
+         /*   int x = 0;
             double ttlsell = 0;
             double ttlval = 0;
             double ttlothrcsts = 0;
@@ -325,12 +359,14 @@ namespace C_sharp_project
             catch (SqlException ea)
             {
                 Console.WriteLine(ea.ToString());
-            }
+            }*/
         }
 
         private void genthsmnth_Click(object sender, EventArgs e)
         {
-            int x = 0;
+            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + thsmnth + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + lstmnth + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE Month(date) = '" + thsmnth + "'");
+
+         /*   int x = 0;
             double ttlsell = 0;
             double ttlval = 0;
             double ttlothrcsts = 0;
@@ -475,12 +511,14 @@ namespace C_sharp_project
             catch (SqlException ea)
             {
                 Console.WriteLine(ea.ToString());
-            }
+            }*/
         }
 
         private void genlstmnth_Click(object sender, EventArgs e)
         {
-            int x = 0;
+            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + lstmnth + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + twomnthsbfr + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE Month(date) = '" + lstmnth + "'");
+
+         /*   int x = 0;
             double ttlsell = 0;
             double ttlval = 0;
             double ttlothrcsts = 0;
@@ -625,13 +663,14 @@ namespace C_sharp_project
             catch (SqlException ea)
             {
                 Console.WriteLine(ea.ToString());
-            }
+            }*/
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtpicker1()+ "' AND '" + dtpicker2() + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtpicker1() + "' AND '" + dtpicker2() + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE date BETWEEN '" + dtpicker1() + "' AND '" + dtpicker2() + "' ");
 
-            int x = 0;
+          /*  int x = 0;
             double ttlsell = 0;
             double ttlval = 0;
             double ttlothrcsts = 0;
@@ -775,10 +814,145 @@ namespace C_sharp_project
             catch (SqlException ea)
             {
                 Console.WriteLine(ea.ToString());
+            }*/
+
+
+
+
+        }
+
+        private void strctre(string sqlqry1, string sqlqry2,string sqlqry3)
+        {
+            int x = 0;
+            double ttlsell = 0;
+            double ttlval = 0;
+            double ttlothrcsts = 0;
+            double ytdsell = 0;
+            double ytdval = 0;
+            double ytdothrcsts = 0;
+            ProfitNlossClasses.DBConn obj = new ProfitNlossClasses.DBConn();
+            try
+            {
+                SqlConnection connection = new SqlConnection(obj.getdbconn());
+                String sql = sqlqry1;
+                String sql2 = sqlqry2;
+                String sql3 = sqlqry3;
+                SqlDataAdapter da = new SqlDataAdapter(sql3, connection);
+                DataSet ds = new DataSet();
+                int results = da.Fill(ds, "id");
+
+                this.DataOrderCount.Text = results.ToString();
+                using (SqlCommand command2 = new SqlCommand(sql2, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader2 = command2.ExecuteReader())
+                    {
+                        while (reader2.Read())
+                        {
+                            ytdsell = ytdsell + (Convert.ToDouble(reader2["selling_price"]));
+                            ytdval = ytdval + (Convert.ToDouble(reader2["value"]));
+                            ytdothrcsts = ytdothrcsts + (Convert.ToDouble(reader2["other_costs"]));
+                        }
+
+                    }
+                    connection.Close();
+                }
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            double val = 0;
+                            double sell = 0;
+                            double profit = 0;
+
+                            ttlsell = ttlsell + (Convert.ToDouble(reader["selling_price"]));
+                            ttlval = ttlval + (Convert.ToDouble(reader["value"]));
+                            ttlothrcsts = ttlothrcsts + (Convert.ToDouble(reader["other_costs"]));
+                            x++;
+                            switch (x)
+                            {
+                                case 1:
+                                    val = Convert.ToDouble(reader["value"]);
+                                    sell = Convert.ToDouble(reader["selling_price"]);
+                                    profit = sell - val;
+                                    this.r1c1.Text = Convert.ToString(reader["ID"]);
+                                    this.r1c2.Text = Convert.ToString(reader["name"]);
+                                    this.r1c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
+                                    this.r1c4.Text = Convert.ToString(reader["profit"]);
+                                    this.rate1.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    break;
+
+                                case 2:
+                                    val = Convert.ToDouble(reader["value"]);
+                                    sell = Convert.ToDouble(reader["selling_price"]);
+                                    profit = sell - val;
+                                    this.r2c1.Text = Convert.ToString(reader["ID"]);
+                                    this.r2c2.Text = Convert.ToString(reader["name"]);
+                                    this.r2c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
+                                    this.r2c4.Text = Convert.ToString(reader["profit"]);
+                                    this.rate2.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    break;
+
+                                case 3:
+                                    val = Convert.ToDouble(reader["value"]);
+                                    sell = Convert.ToDouble(reader["selling_price"]);
+                                    profit = sell - val;
+                                    this.r3c1.Text = Convert.ToString(reader["ID"]);
+                                    this.r3c2.Text = Convert.ToString(reader["name"]);
+                                    this.r3c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
+                                    this.r3c4.Text = Convert.ToString(reader["profit"]);
+                                    this.rate3.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    break;
+
+                                case 4:
+                                    val = Convert.ToDouble(reader["value"]);
+                                    sell = Convert.ToDouble(reader["selling_price"]);
+                                    profit = sell - val;
+                                    this.r4c1.Text = Convert.ToString(reader["ID"]);
+                                    this.r4c2.Text = Convert.ToString(reader["name"]);
+                                    this.r4c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
+                                    this.r4c4.Text = Convert.ToString(reader["profit"]);
+                                    this.rate4.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    break;
+
+                                case 5:
+                                    val = Convert.ToDouble(reader["value"]);
+                                    sell = Convert.ToDouble(reader["selling_price"]);
+                                    profit = sell - val;
+                                    this.r5c1.Text = Convert.ToString(reader["ID"]);
+                                    this.r5c2.Text = Convert.ToString(reader["name"]);
+                                    this.r5c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
+                                    this.r5c4.Text = Convert.ToString(reader["profit"]);
+                                    this.rate5.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    break;
+
+                            }
+                        }
+                        double tdprft = ttlsell - (ttlval + ttlothrcsts);
+                        double ytdprft = ytdsell - (ytdval + ytdothrcsts);
+                        double tdrev = ttlsell - ttlval;
+                        double ytdrev = ytdsell - ytdval;
+                        double tdrevrt = Math.Round(((tdrev - ytdrev) / ytdrev) * 100, 2);
+                        double tdprftrt = Math.Round(((tdprft - ytdprft) / ytdprft) * 100, 2);
+                        this.DataRev.Text = "Rs " + Convert.ToString(ttlsell - ttlval);
+                        this.DataProfit.Text = "Rs " + Convert.ToString(ttlsell - (ttlval + ttlothrcsts));
+                        this.ttlrevrt.Text = "%" + Convert.ToString(tdrevrt);
+                        this.ttlprftrt.Text = "%" + Convert.ToString(tdprftrt);
+
+                    }
+                    connection.Close();
+
+                }
+
             }
-
-
-
+            catch (SqlException ea)
+            {
+                Console.WriteLine(ea.ToString());
+            }
 
         }
     }
