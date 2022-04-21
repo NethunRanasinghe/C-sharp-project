@@ -28,29 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfitNloss));
             this.panel1 = new System.Windows.Forms.Panel();
             this.prftls = new System.Windows.Forms.Button();
             this.prftgn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DataOrderCount = new System.Windows.Forms.Label();
             this.lblOrderCount = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ttlrevrt = new System.Windows.Forms.Label();
             this.DataRev = new System.Windows.Forms.Label();
             this.lblRev = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.ttlprftrt = new System.Windows.Forms.Label();
             this.DataProfit = new System.Windows.Forms.Label();
             this.lblProfit = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button5 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.genlstmnth = new System.Windows.Forms.Button();
+            this.gentdy = new System.Windows.Forms.Button();
             this.genthsmnth = new System.Windows.Forms.Button();
             this.genlstwk = new System.Windows.Forms.Button();
-            this.gentdy = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel6 = new System.Windows.Forms.Panel();
             this.rate5 = new System.Windows.Forms.Label();
@@ -83,12 +89,19 @@
             this.datec = new System.Windows.Forms.Label();
             this.namec = new System.Windows.Forms.Label();
             this.idc = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,6 +143,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.DataOrderCount);
             this.panel2.Controls.Add(this.lblOrderCount);
             this.panel2.Location = new System.Drawing.Point(12, 59);
@@ -137,64 +151,83 @@
             this.panel2.Size = new System.Drawing.Size(192, 59);
             this.panel2.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.sales42;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 44);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // DataOrderCount
             // 
-            this.DataOrderCount.Font = new System.Drawing.Font("Segoe UI Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DataOrderCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DataOrderCount.ForeColor = System.Drawing.Color.White;
-            this.DataOrderCount.Location = new System.Drawing.Point(12, 21);
+            this.DataOrderCount.Location = new System.Drawing.Point(51, 23);
             this.DataOrderCount.Name = "DataOrderCount";
-            this.DataOrderCount.Size = new System.Drawing.Size(192, 38);
+            this.DataOrderCount.Size = new System.Drawing.Size(134, 28);
             this.DataOrderCount.TabIndex = 4;
             this.DataOrderCount.Text = "1000";
             // 
             // lblOrderCount
             // 
-            this.lblOrderCount.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblOrderCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblOrderCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.lblOrderCount.Location = new System.Drawing.Point(12, 0);
+            this.lblOrderCount.Location = new System.Drawing.Point(51, 3);
             this.lblOrderCount.Name = "lblOrderCount";
-            this.lblOrderCount.Size = new System.Drawing.Size(147, 26);
+            this.lblOrderCount.Size = new System.Drawing.Size(118, 21);
             this.lblOrderCount.TabIndex = 3;
-            this.lblOrderCount.Text = "Number of Orders";
+            this.lblOrderCount.Text = "Number of Sales";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.ttlrevrt);
             this.panel3.Controls.Add(this.DataRev);
             this.panel3.Controls.Add(this.lblRev);
             this.panel3.Location = new System.Drawing.Point(221, 59);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(233, 59);
+            this.panel3.Size = new System.Drawing.Size(268, 59);
             this.panel3.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.revenue42;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // ttlrevrt
             // 
             this.ttlrevrt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ttlrevrt.ForeColor = System.Drawing.Color.Lime;
-            this.ttlrevrt.Location = new System.Drawing.Point(143, 15);
+            this.ttlrevrt.Location = new System.Drawing.Point(188, 16);
             this.ttlrevrt.Name = "ttlrevrt";
-            this.ttlrevrt.Size = new System.Drawing.Size(85, 44);
+            this.ttlrevrt.Size = new System.Drawing.Size(77, 44);
             this.ttlrevrt.TabIndex = 8;
             this.ttlrevrt.Text = "10%";
             this.ttlrevrt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // DataRev
             // 
-            this.DataRev.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DataRev.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DataRev.ForeColor = System.Drawing.Color.White;
-            this.DataRev.Location = new System.Drawing.Point(12, 21);
+            this.DataRev.Location = new System.Drawing.Point(53, 25);
             this.DataRev.Name = "DataRev";
-            this.DataRev.Size = new System.Drawing.Size(193, 26);
+            this.DataRev.Size = new System.Drawing.Size(112, 26);
             this.DataRev.TabIndex = 5;
             this.DataRev.Text = "1000";
             // 
             // lblRev
             // 
             this.lblRev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
-            this.lblRev.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRev.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.lblRev.Location = new System.Drawing.Point(12, 0);
+            this.lblRev.Location = new System.Drawing.Point(53, 5);
             this.lblRev.Name = "lblRev";
             this.lblRev.Size = new System.Drawing.Size(112, 21);
             this.lblRev.TabIndex = 5;
@@ -203,20 +236,30 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.ttlprftrt);
             this.panel4.Controls.Add(this.DataProfit);
             this.panel4.Controls.Add(this.lblProfit);
-            this.panel4.Location = new System.Drawing.Point(470, 59);
+            this.panel4.Location = new System.Drawing.Point(506, 59);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(425, 59);
+            this.panel4.Size = new System.Drawing.Size(389, 59);
             this.panel4.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::C_sharp_project.Properties.Resources.profit42;
+            this.pictureBox3.Location = new System.Drawing.Point(5, 7);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
             // 
             // ttlprftrt
             // 
             this.ttlprftrt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ttlprftrt.ForeColor = System.Drawing.Color.Lime;
             this.ttlprftrt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ttlprftrt.Location = new System.Drawing.Point(329, 15);
+            this.ttlprftrt.Location = new System.Drawing.Point(297, 16);
             this.ttlprftrt.Name = "ttlprftrt";
             this.ttlprftrt.Size = new System.Drawing.Size(87, 44);
             this.ttlprftrt.TabIndex = 7;
@@ -225,91 +268,118 @@
             // 
             // DataProfit
             // 
-            this.DataProfit.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DataProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DataProfit.ForeColor = System.Drawing.Color.White;
-            this.DataProfit.Location = new System.Drawing.Point(14, 21);
+            this.DataProfit.Location = new System.Drawing.Point(47, 25);
             this.DataProfit.Name = "DataProfit";
-            this.DataProfit.Size = new System.Drawing.Size(222, 38);
+            this.DataProfit.Size = new System.Drawing.Size(122, 28);
             this.DataProfit.TabIndex = 6;
             this.DataProfit.Text = "1000";
             // 
             // lblProfit
             // 
-            this.lblProfit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblProfit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblProfit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.lblProfit.Location = new System.Drawing.Point(14, 0);
+            this.lblProfit.Location = new System.Drawing.Point(49, 6);
             this.lblProfit.Name = "lblProfit";
-            this.lblProfit.Size = new System.Drawing.Size(99, 26);
+            this.lblProfit.Size = new System.Drawing.Size(99, 21);
             this.lblProfit.TabIndex = 6;
             this.lblProfit.Text = "Total Profit";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.button5);
-            this.panel5.Controls.Add(this.dateTimePicker2);
-            this.panel5.Controls.Add(this.dateTimePicker1);
             this.panel5.Controls.Add(this.genlstmnth);
+            this.panel5.Controls.Add(this.gentdy);
             this.panel5.Controls.Add(this.genthsmnth);
             this.panel5.Controls.Add(this.genlstwk);
-            this.panel5.Controls.Add(this.gentdy);
             this.panel5.Location = new System.Drawing.Point(618, 137);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(289, 356);
             this.panel5.TabIndex = 3;
             // 
-            // label6
+            // panel7
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.Location = new System.Drawing.Point(15, 167);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(261, 35);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Custom";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(92)))), ((int)(((byte)(104)))));
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(84, 252);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 35);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Profit Loss";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(81)))));
+            this.panel7.Controls.Add(this.dateTimePicker2);
+            this.panel7.Controls.Add(this.button5);
+            this.panel7.Controls.Add(this.dateTimePicker1);
+            this.panel7.Location = new System.Drawing.Point(7, 206);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(275, 120);
+            this.panel7.TabIndex = 32;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "MMM dd, yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(162, 214);
+            this.dateTimePicker2.Location = new System.Drawing.Point(154, 29);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(114, 23);
             this.dateTimePicker2.TabIndex = 7;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button5.FlatAppearance.BorderSize = 3;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
+            this.button5.Location = new System.Drawing.Point(76, 67);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 35);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "Custom";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "MMM dd, yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(15, 214);
+            this.dateTimePicker1.Location = new System.Drawing.Point(7, 29);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(114, 23);
             this.dateTimePicker1.TabIndex = 6;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::C_sharp_project.Properties.Resources.date60;
+            this.pictureBox4.Location = new System.Drawing.Point(112, 9);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(62, 64);
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label6.Location = new System.Drawing.Point(17, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(261, 64);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Custom";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // genlstmnth
             // 
             this.genlstmnth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
-            this.genlstmnth.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.genlstmnth.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.genlstmnth.FlatAppearance.BorderSize = 3;
+            this.genlstmnth.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.genlstmnth.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.genlstmnth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.genlstmnth.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genlstmnth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.genlstmnth.Location = new System.Drawing.Point(162, 82);
+            this.genlstmnth.Location = new System.Drawing.Point(158, 149);
             this.genlstmnth.Name = "genlstmnth";
             this.genlstmnth.Size = new System.Drawing.Size(114, 35);
             this.genlstmnth.TabIndex = 5;
@@ -317,12 +387,35 @@
             this.genlstmnth.UseVisualStyleBackColor = false;
             this.genlstmnth.Click += new System.EventHandler(this.genlstmnth_Click);
             // 
+            // gentdy
+            // 
+            this.gentdy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.gentdy.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gentdy.FlatAppearance.BorderSize = 3;
+            this.gentdy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.gentdy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.gentdy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gentdy.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gentdy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
+            this.gentdy.Location = new System.Drawing.Point(11, 89);
+            this.gentdy.Name = "gentdy";
+            this.gentdy.Size = new System.Drawing.Size(114, 35);
+            this.gentdy.TabIndex = 2;
+            this.gentdy.Text = "Today";
+            this.gentdy.UseVisualStyleBackColor = false;
+            this.gentdy.Click += new System.EventHandler(this.gentdy_Click);
+            // 
             // genthsmnth
             // 
             this.genthsmnth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.genthsmnth.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.genthsmnth.FlatAppearance.BorderSize = 3;
+            this.genthsmnth.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.genthsmnth.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.genthsmnth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.genthsmnth.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genthsmnth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.genthsmnth.Location = new System.Drawing.Point(15, 82);
+            this.genthsmnth.Location = new System.Drawing.Point(11, 149);
             this.genthsmnth.Name = "genthsmnth";
             this.genthsmnth.Size = new System.Drawing.Size(114, 35);
             this.genthsmnth.TabIndex = 4;
@@ -333,9 +426,14 @@
             // genlstwk
             // 
             this.genlstwk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.genlstwk.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.genlstwk.FlatAppearance.BorderSize = 3;
+            this.genlstwk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.genlstwk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(63)))), ((int)(((byte)(102)))));
+            this.genlstwk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.genlstwk.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genlstwk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.genlstwk.Location = new System.Drawing.Point(162, 22);
+            this.genlstwk.Location = new System.Drawing.Point(158, 89);
             this.genlstwk.Name = "genlstwk";
             this.genlstwk.Size = new System.Drawing.Size(114, 35);
             this.genlstwk.TabIndex = 3;
@@ -343,21 +441,9 @@
             this.genlstwk.UseVisualStyleBackColor = false;
             this.genlstwk.Click += new System.EventHandler(this.genlstwk_Click);
             // 
-            // gentdy
-            // 
-            this.gentdy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
-            this.gentdy.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.gentdy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.gentdy.Location = new System.Drawing.Point(15, 22);
-            this.gentdy.Name = "gentdy";
-            this.gentdy.Size = new System.Drawing.Size(114, 35);
-            this.gentdy.TabIndex = 2;
-            this.gentdy.Text = "Today";
-            this.gentdy.UseVisualStyleBackColor = false;
-            this.gentdy.Click += new System.EventHandler(this.gentdy_Click);
-            // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.rate5);
             this.panel6.Controls.Add(this.rate4);
             this.panel6.Controls.Add(this.rate3);
@@ -754,6 +840,16 @@
             this.idc.Text = "ID";
             this.idc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(197, 15);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(41, 40);
+            this.pictureBox5.TabIndex = 30;
+            this.pictureBox5.TabStop = false;
+            // 
             // ProfitNloss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -770,10 +866,16 @@
             this.Text = "ProfitNloss";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -835,5 +937,11 @@
         private System.Windows.Forms.Label rate1;
         private System.Windows.Forms.Label ttlrevrt;
         private System.Windows.Forms.Label ttlprftrt;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
