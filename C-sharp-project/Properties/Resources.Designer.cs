@@ -213,6 +213,16 @@ namespace C_sharp_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sales__35 {
+            get {
+                object obj = ResourceManager.GetObject("sales -35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sales42 {
             get {
                 object obj = ResourceManager.GetObject("sales42", resourceCulture);

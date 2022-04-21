@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfitNloss));
             this.panel1 = new System.Windows.Forms.Panel();
             this.prftls = new System.Windows.Forms.Button();
             this.prftgn = new System.Windows.Forms.Button();
@@ -59,6 +58,7 @@
             this.genlstwk = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.rate5 = new System.Windows.Forms.Label();
             this.rate4 = new System.Windows.Forms.Label();
             this.rate3 = new System.Windows.Forms.Label();
@@ -89,7 +89,6 @@
             this.datec = new System.Windows.Forms.Label();
             this.namec = new System.Windows.Forms.Label();
             this.idc = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -298,7 +297,7 @@
             this.panel5.Controls.Add(this.genlstwk);
             this.panel5.Location = new System.Drawing.Point(618, 137);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(289, 356);
+            this.panel5.Size = new System.Drawing.Size(282, 356);
             this.panel5.TabIndex = 3;
             // 
             // panel7
@@ -479,6 +478,16 @@
             this.panel6.Size = new System.Drawing.Size(590, 356);
             this.panel6.TabIndex = 4;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
+            this.pictureBox5.Image = global::C_sharp_project.Properties.Resources.sales__35;
+            this.pictureBox5.Location = new System.Drawing.Point(197, 15);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(41, 40);
+            this.pictureBox5.TabIndex = 30;
+            this.pictureBox5.TabStop = false;
             // 
             // rate5
             // 
@@ -839,16 +848,6 @@
             this.idc.TabIndex = 0;
             this.idc.Text = "ID";
             this.idc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(197, 15);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(41, 40);
-            this.pictureBox5.TabIndex = 30;
-            this.pictureBox5.TabStop = false;
             // 
             // ProfitNloss
             // 

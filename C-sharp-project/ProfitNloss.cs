@@ -14,25 +14,26 @@ namespace C_sharp_project
 {
     public partial class ProfitNloss : Form
     {
+        ProfitNloss_SQL objv = new ProfitNloss_SQL();
         //today
         private string dtdo = DateTime.Now.ToString("d");
-        private string ydt = DateTime.Now.AddDays(-1).ToString("d");
-        private string tdy_sql1()
-        {
-            return "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + dtdo + "'ORDER BY profit DESC";
-        }
-        private string tdy_sql2()
-        {
-            return "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + ydt + "'ORDER BY profit DESC";
-        }
-        private string tdy_sql3()
-        {
-            return "Select * From sellinfo WHERE date='" + dtdo + "'";
-        }
+        /* private string ydt = DateTime.Now.AddDays(-1).ToString("d");
+         private string tdy_sql1()
+         {
+             return "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + dtdo + "'ORDER BY profit DESC";
+         }
+         private string tdy_sql2()
+         {
+             return "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + ydt + "'ORDER BY profit DESC";
+         }
+         private string tdy_sql3()
+         {
+             return "Select * From sellinfo WHERE date='" + dtdo + "'";
+         }*/
 
 
         //last 7 days
-        string dtmin6dys = DateTime.Now.AddDays(-6).ToString("d");
+       /* string dtmin6dys = DateTime.Now.AddDays(-6).ToString("d");
         string dtmin12dys = DateTime.Now.AddDays(-12).ToString("d");
         private string lst7dys_sql1()
         {
@@ -45,28 +46,16 @@ namespace C_sharp_project
         private string lst7dys_sql3()
         {
             return "Select * From sellinfo WHERE date BETWEEN '" + dtmin6dys + "' AND '" + dtdo + "' ";
-        }
+        }*/
 
         //this month
-        int thsmnth = Convert.ToInt32(DateTime.Now.Month);
-        int lstmnth = Convert.ToInt32(DateTime.Now.AddMonths(-1).Month);
+        /*int thsmnth = Convert.ToInt32(DateTime.Now.Month);
+        int lstmnth = Convert.ToInt32(DateTime.Now.AddMonths(-1).Month);*/
 
         //last month
-        int twomnthsbfr = Convert.ToInt32(DateTime.Now.AddMonths(-2).Month);
+        //int twomnthsbfr = Convert.ToInt32(DateTime.Now.AddMonths(-2).Month);
 
         //custom date
-        private string dtpicker1()
-        {
-            string dtleft = dateTimePicker1.Value.ToString("d");
-            return dtleft;
-        }
-        private string dtpicker2()
-        {
-            string dtright = dateTimePicker2.Value.ToString("d");
-            return dtright;
-        }
-
-
 
         public ProfitNloss()
         {
@@ -85,7 +74,8 @@ namespace C_sharp_project
 
         private void gentdy_Click(object sender, EventArgs e)
         {
-            strctre(tdy_sql1(),tdy_sql2(),tdy_sql3());
+            textrest();
+            strctre(objv.tdy_sql1(),objv.tdy_sql2(),objv.tdy_sql3(),"tdy");
           /*  int x = 0;
             double ttlsell = 0;
             double ttlval=0;
@@ -234,7 +224,8 @@ namespace C_sharp_project
 
         private void genlstwk_Click(object sender, EventArgs e)
         {
-            strctre(lst7dys_sql1(), lst7dys_sql2(), lst7dys_sql3());
+            textrest();
+            strctre(objv.lst7dys_sql1(), objv.lst7dys_sql2(), objv.lst7dys_sql3(),"lstwk");
 
 
          /*   int x = 0;
@@ -388,7 +379,8 @@ namespace C_sharp_project
 
         private void genthsmnth_Click(object sender, EventArgs e)
         {
-            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + thsmnth + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + lstmnth + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE Month(date) = '" + thsmnth + "'");
+            textrest();
+            strctre(objv.thsmnth_sql1(), objv.thsmnth_sql2(), objv.thsmnth_sql3(),"thsmnth");
 
          /*   int x = 0;
             double ttlsell = 0;
@@ -540,7 +532,8 @@ namespace C_sharp_project
 
         private void genlstmnth_Click(object sender, EventArgs e)
         {
-            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + lstmnth + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + twomnthsbfr + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE Month(date) = '" + lstmnth + "'");
+            textrest();
+            strctre(objv.lstmnth_sql1(), objv.lstmnth_sql2(), objv.lstmnth_sql3(),"lstmnth");
 
          /*   int x = 0;
             double ttlsell = 0;
@@ -692,7 +685,12 @@ namespace C_sharp_project
 
         private void button5_Click(object sender, EventArgs e)
         {
-            strctre("SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtpicker1()+ "' AND '" + dtpicker2() + "' ORDER BY profit DESC", "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + dtpicker1() + "' AND '" + dtpicker2() + "'  ORDER BY profit DESC", "Select * From sellinfo WHERE date BETWEEN '" + dtpicker1() + "' AND '" + dtpicker2() + "' ");
+            textrest();
+            objv.setdatpicker(dateTimePicker1.Value.ToString("d"), dateTimePicker2.Value.ToString("d"));
+            objv.set_cstmsql1();
+            objv.set_cstmsql2();
+            objv.set_cstmsql3();
+            strctre(objv.cstm_sql1(), objv.cstm_sql2(), objv.cstm_sql3(),"cstm");
 
           /*  int x = 0;
             double ttlsell = 0;
@@ -845,7 +843,7 @@ namespace C_sharp_project
 
         }
 
-        private void strctre(string sqlqry1, string sqlqry2,string sqlqry3)
+        private void strctre(string sqlqry1, string sqlqry2,string sqlqry3,string bttn)
         {
             int x = 0;
             double ttlsell = 0;
@@ -964,8 +962,35 @@ namespace C_sharp_project
                         double tdprftrt = Math.Round(((tdprft - ytdprft) / ytdprft) * 100, 2);
                         this.DataRev.Text = "Rs " + Convert.ToString(ttlsell - ttlval);
                         this.DataProfit.Text = "Rs " + Convert.ToString(ttlsell - (ttlval + ttlothrcsts));
-                        this.ttlrevrt.Text = "%" + Convert.ToString(tdrevrt);
-                        this.ttlprftrt.Text = "%" + Convert.ToString(tdprftrt);
+                        if(bttn!="cstm")
+                        {
+                            if(tdrevrt>0)
+                            {
+                                this.ttlrevrt.ForeColor=Color.Green;
+                                this.ttlrevrt.Text =  "+"+ Convert.ToString(tdrevrt)+ "%";
+                            }
+                            else
+                            {
+                                this.ttlrevrt.ForeColor = Color.Red;
+                                this.ttlrevrt.Text = Convert.ToString(tdrevrt) + "%";
+                            }
+                            if(tdprftrt>0)
+                            {
+                                this.ttlprftrt.ForeColor = Color.Green;
+                                this.ttlprftrt.Text = "+" + Convert.ToString(tdprftrt) + "%";
+                            }
+                            else
+                            {
+                                this.ttlprftrt.ForeColor = Color.Red;
+                                this.ttlprftrt.Text = Convert.ToString(tdprftrt) + "%";
+                            }
+                        }
+                        else if(bttn=="cstm")
+                        {
+                            this.ttlrevrt.Text = "";
+                            this.ttlprftrt.Text = "";
+                        }
+                        
 
                     }
                     connection.Close();
@@ -977,6 +1002,41 @@ namespace C_sharp_project
             {
                 Console.WriteLine(ea.ToString());
             }
+
+        }
+
+        private void textrest()
+        {
+            this.r1c1.Text = "";
+            this.r1c2.Text = "";
+            this.r1c3.Text = "";
+            this.r1c4.Text = "";
+            this.rate1.Text = "";
+            this.r2c1.Text = "";
+            this.r2c2.Text = "";
+            this.r2c3.Text = "";
+            this.r2c4.Text = "";
+            this.rate2.Text = "";
+            this.r3c1.Text = "";
+            this.r3c2.Text = "";
+            this.r3c3.Text = "";
+            this.r3c4.Text = "";
+            this.rate3.Text = "";
+            this.r4c1.Text = "";
+            this.r4c2.Text = "";
+            this.r4c3.Text = "";
+            this.r4c4.Text = "";
+            this.rate4.Text = "";
+            this.r5c1.Text = "";
+            this.r5c2.Text = "";
+            this.r5c3.Text = "";
+            this.r5c4.Text = "";
+            this.rate5.Text = "";
+            this.DataOrderCount.Text = ""; ;
+            this.ttlrevrt.Text = "";
+            this.ttlprftrt.Text = "";
+
+
 
         }
 
