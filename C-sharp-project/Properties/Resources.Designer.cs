@@ -181,6 +181,16 @@ namespace C_sharp_project.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon logo1_removebg_preview_lsk_icon {
+            get {
+                object obj = ResourceManager.GetObject("logo1_removebg_preview_lsk_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap warning {
