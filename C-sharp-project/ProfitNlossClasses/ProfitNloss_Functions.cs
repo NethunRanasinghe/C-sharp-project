@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace C_sharp_project
 {
-    internal class FirstBlock
+    internal class ProfitNloss_Functions
     {
 
     }
