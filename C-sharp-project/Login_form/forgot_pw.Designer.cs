@@ -52,17 +52,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(135, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 54);
+            this.label1.Size = new System.Drawing.Size(344, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "Forgot Password";
             // 
             // fpw_txtemail
             // 
             this.fpw_txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fpw_txtemail.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fpw_txtemail.ForeColor = System.Drawing.Color.SaddleBrown;
             this.fpw_txtemail.Location = new System.Drawing.Point(25, 26);
             this.fpw_txtemail.MaxLength = 200;
             this.fpw_txtemail.Multiline = true;
@@ -79,6 +81,8 @@
             // fpw_txtauthcode
             // 
             this.fpw_txtauthcode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fpw_txtauthcode.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fpw_txtauthcode.ForeColor = System.Drawing.Color.SaddleBrown;
             this.fpw_txtauthcode.Location = new System.Drawing.Point(25, 110);
             this.fpw_txtauthcode.MaxLength = 1000000;
             this.fpw_txtauthcode.Multiline = true;
@@ -94,6 +98,8 @@
             // fpw_txtnpw
             // 
             this.fpw_txtnpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fpw_txtnpw.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fpw_txtnpw.ForeColor = System.Drawing.Color.SaddleBrown;
             this.fpw_txtnpw.Location = new System.Drawing.Point(25, 197);
             this.fpw_txtnpw.MaxLength = 200;
             this.fpw_txtnpw.Multiline = true;
@@ -109,6 +115,8 @@
             // fpw_txtcpw
             // 
             this.fpw_txtcpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fpw_txtcpw.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fpw_txtcpw.ForeColor = System.Drawing.Color.SaddleBrown;
             this.fpw_txtcpw.Location = new System.Drawing.Point(274, 197);
             this.fpw_txtcpw.MaxLength = 200;
             this.fpw_txtcpw.Multiline = true;
@@ -123,8 +131,8 @@
             // 
             // fpw_btnrqcode
             // 
-            this.fpw_btnrqcode.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fpw_btnrqcode.ForeColor = System.Drawing.Color.Black;
+            this.fpw_btnrqcode.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fpw_btnrqcode.ForeColor = System.Drawing.Color.SaddleBrown;
             this.fpw_btnrqcode.Location = new System.Drawing.Point(274, 110);
             this.fpw_btnrqcode.Name = "fpw_btnrqcode";
             this.fpw_btnrqcode.Size = new System.Drawing.Size(241, 50);
@@ -174,11 +182,12 @@
             // 
             // fpw_btncpw
             // 
-            this.fpw_btncpw.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fpw_btncpw.ForeColor = System.Drawing.Color.Black;
+            this.fpw_btncpw.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.fpw_btncpw.Font = new System.Drawing.Font("Baskerville Old Face", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fpw_btncpw.ForeColor = System.Drawing.Color.Snow;
             this.fpw_btncpw.Location = new System.Drawing.Point(58, 396);
             this.fpw_btncpw.Name = "fpw_btncpw";
-            this.fpw_btncpw.Size = new System.Drawing.Size(142, 60);
+            this.fpw_btncpw.Size = new System.Drawing.Size(151, 68);
             this.fpw_btncpw.TabIndex = 9;
             this.fpw_btncpw.Text = "Change Password";
             this.fpw_btncpw.UseVisualStyleBackColor = true;
@@ -192,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::C_sharp_project.Properties.Resources.login_bg;
+            this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(606, 514);
             this.Controls.Add(this.fpw_btncpw);
