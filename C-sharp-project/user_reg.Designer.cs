@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.fname = new System.Windows.Forms.TextBox();
             this.lname = new System.Windows.Forms.TextBox();
             this.nicno = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.fname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -69,15 +69,6 @@
             this.label2.Size = new System.Drawing.Size(145, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name";
-            // 
-            // fname
-            // 
-            this.fname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fname.Location = new System.Drawing.Point(40, 198);
-            this.fname.Multiline = true;
-            this.fname.Name = "fname";
-            this.fname.Size = new System.Drawing.Size(221, 46);
-            this.fname.TabIndex = 2;
             // 
             // lname
             // 
@@ -256,11 +247,21 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "NIC Number";
             // 
+            // fname
+            // 
+            this.fname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fname.Location = new System.Drawing.Point(40, 198);
+            this.fname.Multiline = true;
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(231, 46);
+            this.fname.TabIndex = 23;
+            // 
             // user_reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1117, 714);
+            this.Controls.Add(this.fname);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -280,7 +281,6 @@
             this.Controls.Add(this.nicno);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lname);
-            this.Controls.Add(this.fname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "user_reg";
@@ -294,7 +294,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox fname;
         private System.Windows.Forms.TextBox lname;
         private System.Windows.Forms.TextBox nicno;
         private System.Windows.Forms.Label label3;
@@ -314,5 +313,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox fname;
     }
 }
