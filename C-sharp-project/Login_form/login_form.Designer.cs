@@ -122,7 +122,9 @@
             // 
             // login_btnclear
             // 
-            this.login_btnclear.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.login_btnclear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.login_btnclear.Font = new System.Drawing.Font("Baskerville Old Face", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.login_btnclear.ForeColor = System.Drawing.Color.White;
             this.login_btnclear.Location = new System.Drawing.Point(290, 421);
             this.login_btnclear.Name = "login_btnclear";
             this.login_btnclear.Size = new System.Drawing.Size(120, 45);
@@ -133,7 +135,9 @@
             // 
             // login_btnlogin
             // 
-            this.login_btnlogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.login_btnlogin.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.login_btnlogin.Font = new System.Drawing.Font("Baskerville Old Face", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.login_btnlogin.ForeColor = System.Drawing.Color.White;
             this.login_btnlogin.Location = new System.Drawing.Point(144, 421);
             this.login_btnlogin.Name = "login_btnlogin";
             this.login_btnlogin.Size = new System.Drawing.Size(120, 45);
@@ -147,7 +151,7 @@
             this.login_lbllogin.AutoSize = true;
             this.login_lbllogin.BackColor = System.Drawing.Color.Transparent;
             this.login_lbllogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.login_lbllogin.ForeColor = System.Drawing.Color.Black;
+            this.login_lbllogin.ForeColor = System.Drawing.Color.White;
             this.login_lbllogin.Location = new System.Drawing.Point(21, 76);
             this.login_lbllogin.Name = "login_lbllogin";
             this.login_lbllogin.Size = new System.Drawing.Size(96, 38);
@@ -156,7 +160,7 @@
             // 
             // login_panelr
             // 
-            this.login_panelr.BackColor = System.Drawing.Color.LightGray;
+            this.login_panelr.BackColor = System.Drawing.Color.Transparent;
             this.login_panelr.Controls.Add(this.login_txtforgotpw);
             this.login_panelr.Controls.Add(this.login_txtpw);
             this.login_panelr.Controls.Add(this.login_txtusr);
@@ -167,13 +171,14 @@
             // 
             // login_txtforgotpw
             // 
+            this.login_txtforgotpw.ActiveLinkColor = System.Drawing.Color.White;
             this.login_txtforgotpw.AutoSize = true;
             this.login_txtforgotpw.BackColor = System.Drawing.Color.Transparent;
-            this.login_txtforgotpw.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.login_txtforgotpw.LinkColor = System.Drawing.Color.Brown;
-            this.login_txtforgotpw.Location = new System.Drawing.Point(230, 208);
+            this.login_txtforgotpw.Font = new System.Drawing.Font("Baskerville Old Face", 11.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.login_txtforgotpw.LinkColor = System.Drawing.Color.White;
+            this.login_txtforgotpw.Location = new System.Drawing.Point(212, 208);
             this.login_txtforgotpw.Name = "login_txtforgotpw";
-            this.login_txtforgotpw.Size = new System.Drawing.Size(151, 23);
+            this.login_txtforgotpw.Size = new System.Drawing.Size(168, 22);
             this.login_txtforgotpw.TabIndex = 4;
             this.login_txtforgotpw.TabStop = true;
             this.login_txtforgotpw.Text = "Forgot Password ?";
@@ -184,7 +189,8 @@
             // 
             this.login_txtpw.BackColor = System.Drawing.Color.White;
             this.login_txtpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.login_txtpw.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.login_txtpw.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.login_txtpw.ForeColor = System.Drawing.Color.DarkRed;
             this.login_txtpw.Location = new System.Drawing.Point(33, 129);
             this.login_txtpw.Multiline = true;
             this.login_txtpw.Name = "login_txtpw";
@@ -200,7 +206,8 @@
             // 
             this.login_txtusr.BackColor = System.Drawing.Color.White;
             this.login_txtusr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.login_txtusr.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.login_txtusr.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.login_txtusr.ForeColor = System.Drawing.Color.DarkRed;
             this.login_txtusr.Location = new System.Drawing.Point(33, 43);
             this.login_txtusr.MaxLength = 200;
             this.login_txtusr.Multiline = true;

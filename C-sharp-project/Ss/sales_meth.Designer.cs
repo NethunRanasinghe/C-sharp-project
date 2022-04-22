@@ -364,6 +364,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1100, 1025);
             this.Controls.Add(this.BTN_sumbit);
             this.Controls.Add(this.BTN_Clear);
