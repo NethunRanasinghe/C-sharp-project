@@ -19,6 +19,7 @@ namespace C_sharp_project
             InitializeComponent();
             this.login_panelr.BackColor = Color.FromArgb(125, Color.White);
 
+
         }
 
         private void login_form_Load(object sender, EventArgs e)
@@ -187,8 +188,18 @@ namespace C_sharp_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProfitNloss objmp=new ProfitNloss();
+            user_reg objmp=new user_reg();
             objmp.Show();
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -13,7 +13,7 @@ namespace C_sharp_project
 {
     internal class DBConn
     {
-        private readonly string connstringdbx=@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sandman\source\repos\C-sharp-project\C-sharp-project\bin\Debug\net5.0-windows\systmDB.mdf;Integrated Security=True;Connect Timeout=30";
+        private readonly string connstringdbx= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\source\repos\C-sharp-project\C-sharp-project\Databases\DB1\systmDB.mdf;Integrated Security=True;Connect Timeout=30";
         public string getdbconn()
         {
             return connstringdbx;
