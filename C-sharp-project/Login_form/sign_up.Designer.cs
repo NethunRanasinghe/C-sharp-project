@@ -57,16 +57,19 @@
             // 
             this.signup_lblsignup.AutoSize = true;
             this.signup_lblsignup.BackColor = System.Drawing.Color.Transparent;
-            this.signup_lblsignup.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.signup_lblsignup.Font = new System.Drawing.Font("Baskerville Old Face", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.signup_lblsignup.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_lblsignup.Location = new System.Drawing.Point(200, 20);
             this.signup_lblsignup.Name = "signup_lblsignup";
-            this.signup_lblsignup.Size = new System.Drawing.Size(165, 54);
+            this.signup_lblsignup.Size = new System.Drawing.Size(156, 45);
             this.signup_lblsignup.TabIndex = 0;
             this.signup_lblsignup.Text = "Sign Up";
             // 
             // signup_btnsignup
             // 
-            this.signup_btnsignup.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.signup_btnsignup.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.signup_btnsignup.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.signup_btnsignup.ForeColor = System.Drawing.Color.Snow;
             this.signup_btnsignup.Location = new System.Drawing.Point(45, 618);
             this.signup_btnsignup.Name = "signup_btnsignup";
             this.signup_btnsignup.Size = new System.Drawing.Size(142, 60);
@@ -103,7 +106,7 @@
             // 
             // signup_pnlsignup
             // 
-            this.signup_pnlsignup.BackColor = System.Drawing.Color.LightGray;
+            this.signup_pnlsignup.BackColor = System.Drawing.Color.Transparent;
             this.signup_pnlsignup.Controls.Add(this.signup_btnwarn);
             this.signup_pnlsignup.Controls.Add(this.signup_btnrequest);
             this.signup_pnlsignup.Controls.Add(this.signup_txtcpw);
@@ -136,6 +139,7 @@
             // signup_btnrequest
             // 
             this.signup_btnrequest.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.signup_btnrequest.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_btnrequest.Location = new System.Drawing.Point(389, 262);
             this.signup_btnrequest.Name = "signup_btnrequest";
             this.signup_btnrequest.Size = new System.Drawing.Size(125, 31);
@@ -147,7 +151,8 @@
             // signup_txtcpw
             // 
             this.signup_txtcpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signup_txtcpw.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.signup_txtcpw.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signup_txtcpw.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_txtcpw.Location = new System.Drawing.Point(24, 408);
             this.signup_txtcpw.MaxLength = 200;
             this.signup_txtcpw.Multiline = true;
@@ -163,7 +168,8 @@
             // signup_txtpw
             // 
             this.signup_txtpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signup_txtpw.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.signup_txtpw.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signup_txtpw.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_txtpw.Location = new System.Drawing.Point(24, 322);
             this.signup_txtpw.MaxLength = 200;
             this.signup_txtpw.Multiline = true;
@@ -179,7 +185,8 @@
             // signup_txtcode
             // 
             this.signup_txtcode.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signup_txtcode.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.signup_txtcode.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signup_txtcode.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_txtcode.Location = new System.Drawing.Point(298, 206);
             this.signup_txtcode.MaxLength = 200;
             this.signup_txtcode.Multiline = true;
@@ -195,7 +202,8 @@
             // signup_txtposition
             // 
             this.signup_txtposition.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signup_txtposition.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.signup_txtposition.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signup_txtposition.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_txtposition.Location = new System.Drawing.Point(24, 206);
             this.signup_txtposition.MaxLength = 200;
             this.signup_txtposition.Multiline = true;
@@ -211,7 +219,8 @@
             // signup_txtemail
             // 
             this.signup_txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signup_txtemail.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.signup_txtemail.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signup_txtemail.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_txtemail.Location = new System.Drawing.Point(24, 117);
             this.signup_txtemail.MaxLength = 200;
             this.signup_txtemail.Multiline = true;
@@ -227,7 +236,8 @@
             // signup_txtln
             // 
             this.signup_txtln.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signup_txtln.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.signup_txtln.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signup_txtln.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_txtln.Location = new System.Drawing.Point(298, 26);
             this.signup_txtln.MaxLength = 200;
             this.signup_txtln.Multiline = true;
@@ -243,7 +253,8 @@
             // signup_txtfn
             // 
             this.signup_txtfn.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.signup_txtfn.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.signup_txtfn.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.signup_txtfn.ForeColor = System.Drawing.Color.SaddleBrown;
             this.signup_txtfn.Location = new System.Drawing.Point(24, 26);
             this.signup_txtfn.MaxLength = 200;
             this.signup_txtfn.Multiline = true;
@@ -264,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(582, 753);
             this.Controls.Add(this.signup_pnlsignup);

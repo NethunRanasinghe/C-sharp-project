@@ -292,6 +292,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1152, 748);
             this.Controls.Add(this.Btn_prevMenu);
             this.Controls.Add(this.Btn_exit);
