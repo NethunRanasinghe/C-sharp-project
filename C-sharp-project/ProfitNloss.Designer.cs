@@ -110,8 +110,9 @@
             this.panel1.Controls.Add(this.prftgn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(908, 39);
+            this.panel1.Size = new System.Drawing.Size(1297, 65);
             this.panel1.TabIndex = 0;
             // 
             // prftls
@@ -119,9 +120,10 @@
             this.prftls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(77)))), ((int)(((byte)(75)))));
             this.prftls.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.prftls.ForeColor = System.Drawing.Color.White;
-            this.prftls.Location = new System.Drawing.Point(470, 0);
+            this.prftls.Location = new System.Drawing.Point(671, 0);
+            this.prftls.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.prftls.Name = "prftls";
-            this.prftls.Size = new System.Drawing.Size(391, 39);
+            this.prftls.Size = new System.Drawing.Size(559, 65);
             this.prftls.TabIndex = 1;
             this.prftls.Text = "Profit Loss";
             this.prftls.UseVisualStyleBackColor = false;
@@ -131,9 +133,10 @@
             this.prftgn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(176)))), ((int)(((byte)(76)))));
             this.prftgn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.prftgn.ForeColor = System.Drawing.Color.White;
-            this.prftgn.Location = new System.Drawing.Point(38, 0);
+            this.prftgn.Location = new System.Drawing.Point(54, 0);
+            this.prftgn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.prftgn.Name = "prftgn";
-            this.prftgn.Size = new System.Drawing.Size(391, 39);
+            this.prftgn.Size = new System.Drawing.Size(559, 65);
             this.prftgn.TabIndex = 0;
             this.prftgn.Text = "Profit Gain";
             this.prftgn.UseVisualStyleBackColor = false;
@@ -145,17 +148,19 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.DataOrderCount);
             this.panel2.Controls.Add(this.lblOrderCount);
-            this.panel2.Location = new System.Drawing.Point(12, 59);
+            this.panel2.Location = new System.Drawing.Point(17, 98);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(192, 59);
+            this.panel2.Size = new System.Drawing.Size(274, 98);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.sales42;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(66, 73);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -163,9 +168,10 @@
             // 
             this.DataOrderCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DataOrderCount.ForeColor = System.Drawing.Color.White;
-            this.DataOrderCount.Location = new System.Drawing.Point(51, 23);
+            this.DataOrderCount.Location = new System.Drawing.Point(73, 38);
+            this.DataOrderCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DataOrderCount.Name = "DataOrderCount";
-            this.DataOrderCount.Size = new System.Drawing.Size(134, 28);
+            this.DataOrderCount.Size = new System.Drawing.Size(191, 47);
             this.DataOrderCount.TabIndex = 4;
             this.DataOrderCount.Text = "1000";
             // 
@@ -173,9 +179,10 @@
             // 
             this.lblOrderCount.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblOrderCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.lblOrderCount.Location = new System.Drawing.Point(51, 3);
+            this.lblOrderCount.Location = new System.Drawing.Point(73, 5);
+            this.lblOrderCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOrderCount.Name = "lblOrderCount";
-            this.lblOrderCount.Size = new System.Drawing.Size(118, 21);
+            this.lblOrderCount.Size = new System.Drawing.Size(169, 35);
             this.lblOrderCount.TabIndex = 3;
             this.lblOrderCount.Text = "Number of Sales";
             // 
@@ -186,17 +193,19 @@
             this.panel3.Controls.Add(this.ttlrevrt);
             this.panel3.Controls.Add(this.DataRev);
             this.panel3.Controls.Add(this.lblRev);
-            this.panel3.Location = new System.Drawing.Point(221, 59);
+            this.panel3.Location = new System.Drawing.Point(316, 98);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(268, 59);
+            this.panel3.Size = new System.Drawing.Size(383, 98);
             this.panel3.TabIndex = 2;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.revenue42;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(4, 12);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox2.Size = new System.Drawing.Size(61, 75);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
@@ -204,9 +213,10 @@
             // 
             this.ttlrevrt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ttlrevrt.ForeColor = System.Drawing.Color.Lime;
-            this.ttlrevrt.Location = new System.Drawing.Point(188, 16);
+            this.ttlrevrt.Location = new System.Drawing.Point(269, 27);
+            this.ttlrevrt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ttlrevrt.Name = "ttlrevrt";
-            this.ttlrevrt.Size = new System.Drawing.Size(77, 44);
+            this.ttlrevrt.Size = new System.Drawing.Size(110, 73);
             this.ttlrevrt.TabIndex = 8;
             this.ttlrevrt.Text = "10%";
             this.ttlrevrt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -215,9 +225,10 @@
             // 
             this.DataRev.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DataRev.ForeColor = System.Drawing.Color.White;
-            this.DataRev.Location = new System.Drawing.Point(53, 25);
+            this.DataRev.Location = new System.Drawing.Point(76, 42);
+            this.DataRev.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DataRev.Name = "DataRev";
-            this.DataRev.Size = new System.Drawing.Size(112, 26);
+            this.DataRev.Size = new System.Drawing.Size(160, 43);
             this.DataRev.TabIndex = 5;
             this.DataRev.Text = "1000";
             // 
@@ -226,9 +237,10 @@
             this.lblRev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.lblRev.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.lblRev.Location = new System.Drawing.Point(53, 5);
+            this.lblRev.Location = new System.Drawing.Point(76, 8);
+            this.lblRev.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRev.Name = "lblRev";
-            this.lblRev.Size = new System.Drawing.Size(112, 21);
+            this.lblRev.Size = new System.Drawing.Size(160, 35);
             this.lblRev.TabIndex = 5;
             this.lblRev.Text = "Total Revenue";
             // 
@@ -239,17 +251,19 @@
             this.panel4.Controls.Add(this.ttlprftrt);
             this.panel4.Controls.Add(this.DataProfit);
             this.panel4.Controls.Add(this.lblProfit);
-            this.panel4.Location = new System.Drawing.Point(506, 59);
+            this.panel4.Location = new System.Drawing.Point(723, 98);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(389, 59);
+            this.panel4.Size = new System.Drawing.Size(556, 98);
             this.panel4.TabIndex = 2;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::C_sharp_project.Properties.Resources.profit42;
-            this.pictureBox3.Location = new System.Drawing.Point(5, 7);
+            this.pictureBox3.Location = new System.Drawing.Point(7, 12);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox3.Size = new System.Drawing.Size(61, 75);
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
@@ -258,9 +272,10 @@
             this.ttlprftrt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ttlprftrt.ForeColor = System.Drawing.Color.Lime;
             this.ttlprftrt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ttlprftrt.Location = new System.Drawing.Point(297, 16);
+            this.ttlprftrt.Location = new System.Drawing.Point(424, 27);
+            this.ttlprftrt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ttlprftrt.Name = "ttlprftrt";
-            this.ttlprftrt.Size = new System.Drawing.Size(87, 44);
+            this.ttlprftrt.Size = new System.Drawing.Size(124, 73);
             this.ttlprftrt.TabIndex = 7;
             this.ttlprftrt.Text = "12%";
             this.ttlprftrt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -269,9 +284,10 @@
             // 
             this.DataProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DataProfit.ForeColor = System.Drawing.Color.White;
-            this.DataProfit.Location = new System.Drawing.Point(47, 25);
+            this.DataProfit.Location = new System.Drawing.Point(67, 42);
+            this.DataProfit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DataProfit.Name = "DataProfit";
-            this.DataProfit.Size = new System.Drawing.Size(122, 28);
+            this.DataProfit.Size = new System.Drawing.Size(174, 47);
             this.DataProfit.TabIndex = 6;
             this.DataProfit.Text = "1000";
             // 
@@ -279,9 +295,10 @@
             // 
             this.lblProfit.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblProfit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.lblProfit.Location = new System.Drawing.Point(49, 6);
+            this.lblProfit.Location = new System.Drawing.Point(70, 10);
+            this.lblProfit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProfit.Name = "lblProfit";
-            this.lblProfit.Size = new System.Drawing.Size(99, 21);
+            this.lblProfit.Size = new System.Drawing.Size(141, 35);
             this.lblProfit.TabIndex = 6;
             this.lblProfit.Text = "Total Profit";
             // 
@@ -295,9 +312,10 @@
             this.panel5.Controls.Add(this.gentdy);
             this.panel5.Controls.Add(this.genthsmnth);
             this.panel5.Controls.Add(this.genlstwk);
-            this.panel5.Location = new System.Drawing.Point(618, 137);
+            this.panel5.Location = new System.Drawing.Point(883, 228);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(282, 356);
+            this.panel5.Size = new System.Drawing.Size(403, 593);
             this.panel5.TabIndex = 3;
             // 
             // panel7
@@ -306,18 +324,20 @@
             this.panel7.Controls.Add(this.dateTimePicker2);
             this.panel7.Controls.Add(this.button5);
             this.panel7.Controls.Add(this.dateTimePicker1);
-            this.panel7.Location = new System.Drawing.Point(7, 206);
+            this.panel7.Location = new System.Drawing.Point(10, 343);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(275, 120);
+            this.panel7.Size = new System.Drawing.Size(393, 200);
             this.panel7.TabIndex = 32;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CustomFormat = "MMM dd, yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(154, 29);
+            this.dateTimePicker2.Location = new System.Drawing.Point(220, 48);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(114, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(161, 31);
             this.dateTimePicker2.TabIndex = 7;
             // 
             // button5
@@ -330,9 +350,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.button5.Location = new System.Drawing.Point(76, 67);
+            this.button5.Location = new System.Drawing.Point(109, 112);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 35);
+            this.button5.Size = new System.Drawing.Size(163, 58);
             this.button5.TabIndex = 8;
             this.button5.Text = "Custom";
             this.button5.UseVisualStyleBackColor = false;
@@ -342,17 +363,19 @@
             // 
             this.dateTimePicker1.CustomFormat = "MMM dd, yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(7, 29);
+            this.dateTimePicker1.Location = new System.Drawing.Point(10, 48);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(114, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(161, 31);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::C_sharp_project.Properties.Resources.date60;
-            this.pictureBox4.Location = new System.Drawing.Point(112, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(160, 15);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(62, 64);
+            this.pictureBox4.Size = new System.Drawing.Size(89, 107);
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
             // 
@@ -361,9 +384,10 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.Location = new System.Drawing.Point(17, 10);
+            this.label6.Location = new System.Drawing.Point(24, 17);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(261, 64);
+            this.label6.Size = new System.Drawing.Size(373, 107);
             this.label6.TabIndex = 30;
             this.label6.Text = "Custom";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -378,9 +402,10 @@
             this.genlstmnth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.genlstmnth.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genlstmnth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.genlstmnth.Location = new System.Drawing.Point(158, 149);
+            this.genlstmnth.Location = new System.Drawing.Point(226, 248);
+            this.genlstmnth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.genlstmnth.Name = "genlstmnth";
-            this.genlstmnth.Size = new System.Drawing.Size(114, 35);
+            this.genlstmnth.Size = new System.Drawing.Size(163, 58);
             this.genlstmnth.TabIndex = 5;
             this.genlstmnth.Text = "Last Month";
             this.genlstmnth.UseVisualStyleBackColor = false;
@@ -396,9 +421,10 @@
             this.gentdy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gentdy.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.gentdy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.gentdy.Location = new System.Drawing.Point(11, 89);
+            this.gentdy.Location = new System.Drawing.Point(16, 148);
+            this.gentdy.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gentdy.Name = "gentdy";
-            this.gentdy.Size = new System.Drawing.Size(114, 35);
+            this.gentdy.Size = new System.Drawing.Size(163, 58);
             this.gentdy.TabIndex = 2;
             this.gentdy.Text = "Today";
             this.gentdy.UseVisualStyleBackColor = false;
@@ -414,9 +440,10 @@
             this.genthsmnth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.genthsmnth.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genthsmnth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.genthsmnth.Location = new System.Drawing.Point(11, 149);
+            this.genthsmnth.Location = new System.Drawing.Point(16, 248);
+            this.genthsmnth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.genthsmnth.Name = "genthsmnth";
-            this.genthsmnth.Size = new System.Drawing.Size(114, 35);
+            this.genthsmnth.Size = new System.Drawing.Size(163, 58);
             this.genthsmnth.TabIndex = 4;
             this.genthsmnth.Text = "This Month";
             this.genthsmnth.UseVisualStyleBackColor = false;
@@ -432,9 +459,10 @@
             this.genlstwk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.genlstwk.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.genlstwk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.genlstwk.Location = new System.Drawing.Point(158, 89);
+            this.genlstwk.Location = new System.Drawing.Point(226, 148);
+            this.genlstwk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.genlstwk.Name = "genlstwk";
-            this.genlstwk.Size = new System.Drawing.Size(114, 35);
+            this.genlstwk.Size = new System.Drawing.Size(163, 58);
             this.genlstwk.TabIndex = 3;
             this.genlstwk.Text = "Last Week";
             this.genlstwk.UseVisualStyleBackColor = false;
@@ -473,9 +501,10 @@
             this.panel6.Controls.Add(this.datec);
             this.panel6.Controls.Add(this.namec);
             this.panel6.Controls.Add(this.idc);
-            this.panel6.Location = new System.Drawing.Point(12, 137);
+            this.panel6.Location = new System.Drawing.Point(17, 228);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(590, 356);
+            this.panel6.Size = new System.Drawing.Size(843, 593);
             this.panel6.TabIndex = 4;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
@@ -483,9 +512,10 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.pictureBox5.Image = global::C_sharp_project.Properties.Resources.sales__35;
-            this.pictureBox5.Location = new System.Drawing.Point(197, 15);
+            this.pictureBox5.Location = new System.Drawing.Point(281, 25);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(41, 40);
+            this.pictureBox5.Size = new System.Drawing.Size(59, 67);
             this.pictureBox5.TabIndex = 30;
             this.pictureBox5.TabStop = false;
             // 
@@ -494,9 +524,10 @@
             this.rate5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate5.Location = new System.Drawing.Point(505, 306);
+            this.rate5.Location = new System.Drawing.Point(721, 510);
+            this.rate5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rate5.Name = "rate5";
-            this.rate5.Size = new System.Drawing.Size(60, 35);
+            this.rate5.Size = new System.Drawing.Size(86, 58);
             this.rate5.TabIndex = 29;
             this.rate5.Text = "20%";
             this.rate5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -506,9 +537,10 @@
             this.rate4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate4.Location = new System.Drawing.Point(505, 263);
+            this.rate4.Location = new System.Drawing.Point(721, 438);
+            this.rate4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rate4.Name = "rate4";
-            this.rate4.Size = new System.Drawing.Size(60, 35);
+            this.rate4.Size = new System.Drawing.Size(86, 58);
             this.rate4.TabIndex = 28;
             this.rate4.Text = "25%";
             this.rate4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -518,9 +550,10 @@
             this.rate3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate3.Location = new System.Drawing.Point(505, 221);
+            this.rate3.Location = new System.Drawing.Point(721, 368);
+            this.rate3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rate3.Name = "rate3";
-            this.rate3.Size = new System.Drawing.Size(60, 35);
+            this.rate3.Size = new System.Drawing.Size(86, 58);
             this.rate3.TabIndex = 27;
             this.rate3.Text = "30%";
             this.rate3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -530,9 +563,10 @@
             this.rate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate2.Location = new System.Drawing.Point(505, 179);
+            this.rate2.Location = new System.Drawing.Point(721, 298);
+            this.rate2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rate2.Name = "rate2";
-            this.rate2.Size = new System.Drawing.Size(60, 35);
+            this.rate2.Size = new System.Drawing.Size(86, 58);
             this.rate2.TabIndex = 26;
             this.rate2.Text = "45%";
             this.rate2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -542,9 +576,10 @@
             this.rate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate1.Location = new System.Drawing.Point(505, 138);
+            this.rate1.Location = new System.Drawing.Point(721, 230);
+            this.rate1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rate1.Name = "rate1";
-            this.rate1.Size = new System.Drawing.Size(60, 35);
+            this.rate1.Size = new System.Drawing.Size(86, 58);
             this.rate1.TabIndex = 25;
             this.rate1.Text = "52%";
             this.rate1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -554,9 +589,10 @@
             this.dsplycont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.dsplycont.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dsplycont.ForeColor = System.Drawing.Color.White;
-            this.dsplycont.Location = new System.Drawing.Point(12, 12);
+            this.dsplycont.Location = new System.Drawing.Point(17, 20);
+            this.dsplycont.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dsplycont.Name = "dsplycont";
-            this.dsplycont.Size = new System.Drawing.Size(553, 45);
+            this.dsplycont.Size = new System.Drawing.Size(790, 75);
             this.dsplycont.TabIndex = 24;
             this.dsplycont.Text = "Top 5 Sales";
             this.dsplycont.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -566,9 +602,10 @@
             this.r5c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r5c4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r5c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r5c4.Location = new System.Drawing.Point(418, 306);
+            this.r5c4.Location = new System.Drawing.Point(597, 510);
+            this.r5c4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r5c4.Name = "r5c4";
-            this.r5c4.Size = new System.Drawing.Size(81, 35);
+            this.r5c4.Size = new System.Drawing.Size(116, 58);
             this.r5c4.TabIndex = 23;
             this.r5c4.Text = "Rs 20000";
             this.r5c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -578,9 +615,10 @@
             this.r4c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r4c4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r4c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r4c4.Location = new System.Drawing.Point(418, 263);
+            this.r4c4.Location = new System.Drawing.Point(597, 438);
+            this.r4c4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r4c4.Name = "r4c4";
-            this.r4c4.Size = new System.Drawing.Size(81, 35);
+            this.r4c4.Size = new System.Drawing.Size(116, 58);
             this.r4c4.TabIndex = 22;
             this.r4c4.Text = "Rs 25000";
             this.r4c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -590,9 +628,10 @@
             this.r3c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r3c4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r3c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r3c4.Location = new System.Drawing.Point(418, 221);
+            this.r3c4.Location = new System.Drawing.Point(597, 368);
+            this.r3c4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r3c4.Name = "r3c4";
-            this.r3c4.Size = new System.Drawing.Size(81, 35);
+            this.r3c4.Size = new System.Drawing.Size(116, 58);
             this.r3c4.TabIndex = 21;
             this.r3c4.Text = "Rs 30000";
             this.r3c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -602,9 +641,10 @@
             this.r2c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r2c4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r2c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r2c4.Location = new System.Drawing.Point(418, 179);
+            this.r2c4.Location = new System.Drawing.Point(597, 298);
+            this.r2c4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r2c4.Name = "r2c4";
-            this.r2c4.Size = new System.Drawing.Size(81, 35);
+            this.r2c4.Size = new System.Drawing.Size(116, 58);
             this.r2c4.TabIndex = 20;
             this.r2c4.Text = "Rs 45000";
             this.r2c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -614,9 +654,10 @@
             this.r1c4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r1c4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r1c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r1c4.Location = new System.Drawing.Point(418, 138);
+            this.r1c4.Location = new System.Drawing.Point(597, 230);
+            this.r1c4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r1c4.Name = "r1c4";
-            this.r1c4.Size = new System.Drawing.Size(81, 35);
+            this.r1c4.Size = new System.Drawing.Size(116, 58);
             this.r1c4.TabIndex = 19;
             this.r1c4.Text = "Rs 50000  ";
             this.r1c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -626,9 +667,10 @@
             this.r5c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r5c3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r5c3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r5c3.Location = new System.Drawing.Point(288, 306);
+            this.r5c3.Location = new System.Drawing.Point(411, 510);
+            this.r5c3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r5c3.Name = "r5c3";
-            this.r5c3.Size = new System.Drawing.Size(116, 35);
+            this.r5c3.Size = new System.Drawing.Size(166, 58);
             this.r5c3.TabIndex = 18;
             this.r5c3.Text = "2022-02-09";
             this.r5c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -638,9 +680,10 @@
             this.r4c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r4c3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r4c3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r4c3.Location = new System.Drawing.Point(288, 263);
+            this.r4c3.Location = new System.Drawing.Point(411, 438);
+            this.r4c3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r4c3.Name = "r4c3";
-            this.r4c3.Size = new System.Drawing.Size(116, 35);
+            this.r4c3.Size = new System.Drawing.Size(166, 58);
             this.r4c3.TabIndex = 17;
             this.r4c3.Text = "2022-02-08";
             this.r4c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -650,9 +693,10 @@
             this.r3c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r3c3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r3c3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r3c3.Location = new System.Drawing.Point(288, 221);
+            this.r3c3.Location = new System.Drawing.Point(411, 368);
+            this.r3c3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r3c3.Name = "r3c3";
-            this.r3c3.Size = new System.Drawing.Size(116, 35);
+            this.r3c3.Size = new System.Drawing.Size(166, 58);
             this.r3c3.TabIndex = 16;
             this.r3c3.Text = "2022-02-06";
             this.r3c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -662,9 +706,10 @@
             this.r2c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r2c3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r2c3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r2c3.Location = new System.Drawing.Point(288, 179);
+            this.r2c3.Location = new System.Drawing.Point(411, 298);
+            this.r2c3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r2c3.Name = "r2c3";
-            this.r2c3.Size = new System.Drawing.Size(116, 35);
+            this.r2c3.Size = new System.Drawing.Size(166, 58);
             this.r2c3.TabIndex = 15;
             this.r2c3.Text = "2022-02-05";
             this.r2c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -674,9 +719,10 @@
             this.r1c3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r1c3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r1c3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r1c3.Location = new System.Drawing.Point(288, 138);
+            this.r1c3.Location = new System.Drawing.Point(411, 230);
+            this.r1c3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r1c3.Name = "r1c3";
-            this.r1c3.Size = new System.Drawing.Size(116, 35);
+            this.r1c3.Size = new System.Drawing.Size(166, 58);
             this.r1c3.TabIndex = 14;
             this.r1c3.Text = "2022-02-05";
             this.r1c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -686,9 +732,10 @@
             this.r5c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r5c2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r5c2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r5c2.Location = new System.Drawing.Point(152, 306);
+            this.r5c2.Location = new System.Drawing.Point(217, 510);
+            this.r5c2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r5c2.Name = "r5c2";
-            this.r5c2.Size = new System.Drawing.Size(116, 35);
+            this.r5c2.Size = new System.Drawing.Size(166, 58);
             this.r5c2.TabIndex = 13;
             this.r5c2.Text = "SoftWood";
             this.r5c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -698,9 +745,10 @@
             this.r4c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r4c2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r4c2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r4c2.Location = new System.Drawing.Point(152, 263);
+            this.r4c2.Location = new System.Drawing.Point(217, 438);
+            this.r4c2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r4c2.Name = "r4c2";
-            this.r4c2.Size = new System.Drawing.Size(116, 35);
+            this.r4c2.Size = new System.Drawing.Size(166, 58);
             this.r4c2.TabIndex = 12;
             this.r4c2.Text = "HardWood";
             this.r4c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -710,9 +758,10 @@
             this.r3c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r3c2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r3c2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r3c2.Location = new System.Drawing.Point(152, 221);
+            this.r3c2.Location = new System.Drawing.Point(217, 368);
+            this.r3c2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r3c2.Name = "r3c2";
-            this.r3c2.Size = new System.Drawing.Size(116, 35);
+            this.r3c2.Size = new System.Drawing.Size(166, 58);
             this.r3c2.TabIndex = 11;
             this.r3c2.Text = "HardWood";
             this.r3c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -722,9 +771,10 @@
             this.r2c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r2c2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r2c2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r2c2.Location = new System.Drawing.Point(152, 179);
+            this.r2c2.Location = new System.Drawing.Point(217, 298);
+            this.r2c2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r2c2.Name = "r2c2";
-            this.r2c2.Size = new System.Drawing.Size(116, 35);
+            this.r2c2.Size = new System.Drawing.Size(166, 58);
             this.r2c2.TabIndex = 10;
             this.r2c2.Text = "SoftWood";
             this.r2c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -734,9 +784,10 @@
             this.r1c2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r1c2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r1c2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r1c2.Location = new System.Drawing.Point(152, 138);
+            this.r1c2.Location = new System.Drawing.Point(217, 230);
+            this.r1c2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r1c2.Name = "r1c2";
-            this.r1c2.Size = new System.Drawing.Size(116, 35);
+            this.r1c2.Size = new System.Drawing.Size(166, 58);
             this.r1c2.TabIndex = 9;
             this.r1c2.Text = "HardWood";
             this.r1c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -746,9 +797,10 @@
             this.r5c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r5c1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r5c1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r5c1.Location = new System.Drawing.Point(12, 306);
+            this.r5c1.Location = new System.Drawing.Point(17, 510);
+            this.r5c1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r5c1.Name = "r5c1";
-            this.r5c1.Size = new System.Drawing.Size(116, 35);
+            this.r5c1.Size = new System.Drawing.Size(166, 58);
             this.r5c1.TabIndex = 8;
             this.r5c1.Text = "1034";
             this.r5c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -758,9 +810,10 @@
             this.r4c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r4c1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r4c1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r4c1.Location = new System.Drawing.Point(12, 263);
+            this.r4c1.Location = new System.Drawing.Point(17, 438);
+            this.r4c1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r4c1.Name = "r4c1";
-            this.r4c1.Size = new System.Drawing.Size(116, 35);
+            this.r4c1.Size = new System.Drawing.Size(166, 58);
             this.r4c1.TabIndex = 7;
             this.r4c1.Text = "1022";
             this.r4c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -770,9 +823,10 @@
             this.r3c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r3c1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r3c1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r3c1.Location = new System.Drawing.Point(12, 221);
+            this.r3c1.Location = new System.Drawing.Point(17, 368);
+            this.r3c1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r3c1.Name = "r3c1";
-            this.r3c1.Size = new System.Drawing.Size(116, 35);
+            this.r3c1.Size = new System.Drawing.Size(166, 58);
             this.r3c1.TabIndex = 6;
             this.r3c1.Text = "1012";
             this.r3c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -782,9 +836,10 @@
             this.r2c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r2c1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r2c1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r2c1.Location = new System.Drawing.Point(12, 179);
+            this.r2c1.Location = new System.Drawing.Point(17, 298);
+            this.r2c1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r2c1.Name = "r2c1";
-            this.r2c1.Size = new System.Drawing.Size(116, 35);
+            this.r2c1.Size = new System.Drawing.Size(166, 58);
             this.r2c1.TabIndex = 5;
             this.r2c1.Text = "1001";
             this.r2c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -794,9 +849,10 @@
             this.r1c1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.r1c1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.r1c1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.r1c1.Location = new System.Drawing.Point(12, 138);
+            this.r1c1.Location = new System.Drawing.Point(17, 230);
+            this.r1c1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.r1c1.Name = "r1c1";
-            this.r1c1.Size = new System.Drawing.Size(116, 35);
+            this.r1c1.Size = new System.Drawing.Size(166, 58);
             this.r1c1.TabIndex = 4;
             this.r1c1.Text = "1000";
             this.r1c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -806,9 +862,10 @@
             this.ratec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.ratec.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ratec.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.ratec.Location = new System.Drawing.Point(418, 72);
+            this.ratec.Location = new System.Drawing.Point(597, 120);
+            this.ratec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ratec.Name = "ratec";
-            this.ratec.Size = new System.Drawing.Size(147, 45);
+            this.ratec.Size = new System.Drawing.Size(210, 75);
             this.ratec.TabIndex = 3;
             this.ratec.Text = "Profit Rate";
             this.ratec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -818,9 +875,10 @@
             this.datec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.datec.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.datec.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.datec.Location = new System.Drawing.Point(288, 72);
+            this.datec.Location = new System.Drawing.Point(411, 120);
+            this.datec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.datec.Name = "datec";
-            this.datec.Size = new System.Drawing.Size(116, 45);
+            this.datec.Size = new System.Drawing.Size(166, 75);
             this.datec.TabIndex = 2;
             this.datec.Text = "Date";
             this.datec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -830,9 +888,10 @@
             this.namec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.namec.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.namec.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.namec.Location = new System.Drawing.Point(152, 72);
+            this.namec.Location = new System.Drawing.Point(217, 120);
+            this.namec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namec.Name = "namec";
-            this.namec.Size = new System.Drawing.Size(116, 45);
+            this.namec.Size = new System.Drawing.Size(166, 75);
             this.namec.TabIndex = 1;
             this.namec.Text = "Name";
             this.namec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -842,25 +901,27 @@
             this.idc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.idc.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.idc.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.idc.Location = new System.Drawing.Point(12, 72);
+            this.idc.Location = new System.Drawing.Point(17, 120);
+            this.idc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idc.Name = "idc";
-            this.idc.Size = new System.Drawing.Size(116, 45);
+            this.idc.Size = new System.Drawing.Size(166, 75);
             this.idc.TabIndex = 0;
             this.idc.Text = "ID";
             this.idc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProfitNloss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(15)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(908, 505);
+            this.ClientSize = new System.Drawing.Size(1297, 842);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ProfitNloss";
             this.Text = "ProfitNloss";
             this.panel1.ResumeLayout(false);

@@ -63,9 +63,29 @@ namespace C_sharp_project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _98c8ddb18b1311c90f9e56e08ad7358d {
+            get {
+                object obj = ResourceManager.GetObject("_98c8ddb18b1311c90f9e56e08ad7358d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back {
             get {
                 object obj = ResourceManager.GetObject("back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap central {
+            get {
+                object obj = ResourceManager.GetObject("central", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +116,16 @@ namespace C_sharp_project.Properties {
         internal static System.Drawing.Icon icon2 {
             get {
                 object obj = ResourceManager.GetObject("icon2", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Iconicon_Alpha_Magnets_Letter_r {
+            get {
+                object obj = ResourceManager.GetObject("Iconicon_Alpha_Magnets_Letter_r", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -191,16 +221,6 @@ namespace C_sharp_project.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon logo1_removebg_preview_lsk_icon {
-            get {
-                object obj = ResourceManager.GetObject("logo1_removebg_preview_lsk_icon", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap profit42 {
@@ -276,6 +296,16 @@ namespace C_sharp_project.Properties {
         internal static System.Drawing.Bitmap shopping_bag_r {
             get {
                 object obj = ResourceManager.GetObject("shopping-bag r", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap texture_background {
+            get {
+                object obj = ResourceManager.GetObject("texture_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

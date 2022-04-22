@@ -15,7 +15,7 @@ namespace C_sharp_project
     {
         public int generated_code = 0;
         int fpw_val = 1;
-        string connection_string = "server=localhost; user id=root; database=rsmt_management_system";
+        string connection_string = "server=localhost; user id=root; database=ranasinghesawmilldb";
 
 
         public forgot_pw()
