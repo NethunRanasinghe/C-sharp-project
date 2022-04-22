@@ -69,8 +69,8 @@ namespace C_sharp_project
         private void btn_sales_Click(object sender, EventArgs e)
         {
             this.Hide();
-          //   var form_sales = new form_sales();
-          //   form_sales.Show();
+           var form_sales = new form_sales();
+            form_sales.Show();
         }
 
         private void btn_buying_Click(object sender, EventArgs e)
@@ -89,9 +89,9 @@ namespace C_sharp_project
 
         private void btn_check_Click(object sender, EventArgs e)
         {
-            this.Hide();
-           // var ACNTchk = new ACNTchk();
-           //ACNTchk.Show();
+           // this.Hide();
+             //var Intermediate  = new Intermediate();
+            //Intermediate.Show();
         }
 
         private void btn_list_Click(object sender, EventArgs e)

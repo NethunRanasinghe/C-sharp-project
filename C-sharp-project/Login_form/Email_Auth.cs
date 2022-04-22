@@ -13,7 +13,7 @@ namespace C_sharp_project
     internal class Email_Auth
     {
         private int num = 0;
-        private string wdialog;
+        private string ?wdialog;
         public void send_code(string email, string subject, string body, string dialog)
         {
             wdialog = dialog;

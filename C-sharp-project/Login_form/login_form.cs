@@ -13,7 +13,7 @@ namespace C_sharp_project
 {
     public partial class login_form : Form
     {
-        string connection_string = "server=localhost; user id=root; database=rsmt_management_system";
+        string connection_string = "server=localhost; user id=root; database=ranasinghesawmilldb";
         public login_form()
         {
             InitializeComponent();
@@ -76,7 +76,9 @@ namespace C_sharp_project
 
                 if (reader.HasRows)
                 {
-                    MessageBox.Show("Login complete !");
+                    this.Hide();
+                    form_selectionmenu objsel = new form_selectionmenu();
+                    objsel.Show();
                 }
                 else
                 {
