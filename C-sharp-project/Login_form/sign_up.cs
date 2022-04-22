@@ -15,7 +15,7 @@ namespace C_sharp_project
 {
     public partial class sign_up : Form
     {
-        string connection_string = "server=localhost; user id=root; database=rsmt_management_system";
+        string connection_string = "server=localhost; user id=root; database=ranasinghesawmilldb";
 
         public int generated_code = 0;
         int signup_val = 1;

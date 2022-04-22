@@ -326,10 +326,12 @@
             this.LBL_salesrecords.Size = new System.Drawing.Size(292, 56);
             this.LBL_salesrecords.TabIndex = 15;
             this.LBL_salesrecords.Text = "Sales Records";
+            this.LBL_salesrecords.Click += new System.EventHandler(this.LBL_salesrecords_Click);
             // 
             // BTN_Clear
             // 
-            this.BTN_Clear.BackColor = System.Drawing.Color.White;
+            this.BTN_Clear.BackColor = System.Drawing.Color.Transparent;
+            this.BTN_Clear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_Clear.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_Clear.ForeColor = System.Drawing.Color.Snow;
             this.BTN_Clear.Location = new System.Drawing.Point(435, 875);
@@ -344,6 +346,7 @@
             // BTN_sumbit
             // 
             this.BTN_sumbit.BackColor = System.Drawing.Color.White;
+            this.BTN_sumbit.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_sumbit.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_sumbit.ForeColor = System.Drawing.Color.Snow;
             this.BTN_sumbit.Location = new System.Drawing.Point(589, 875);

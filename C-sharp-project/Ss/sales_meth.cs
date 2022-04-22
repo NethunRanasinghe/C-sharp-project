@@ -71,5 +71,10 @@ namespace C_sharp_project
         {
 
         }
+
+        private void LBL_salesrecords_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
