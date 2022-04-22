@@ -188,7 +188,7 @@ namespace C_sharp_project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProfitNloss objmp=new ProfitNloss();
+            user_reg objmp=new user_reg();
             objmp.Show();
         }
 

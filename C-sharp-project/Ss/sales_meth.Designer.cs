@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_sales));
             this.Btn_prevMenu = new System.Windows.Forms.Button();
             this.Btn_exit = new System.Windows.Forms.Button();
             this.TextBox1 = new System.Windows.Forms.TextBox();
@@ -372,6 +373,7 @@
             this.Controls.Add(this.GroupBox_menu);
             this.Controls.Add(this.Lbl_user);
             this.Controls.Add(this.LBL_salesrecords);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "form_sales";
             this.Text = "Ranasinghe Sawmills";
