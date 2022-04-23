@@ -38,9 +38,11 @@ namespace C_sharp_project
 
         private void prvbtn_Click(object sender, EventArgs e)
         {
+            /*
             this.Hide();
             var SCNDfrm = new SCNDfrm();
             SCNDfrm.Show();
+            */
         }
     }
 }

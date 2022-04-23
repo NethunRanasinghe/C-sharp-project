@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 
 namespace C_sharp_project
@@ -21,7 +22,7 @@ namespace C_sharp_project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            sluser.Text = sawmill.passingText;
+            
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -48,9 +49,7 @@ namespace C_sharp_project
 
         private void bck_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var SCNDfrm = new SCNDfrm();
-            SCNDfrm.Show();
+           
         }
 
         private void prcd_Click(object sender, EventArgs e)
