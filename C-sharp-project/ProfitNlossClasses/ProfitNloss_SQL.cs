@@ -9,9 +9,9 @@ namespace C_sharp_project
     internal class ProfitNloss_SQL
     {
         //today
-        readonly private string tdy_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.ToString("d") + "'ORDER BY profit DESC";
-        readonly private string tdy_sqlqry2 = "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.AddDays(-1).ToString("d") + "'ORDER BY profit DESC";
-        readonly private string tdy_sqlqry3 = "Select * From sellinfo WHERE date='" + DateTime.Now.ToString("d") + "'";
+        readonly private string tdy_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.ToString("yyyy-MM-dd") + "'ORDER BY profit DESC";
+        readonly private string tdy_sqlqry2 = "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd") + "'ORDER BY profit DESC";
+        readonly private string tdy_sqlqry3 = "Select * From sellinfo WHERE date='" + DateTime.Now.ToString("yyyy-MM-dd") + "'";
         
         public string tdy_sql1()
          {
