@@ -18,6 +18,7 @@ namespace C_sharp_project
         {
             InitializeComponent();
             this.login_panelr.BackColor = Color.FromArgb(125, Color.White);
+            this.login_lpanel.BackColor = Color.FromArgb(125, Color.White);
 
 
         }
@@ -197,14 +198,15 @@ namespace C_sharp_project
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void login_lpanel_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
     }
 }

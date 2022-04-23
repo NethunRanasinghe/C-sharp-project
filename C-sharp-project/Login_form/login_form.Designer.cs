@@ -31,7 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login_form));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
+            this.login_lpanel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.login_picnewusr = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.login_btnclear = new System.Windows.Forms.Button();
@@ -47,6 +50,7 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.login_lpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.login_picnewusr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.login_panelr.SuspendLayout();
@@ -62,9 +66,9 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.splitContainer1.Panel1.BackgroundImage = global::C_sharp_project.Properties.Resources.login_bgl_6_;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.login_lpanel);
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
@@ -83,16 +87,54 @@
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // button1
+            // login_lpanel
             // 
-            this.button1.Location = new System.Drawing.Point(12, 509);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.login_lpanel.BackColor = System.Drawing.Color.Transparent;
+            this.login_lpanel.Controls.Add(this.label3);
+            this.login_lpanel.Controls.Add(this.label2);
+            this.login_lpanel.Controls.Add(this.label1);
+            this.login_lpanel.Location = new System.Drawing.Point(20, 86);
+            this.login_lpanel.Name = "login_lpanel";
+            this.login_lpanel.Size = new System.Drawing.Size(538, 380);
+            this.login_lpanel.TabIndex = 4;
+            this.login_lpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.login_lpanel_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Aloevera", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(81, 287);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(377, 61);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Timber Stores";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Aloevera", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(213, 154);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 61);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "and";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Aloevera", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(527, 61);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ranasinghe Saw Mill";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // login_picnewusr
             // 
@@ -151,7 +193,7 @@
             this.login_lbllogin.AutoSize = true;
             this.login_lbllogin.BackColor = System.Drawing.Color.Transparent;
             this.login_lbllogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.login_lbllogin.ForeColor = System.Drawing.Color.White;
+            this.login_lbllogin.ForeColor = System.Drawing.Color.DarkRed;
             this.login_lbllogin.Location = new System.Drawing.Point(21, 76);
             this.login_lbllogin.Name = "login_lbllogin";
             this.login_lbllogin.Size = new System.Drawing.Size(96, 38);
@@ -175,7 +217,7 @@
             this.login_txtforgotpw.AutoSize = true;
             this.login_txtforgotpw.BackColor = System.Drawing.Color.Transparent;
             this.login_txtforgotpw.Font = new System.Drawing.Font("Baskerville Old Face", 11.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.login_txtforgotpw.LinkColor = System.Drawing.Color.White;
+            this.login_txtforgotpw.LinkColor = System.Drawing.Color.DarkRed;
             this.login_txtforgotpw.Location = new System.Drawing.Point(212, 208);
             this.login_txtforgotpw.Name = "login_txtforgotpw";
             this.login_txtforgotpw.Size = new System.Drawing.Size(168, 22);
@@ -243,6 +285,8 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.login_lpanel.ResumeLayout(false);
+            this.login_lpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.login_picnewusr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.login_panelr.ResumeLayout(false);
@@ -266,6 +310,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolTip login_tt;
         private System.Windows.Forms.ErrorProvider login_errp;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel login_lpanel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
