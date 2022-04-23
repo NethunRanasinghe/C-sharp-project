@@ -31,7 +31,7 @@ namespace C_sharp_project
         {
             this.Hide();
             var form_Selectionmenu = new form_selectionmenu();
-             form_Selectionmenu.Show();
+            form_Selectionmenu.Show();
         }
 
         private void BTN_sumbit_Click(object sender, EventArgs e)
@@ -75,6 +75,23 @@ namespace C_sharp_project
         private void LBL_salesrecords_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void sales_usr_Click(object sender, EventArgs e)
+        {
+            this.sales_usr.Text = login_form.passingText;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form_Selectionmenu = new form_selectionmenu();
+            form_Selectionmenu.Show();
         }
     }
 }
