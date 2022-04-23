@@ -42,10 +42,12 @@
             this.Btn_check = new System.Windows.Forms.Button();
             this.Btn_list = new System.Windows.Forms.Button();
             this.GroupBox_menu = new System.Windows.Forms.GroupBox();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
             this.Btn_exit = new System.Windows.Forms.Button();
             this.Btn_prevMenu = new System.Windows.Forms.Button();
+            this.selection_usr = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GroupBox_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblwelcometext
@@ -248,21 +250,13 @@
             this.GroupBox_menu.TabStop = false;
             this.GroupBox_menu.Enter += new System.EventHandler(this.groupBox_menu_Enter);
             // 
-            // TextBox1
-            // 
-            this.TextBox1.Location = new System.Drawing.Point(305, 154);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(167, 27);
-            this.TextBox1.TabIndex = 13;
-            // 
             // Btn_exit
             // 
             this.Btn_exit.BackColor = System.Drawing.Color.White;
             this.Btn_exit.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.Btn_exit.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_exit.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.Btn_exit.Location = new System.Drawing.Point(1015, 677);
+            this.Btn_exit.Location = new System.Drawing.Point(481, 692);
             this.Btn_exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_exit.Name = "Btn_exit";
             this.Btn_exit.Size = new System.Drawing.Size(121, 52);
@@ -286,6 +280,26 @@
             this.Btn_prevMenu.UseVisualStyleBackColor = false;
             this.Btn_prevMenu.Click += new System.EventHandler(this.btn_prevMenu_Click);
             // 
+            // selection_usr
+            // 
+            this.selection_usr.AutoSize = true;
+            this.selection_usr.BackColor = System.Drawing.Color.Transparent;
+            this.selection_usr.Font = new System.Drawing.Font("Arial Narrow", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.selection_usr.Location = new System.Drawing.Point(309, 150);
+            this.selection_usr.Name = "selection_usr";
+            this.selection_usr.Size = new System.Drawing.Size(0, 26);
+            this.selection_usr.TabIndex = 15;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.back;
+            this.pictureBox1.Location = new System.Drawing.Point(939, 677);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // form_selectionmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -294,9 +308,10 @@
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1152, 748);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.selection_usr);
             this.Controls.Add(this.Btn_prevMenu);
             this.Controls.Add(this.Btn_exit);
-            this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.GroupBox_menu);
             this.Controls.Add(this.lbl_user);
             this.Controls.Add(this.lblwelcometext);
@@ -309,6 +324,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.GroupBox_menu.ResumeLayout(false);
             this.GroupBox_menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,8 +345,9 @@
         private System.Windows.Forms.Button Btn_check;
         private System.Windows.Forms.Button Btn_list;
         private System.Windows.Forms.GroupBox GroupBox_menu;
-        private System.Windows.Forms.TextBox TextBox1;
         private System.Windows.Forms.Button Btn_exit;
         private System.Windows.Forms.Button Btn_prevMenu;
+        private System.Windows.Forms.Label selection_usr;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

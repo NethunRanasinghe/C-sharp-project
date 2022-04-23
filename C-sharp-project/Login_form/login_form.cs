@@ -14,6 +14,7 @@ namespace C_sharp_project
     public partial class login_form : Form
     {
         string connection_string = "server=localhost; user id=root; database=ranasinghesawmilldb";
+        public static string passingText;
         public login_form()
         {
             InitializeComponent();
@@ -99,6 +100,7 @@ namespace C_sharp_project
         {
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
+                passingText = login_txtusr.Text;
                 login();
             }
         }
