@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_sales));
-            this.Btn_prevMenu = new System.Windows.Forms.Button();
-            this.Btn_exit = new System.Windows.Forms.Button();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
             this.GroupBox_menu = new System.Windows.Forms.GroupBox();
             this.TXTBX_otherservices = new System.Windows.Forms.TextBox();
             this.TXTBX_extra = new System.Windows.Forms.TextBox();
@@ -53,44 +50,13 @@
             this.LBL_salesrecords = new System.Windows.Forms.Label();
             this.BTN_Clear = new System.Windows.Forms.Button();
             this.BTN_sumbit = new System.Windows.Forms.Button();
+            this.sales_usr = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GroupBox_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Btn_prevMenu
-            // 
-            this.Btn_prevMenu.BackColor = System.Drawing.Color.White;
-            this.Btn_prevMenu.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Btn_prevMenu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.Btn_prevMenu.Location = new System.Drawing.Point(44, 946);
-            this.Btn_prevMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Btn_prevMenu.Name = "Btn_prevMenu";
-            this.Btn_prevMenu.Size = new System.Drawing.Size(133, 52);
-            this.Btn_prevMenu.TabIndex = 20;
-            this.Btn_prevMenu.Text = "Back ";
-            this.Btn_prevMenu.UseVisualStyleBackColor = false;
-            this.Btn_prevMenu.Click += new System.EventHandler(this.Btn_prevMenu_Click);
-            // 
-            // Btn_exit
-            // 
-            this.Btn_exit.BackColor = System.Drawing.Color.White;
-            this.Btn_exit.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Btn_exit.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.Btn_exit.Location = new System.Drawing.Point(948, 946);
-            this.Btn_exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Btn_exit.Name = "Btn_exit";
-            this.Btn_exit.Size = new System.Drawing.Size(121, 52);
-            this.Btn_exit.TabIndex = 17;
-            this.Btn_exit.Text = "Exit";
-            this.Btn_exit.UseVisualStyleBackColor = false;
-            this.Btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
-            // 
-            // TextBox1
-            // 
-            this.TextBox1.Location = new System.Drawing.Point(263, 114);
-            this.TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(167, 27);
-            this.TextBox1.TabIndex = 19;
             // 
             // GroupBox_menu
             // 
@@ -117,13 +83,13 @@
             this.GroupBox_menu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GroupBox_menu.Name = "GroupBox_menu";
             this.GroupBox_menu.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.GroupBox_menu.Size = new System.Drawing.Size(916, 669);
+            this.GroupBox_menu.Size = new System.Drawing.Size(916, 626);
             this.GroupBox_menu.TabIndex = 18;
             this.GroupBox_menu.TabStop = false;
             // 
             // TXTBX_otherservices
             // 
-            this.TXTBX_otherservices.Location = new System.Drawing.Point(547, 381);
+            this.TXTBX_otherservices.Location = new System.Drawing.Point(547, 374);
             this.TXTBX_otherservices.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TXTBX_otherservices.Multiline = true;
             this.TXTBX_otherservices.Name = "TXTBX_otherservices";
@@ -133,7 +99,7 @@
             // 
             // TXTBX_extra
             // 
-            this.TXTBX_extra.Location = new System.Drawing.Point(547, 574);
+            this.TXTBX_extra.Location = new System.Drawing.Point(547, 571);
             this.TXTBX_extra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TXTBX_extra.Name = "TXTBX_extra";
             this.TXTBX_extra.Size = new System.Drawing.Size(268, 27);
@@ -141,7 +107,7 @@
             // 
             // TXTBX_other
             // 
-            this.TXTBX_other.Location = new System.Drawing.Point(547, 511);
+            this.TXTBX_other.Location = new System.Drawing.Point(547, 504);
             this.TXTBX_other.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TXTBX_other.Name = "TXTBX_other";
             this.TXTBX_other.Size = new System.Drawing.Size(268, 27);
@@ -149,7 +115,7 @@
             // 
             // TXTBX_estimation
             // 
-            this.TXTBX_estimation.Location = new System.Drawing.Point(547, 300);
+            this.TXTBX_estimation.Location = new System.Drawing.Point(547, 307);
             this.TXTBX_estimation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TXTBX_estimation.Name = "TXTBX_estimation";
             this.TXTBX_estimation.Size = new System.Drawing.Size(268, 27);
@@ -157,7 +123,7 @@
             // 
             // TXTBX_woodtype
             // 
-            this.TXTBX_woodtype.Location = new System.Drawing.Point(547, 231);
+            this.TXTBX_woodtype.Location = new System.Drawing.Point(547, 240);
             this.TXTBX_woodtype.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TXTBX_woodtype.Name = "TXTBX_woodtype";
             this.TXTBX_woodtype.Size = new System.Drawing.Size(268, 27);
@@ -165,7 +131,7 @@
             // 
             // TXTBX_Producttype
             // 
-            this.TXTBX_Producttype.Location = new System.Drawing.Point(547, 162);
+            this.TXTBX_Producttype.Location = new System.Drawing.Point(547, 173);
             this.TXTBX_Producttype.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TXTBX_Producttype.Name = "TXTBX_Producttype";
             this.TXTBX_Producttype.Size = new System.Drawing.Size(268, 27);
@@ -186,7 +152,7 @@
             this.LBL_extracharges.Cursor = System.Windows.Forms.Cursors.No;
             this.LBL_extracharges.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_extracharges.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_extracharges.Location = new System.Drawing.Point(143, 569);
+            this.LBL_extracharges.Location = new System.Drawing.Point(143, 568);
             this.LBL_extracharges.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_extracharges.Name = "LBL_extracharges";
             this.LBL_extracharges.Size = new System.Drawing.Size(312, 27);
@@ -200,7 +166,7 @@
             this.LBL_additionalcharges.Cursor = System.Windows.Forms.Cursors.No;
             this.LBL_additionalcharges.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_additionalcharges.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_additionalcharges.Location = new System.Drawing.Point(143, 508);
+            this.LBL_additionalcharges.Location = new System.Drawing.Point(143, 501);
             this.LBL_additionalcharges.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_additionalcharges.Name = "LBL_additionalcharges";
             this.LBL_additionalcharges.Size = new System.Drawing.Size(282, 27);
@@ -237,7 +203,7 @@
             this.LBL_estimation.Cursor = System.Windows.Forms.Cursors.No;
             this.LBL_estimation.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_estimation.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_estimation.Location = new System.Drawing.Point(165, 299);
+            this.LBL_estimation.Location = new System.Drawing.Point(165, 307);
             this.LBL_estimation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_estimation.Name = "LBL_estimation";
             this.LBL_estimation.Size = new System.Drawing.Size(162, 27);
@@ -251,7 +217,7 @@
             this.LBL_woodtype.Cursor = System.Windows.Forms.Cursors.No;
             this.LBL_woodtype.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_woodtype.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_woodtype.Location = new System.Drawing.Point(165, 225);
+            this.LBL_woodtype.Location = new System.Drawing.Point(165, 239);
             this.LBL_woodtype.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_woodtype.Name = "LBL_woodtype";
             this.LBL_woodtype.Size = new System.Drawing.Size(147, 27);
@@ -265,7 +231,7 @@
             this.LBL_Producttype.Cursor = System.Windows.Forms.Cursors.No;
             this.LBL_Producttype.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_Producttype.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_Producttype.Location = new System.Drawing.Point(165, 162);
+            this.LBL_Producttype.Location = new System.Drawing.Point(165, 171);
             this.LBL_Producttype.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_Producttype.Name = "LBL_Producttype";
             this.LBL_Producttype.Size = new System.Drawing.Size(192, 27);
@@ -279,7 +245,7 @@
             this.LBL_cname.Cursor = System.Windows.Forms.Cursors.No;
             this.LBL_cname.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_cname.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_cname.Location = new System.Drawing.Point(165, 100);
+            this.LBL_cname.Location = new System.Drawing.Point(165, 103);
             this.LBL_cname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBL_cname.Name = "LBL_cname";
             this.LBL_cname.Size = new System.Drawing.Size(237, 27);
@@ -335,7 +301,7 @@
             this.BTN_Clear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_Clear.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_Clear.ForeColor = System.Drawing.Color.Snow;
-            this.BTN_Clear.Location = new System.Drawing.Point(435, 875);
+            this.BTN_Clear.Location = new System.Drawing.Point(639, 838);
             this.BTN_Clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(133, 52);
@@ -350,7 +316,7 @@
             this.BTN_sumbit.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_sumbit.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_sumbit.ForeColor = System.Drawing.Color.Snow;
-            this.BTN_sumbit.Location = new System.Drawing.Point(589, 875);
+            this.BTN_sumbit.Location = new System.Drawing.Point(875, 838);
             this.BTN_sumbit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_sumbit.Name = "BTN_sumbit";
             this.BTN_sumbit.Size = new System.Drawing.Size(133, 52);
@@ -359,6 +325,39 @@
             this.BTN_sumbit.UseVisualStyleBackColor = false;
             this.BTN_sumbit.Click += new System.EventHandler(this.BTN_sumbit_Click);
             // 
+            // sales_usr
+            // 
+            this.sales_usr.AutoSize = true;
+            this.sales_usr.BackColor = System.Drawing.Color.Transparent;
+            this.sales_usr.Font = new System.Drawing.Font("Arial Narrow", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sales_usr.Location = new System.Drawing.Point(267, 111);
+            this.sales_usr.Name = "sales_usr";
+            this.sales_usr.Size = new System.Drawing.Size(0, 26);
+            this.sales_usr.TabIndex = 23;
+            this.sales_usr.Click += new System.EventHandler(this.sales_usr_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.exit;
+            this.pictureBox1.Location = new System.Drawing.Point(968, 946);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.back;
+            this.pictureBox2.Location = new System.Drawing.Point(875, 946);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // form_sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -366,11 +365,11 @@
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1100, 1025);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.sales_usr);
             this.Controls.Add(this.BTN_sumbit);
             this.Controls.Add(this.BTN_Clear);
-            this.Controls.Add(this.Btn_prevMenu);
-            this.Controls.Add(this.Btn_exit);
-            this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.GroupBox_menu);
             this.Controls.Add(this.Lbl_user);
             this.Controls.Add(this.LBL_salesrecords);
@@ -381,16 +380,14 @@
             this.Load += new System.EventHandler(this.form_sales_Load);
             this.GroupBox_menu.ResumeLayout(false);
             this.GroupBox_menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Btn_prevMenu;
-        private System.Windows.Forms.Button Btn_exit;
-        private System.Windows.Forms.TextBox TextBox1;
         private System.Windows.Forms.GroupBox GroupBox_menu;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label LBL_estimation;
@@ -412,5 +409,8 @@
         private System.Windows.Forms.TextBox TXTBX_Cname;
         private System.Windows.Forms.TextBox TXTBX_otherservices;
         private System.Windows.Forms.TextBox TXTBX_extra;
+        private System.Windows.Forms.Label sales_usr;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

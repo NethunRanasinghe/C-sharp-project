@@ -12,6 +12,7 @@ namespace C_sharp_project
 {
     public partial class form_selectionmenu : Form
     {
+        int parse = 0;
     /*
         //fields
         private int borderRadius = 30;
@@ -31,7 +32,7 @@ namespace C_sharp_project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            selection_usr.Text = login_form.passingText;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -69,15 +70,15 @@ namespace C_sharp_project
         private void btn_sales_Click(object sender, EventArgs e)
         {
             this.Hide();
-           var form_sales = new form_sales();
+            var form_sales = new form_sales();
             form_sales.Show();
         }
 
         private void btn_buying_Click(object sender, EventArgs e)
         {
             this.Hide();
-           // var Buyfrm = new BUYfrm();
-           // Buyfrm.Show();
+            var BUYfrm  = new BUYfrm();
+            BUYfrm.Show();
         }
 
         private void btn_othersales_Click(object sender, EventArgs e)
@@ -99,6 +100,24 @@ namespace C_sharp_project
             this.Hide();
             //var WDlst = new WDlst();
             //WDlst.Show();
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var login_form = new login_form();
+            login_form.Show();
+
         }
     }
 }
