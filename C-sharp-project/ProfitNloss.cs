@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+//using System.Data.SqlClient;
+
 
 
 namespace C_sharp_project
@@ -687,7 +688,7 @@ namespace C_sharp_project
         private void button5_Click(object sender, EventArgs e)
         {
             textrest();
-            objv.setdatpicker(dateTimePicker1.Value.ToString("d"), dateTimePicker2.Value.ToString("d"));
+            objv.setdatpicker(this.dateTimePicker1, this.dateTimePicker2);
             objv.set_cstmsql1();
             objv.set_cstmsql2();
             objv.set_cstmsql3();
@@ -856,19 +857,19 @@ namespace C_sharp_project
             DBConn obj = new DBConn();
             try
             {
-                SqlConnection connection = new SqlConnection(obj.getdbconn());
+                MySqlConnection connection = new MySqlConnection(obj.getdbconn());
                 String sql = sqlqry1;
                 String sql2 = sqlqry2;
                 String sql3 = sqlqry3;
-                SqlDataAdapter da = new SqlDataAdapter(sql3, connection);
+                MySqlDataAdapter da = new MySqlDataAdapter(sql3, connection);
                 DataSet ds = new DataSet();
                 int results = da.Fill(ds, "id");
 
                 this.DataOrderCount.Text = results.ToString();
-                using (SqlCommand command2 = new SqlCommand(sql2, connection))
+                using (MySqlCommand command2 = new MySqlCommand(sql2, connection))
                 {
                     connection.Open();
-                    using (SqlDataReader reader2 = command2.ExecuteReader())
+                    using (MySqlDataReader reader2 = command2.ExecuteReader())
                     {
                         while (reader2.Read())
                         {
@@ -881,10 +882,10 @@ namespace C_sharp_project
                     connection.Close();
                 }
 
-                using (SqlCommand command = new SqlCommand(sql, connection))
+                using (MySqlCommand command = new MySqlCommand(sql, connection))
                 {
                     connection.Open();
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    using (MySqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
@@ -999,7 +1000,7 @@ namespace C_sharp_project
                 }
 
             }
-            catch (SqlException ea)
+            catch (MySqlException ea)
             {
                 Console.WriteLine(ea.ToString());
             }

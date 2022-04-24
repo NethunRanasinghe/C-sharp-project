@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace C_sharp_project
 {
     internal class ProfitNloss_SQL
     {
         //today
-        readonly private string tdy_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.ToString("d") + "'ORDER BY profit DESC";
-        readonly private string tdy_sqlqry2 = "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.AddDays(-1).ToString("d") + "'ORDER BY profit DESC";
-        readonly private string tdy_sqlqry3 = "Select * From sellinfo WHERE date='" + DateTime.Now.ToString("d") + "'";
+        readonly private string tdy_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.ToString("yyyy-MM-dd") + "'ORDER BY profit DESC";
+        readonly private string tdy_sqlqry2 = "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date='" + DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd") + "'ORDER BY profit DESC";
+        readonly private string tdy_sqlqry3 = "Select * From sellinfo WHERE date='" + DateTime.Now.ToString("yyyy-MM-dd") + "'";
         
         public string tdy_sql1()
          {
@@ -28,9 +29,9 @@ namespace C_sharp_project
 
 
         //last 7 days
-        readonly private string lst7dys_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + DateTime.Now.AddDays(-6).ToString("d") + "' AND '" + DateTime.Now.ToString("d") + "' ORDER BY profit DESC";
-        readonly private string lst7dys_sqlqry2= "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + DateTime.Now.AddDays(-12).ToString("d") + "' AND '" + DateTime.Now.AddDays(-6).ToString("d") + "'  ORDER BY profit DESC";
-        readonly private string lst7dys_sqlqry3= "Select * From sellinfo WHERE date BETWEEN '" + DateTime.Now.AddDays(-6).ToString("d") + "' AND '" + DateTime.Now.ToString("d") + "' ";
+        readonly private string lst7dys_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + DateTime.Now.AddDays(-6).ToString("yyyy-MM-dd") + "' AND '" + DateTime.Now.ToString("yyyy-MM-dd") + "' ORDER BY profit DESC";
+        readonly private string lst7dys_sqlqry2= "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE date BETWEEN '" + DateTime.Now.AddDays(-12).ToString("yyyy-MM-dd") + "' AND '" + DateTime.Now.AddDays(-6).ToString("yyyy-MM-dd") + "'  ORDER BY profit DESC";
+        readonly private string lst7dys_sqlqry3= "Select * From sellinfo WHERE date BETWEEN '" + DateTime.Now.AddDays(-6).ToString("yyyy-MM-dd") + "' AND '" + DateTime.Now.ToString("yyyy-MM-dd") + "' ";
 
         public string lst7dys_sql1()
         {
@@ -47,9 +48,9 @@ namespace C_sharp_project
 
 
         //this month
-        readonly private string thsmnth_sqlqry1 = "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + Convert.ToInt32(DateTime.Now.Month) + "' ORDER BY profit DESC";
-        readonly private string thsmnth_sqlqry2 = "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-1).Month) + "'  ORDER BY profit DESC";
-        readonly private string thsmnth_sqlqry3= "Select * From sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.Month) + "'";
+        readonly private string thsmnth_sqlqry1 = "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.ToString("MM")) + "' ORDER BY profit DESC";
+        readonly private string thsmnth_sqlqry2 = "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-1).ToString("MM")) + "'  ORDER BY profit DESC";
+        readonly private string thsmnth_sqlqry3= "Select * From sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.ToString("MM")) + "'";
 
         public string thsmnth_sql1()
         {
@@ -65,9 +66,9 @@ namespace C_sharp_project
         }
 
         //last month
-        readonly private string lstmnth_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-1).Month) + "' ORDER BY profit DESC";
-        readonly private string lstmnth_sqlqry2= "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE DATEPART(month, date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-2).Month) + "'  ORDER BY profit DESC";
-        readonly private string lstmnth_sqlqry3= "Select * From sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-1).Month) + "'";
+        readonly private string lstmnth_sqlqry1= "SELECT id,name,value,selling_price,date,other_costs,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-1).ToString("MM")) + "' ORDER BY profit DESC";
+        readonly private string lstmnth_sqlqry2= "SELECT id,name,value,selling_price,other_costs,date,selling_price-(value+other_costs) AS profit FROM sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-2).ToString("MM")) + "'  ORDER BY profit DESC";
+        readonly private string lstmnth_sqlqry3= "Select * From sellinfo WHERE Month(date) = '" + Convert.ToInt32(DateTime.Now.AddMonths(-1).ToString("MM")) + "'";
 
         public string lstmnth_sql1()
         {
@@ -86,10 +87,10 @@ namespace C_sharp_project
         //custom date
         private string datepicker1="";
         private string datepicker2="";
-        public void setdatpicker(string dt1,string dt2)
+        public void setdatpicker(DateTimePicker dt1, DateTimePicker dt2)
         {
-            datepicker1 = dt1;
-            datepicker2 = dt2;
+            datepicker1 = dt1.Value.ToString("yyyy-MM-dd");
+            datepicker2 = dt2.Value.ToString("yyyy-MM-dd");
         }
 
          private string cstm_sqlqry1 = "";
