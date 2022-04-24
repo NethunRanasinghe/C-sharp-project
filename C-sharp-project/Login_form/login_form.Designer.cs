@@ -46,6 +46,7 @@
             this.login_txtusr = new System.Windows.Forms.TextBox();
             this.login_tt = new System.Windows.Forms.ToolTip(this.components);
             this.login_errp = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -62,12 +63,14 @@
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackgroundImage = global::C_sharp_project.Properties.Resources.login_bgl_6_;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.login_lpanel);
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
@@ -82,9 +85,9 @@
             this.splitContainer1.Panel2.Controls.Add(this.login_lbllogin);
             this.splitContainer1.Panel2.Controls.Add(this.login_panelr);
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.splitContainer1.Size = new System.Drawing.Size(1006, 553);
-            this.splitContainer1.SplitterDistance = 579;
-            this.splitContainer1.SplitterWidth = 5;
+            this.splitContainer1.Size = new System.Drawing.Size(1258, 691);
+            this.splitContainer1.SplitterDistance = 724;
+            this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 0;
             // 
             // login_lpanel
@@ -93,9 +96,10 @@
             this.login_lpanel.Controls.Add(this.label3);
             this.login_lpanel.Controls.Add(this.label2);
             this.login_lpanel.Controls.Add(this.label1);
-            this.login_lpanel.Location = new System.Drawing.Point(20, 86);
+            this.login_lpanel.Location = new System.Drawing.Point(25, 108);
+            this.login_lpanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_lpanel.Name = "login_lpanel";
-            this.login_lpanel.Size = new System.Drawing.Size(538, 380);
+            this.login_lpanel.Size = new System.Drawing.Size(672, 475);
             this.login_lpanel.TabIndex = 4;
             this.login_lpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.login_lpanel_Paint);
             // 
@@ -103,11 +107,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Aloevera", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(81, 287);
+            this.label3.Location = new System.Drawing.Point(101, 359);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(377, 61);
+            this.label3.Size = new System.Drawing.Size(425, 72);
             this.label3.TabIndex = 2;
             this.label3.Text = "Timber Stores";
             // 
@@ -115,11 +120,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Aloevera", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(213, 154);
+            this.label2.Location = new System.Drawing.Point(266, 192);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 61);
+            this.label2.Size = new System.Drawing.Size(135, 72);
             this.label2.TabIndex = 1;
             this.label2.Text = "and";
             // 
@@ -127,11 +133,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Aloevera", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Location = new System.Drawing.Point(8, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(527, 61);
+            this.label1.Size = new System.Drawing.Size(616, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ranasinghe Saw Mill";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -141,9 +148,10 @@
             this.login_picnewusr.BackColor = System.Drawing.Color.Transparent;
             this.login_picnewusr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_picnewusr.Image = ((System.Drawing.Image)(resources.GetObject("login_picnewusr.Image")));
-            this.login_picnewusr.Location = new System.Drawing.Point(290, 491);
+            this.login_picnewusr.Location = new System.Drawing.Point(362, 614);
+            this.login_picnewusr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_picnewusr.Name = "login_picnewusr";
-            this.login_picnewusr.Size = new System.Drawing.Size(40, 40);
+            this.login_picnewusr.Size = new System.Drawing.Size(50, 50);
             this.login_picnewusr.TabIndex = 10;
             this.login_picnewusr.TabStop = false;
             this.login_tt.SetToolTip(this.login_picnewusr, "Click here to sign up as a new user.");
@@ -154,9 +162,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(361, 491);
+            this.pictureBox1.Location = new System.Drawing.Point(451, 614);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.login_tt.SetToolTip(this.pictureBox1, "Click here to see login help.");
@@ -167,9 +176,10 @@
             this.login_btnclear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.login_btnclear.Font = new System.Drawing.Font("Baskerville Old Face", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_btnclear.ForeColor = System.Drawing.Color.White;
-            this.login_btnclear.Location = new System.Drawing.Point(290, 421);
+            this.login_btnclear.Location = new System.Drawing.Point(362, 526);
+            this.login_btnclear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_btnclear.Name = "login_btnclear";
-            this.login_btnclear.Size = new System.Drawing.Size(120, 45);
+            this.login_btnclear.Size = new System.Drawing.Size(150, 56);
             this.login_btnclear.TabIndex = 8;
             this.login_btnclear.Text = "Clear";
             this.login_btnclear.UseVisualStyleBackColor = true;
@@ -180,9 +190,10 @@
             this.login_btnlogin.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.login_btnlogin.Font = new System.Drawing.Font("Baskerville Old Face", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_btnlogin.ForeColor = System.Drawing.Color.White;
-            this.login_btnlogin.Location = new System.Drawing.Point(144, 421);
+            this.login_btnlogin.Location = new System.Drawing.Point(180, 526);
+            this.login_btnlogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_btnlogin.Name = "login_btnlogin";
-            this.login_btnlogin.Size = new System.Drawing.Size(120, 45);
+            this.login_btnlogin.Size = new System.Drawing.Size(150, 56);
             this.login_btnlogin.TabIndex = 7;
             this.login_btnlogin.Text = "Login";
             this.login_btnlogin.UseVisualStyleBackColor = true;
@@ -194,9 +205,10 @@
             this.login_lbllogin.BackColor = System.Drawing.Color.Transparent;
             this.login_lbllogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.login_lbllogin.ForeColor = System.Drawing.Color.DarkRed;
-            this.login_lbllogin.Location = new System.Drawing.Point(21, 76);
+            this.login_lbllogin.Location = new System.Drawing.Point(26, 95);
+            this.login_lbllogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.login_lbllogin.Name = "login_lbllogin";
-            this.login_lbllogin.Size = new System.Drawing.Size(96, 38);
+            this.login_lbllogin.Size = new System.Drawing.Size(118, 46);
             this.login_lbllogin.TabIndex = 0;
             this.login_lbllogin.Text = "Login";
             // 
@@ -206,9 +218,10 @@
             this.login_panelr.Controls.Add(this.login_txtforgotpw);
             this.login_panelr.Controls.Add(this.login_txtpw);
             this.login_panelr.Controls.Add(this.login_txtusr);
-            this.login_panelr.Location = new System.Drawing.Point(21, 147);
+            this.login_panelr.Location = new System.Drawing.Point(26, 184);
+            this.login_panelr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_panelr.Name = "login_panelr";
-            this.login_panelr.Size = new System.Drawing.Size(390, 239);
+            this.login_panelr.Size = new System.Drawing.Size(488, 299);
             this.login_panelr.TabIndex = 6;
             // 
             // login_txtforgotpw
@@ -218,9 +231,10 @@
             this.login_txtforgotpw.BackColor = System.Drawing.Color.Transparent;
             this.login_txtforgotpw.Font = new System.Drawing.Font("Baskerville Old Face", 11.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_txtforgotpw.LinkColor = System.Drawing.Color.DarkRed;
-            this.login_txtforgotpw.Location = new System.Drawing.Point(212, 208);
+            this.login_txtforgotpw.Location = new System.Drawing.Point(265, 260);
+            this.login_txtforgotpw.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.login_txtforgotpw.Name = "login_txtforgotpw";
-            this.login_txtforgotpw.Size = new System.Drawing.Size(168, 22);
+            this.login_txtforgotpw.Size = new System.Drawing.Size(197, 26);
             this.login_txtforgotpw.TabIndex = 4;
             this.login_txtforgotpw.TabStop = true;
             this.login_txtforgotpw.Text = "Forgot Password ?";
@@ -233,10 +247,11 @@
             this.login_txtpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.login_txtpw.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.login_txtpw.ForeColor = System.Drawing.Color.DarkRed;
-            this.login_txtpw.Location = new System.Drawing.Point(33, 129);
+            this.login_txtpw.Location = new System.Drawing.Point(41, 161);
+            this.login_txtpw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_txtpw.Multiline = true;
             this.login_txtpw.Name = "login_txtpw";
-            this.login_txtpw.Size = new System.Drawing.Size(327, 64);
+            this.login_txtpw.Size = new System.Drawing.Size(409, 80);
             this.login_txtpw.TabIndex = 3;
             this.login_txtpw.Text = "Password";
             this.login_txtpw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -250,11 +265,12 @@
             this.login_txtusr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.login_txtusr.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.login_txtusr.ForeColor = System.Drawing.Color.DarkRed;
-            this.login_txtusr.Location = new System.Drawing.Point(33, 43);
+            this.login_txtusr.Location = new System.Drawing.Point(41, 54);
+            this.login_txtusr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login_txtusr.MaxLength = 200;
             this.login_txtusr.Multiline = true;
             this.login_txtusr.Name = "login_txtusr";
-            this.login_txtusr.Size = new System.Drawing.Size(327, 64);
+            this.login_txtusr.Size = new System.Drawing.Size(409, 80);
             this.login_txtusr.TabIndex = 2;
             this.login_txtusr.Text = "First Name";
             this.login_txtusr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -267,14 +283,25 @@
             // 
             this.login_errp.ContainerControl = this;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(314, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 34);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // login_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 553);
+            this.ClientSize = new System.Drawing.Size(1258, 691);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "login_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -314,5 +341,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
