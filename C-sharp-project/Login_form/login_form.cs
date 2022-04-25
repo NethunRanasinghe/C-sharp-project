@@ -216,5 +216,11 @@ namespace C_sharp_project
             ProfitNloss profitNloss = new ProfitNloss();
             profitNloss.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            user_reg objtst= new user_reg();
+            objtst.Show();
+        }
     }
 }

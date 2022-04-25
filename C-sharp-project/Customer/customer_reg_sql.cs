@@ -8,15 +8,15 @@ namespace C_sharp_project
 {
     internal class customer_reg_sql:DBConn
     {
-        public int nc=0;
-        public string fnm="";
-        public string lnm = "";
-        public string adl1 = "";
-        public string adl2 = "";
-        public int phn=0;
-        public string eml = "";
-        public string prvnce = "";
-        public string sql_reg = "";
+        private int nc=0;
+        private string fnm="";
+        private string lnm = "";
+        private string adl1 = "";
+        private string adl2 = "";
+        private int phn=0;
+        private string eml = "";
+        private string prvnce = "";
+        private string sql_reg = "";
 
         public void set_regvr(int intc,string vrfn,string vrlnm,string vradl1, string vradl2, int vrphn, string vreml, string vrprvnce)
         {
