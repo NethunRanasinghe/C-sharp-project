@@ -83,5 +83,17 @@ namespace C_sharp_project
             }
             connection.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form_Selectionmenu = new form_selectionmenu();
+            form_Selectionmenu.Show();
+        }
     }
 }

@@ -55,18 +55,6 @@ namespace C_sharp_project
 
         }
 
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btn_prevMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var sawmill = new form_selectionmenu();
-          // mekata kalin page eke bname eka dnna mathk krl  selectionmenu.Show();
-        }
-
         private void btn_sales_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -84,8 +72,8 @@ namespace C_sharp_project
         private void btn_othersales_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //var OTHERexp = new OTHERexp();
-           // OTHERexp.Show();
+            var OTHERexp = new OTHERexp();
+            OTHERexp.Show();
         }
 
         private void btn_check_Click(object sender, EventArgs e)

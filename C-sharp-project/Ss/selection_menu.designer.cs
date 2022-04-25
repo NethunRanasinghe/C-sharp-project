@@ -102,7 +102,7 @@
             this.lbl_buying.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_buying.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_buying.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_buying.Location = new System.Drawing.Point(153, 103);
+            this.lbl_buying.Location = new System.Drawing.Point(153, 98);
             this.lbl_buying.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_buying.Name = "lbl_buying";
             this.lbl_buying.Size = new System.Drawing.Size(137, 37);
@@ -116,7 +116,7 @@
             this.lbl_othersales.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_othersales.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_othersales.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_othersales.Location = new System.Drawing.Point(153, 188);
+            this.lbl_othersales.Location = new System.Drawing.Point(153, 179);
             this.lbl_othersales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_othersales.Name = "lbl_othersales";
             this.lbl_othersales.Size = new System.Drawing.Size(237, 37);
@@ -130,7 +130,7 @@
             this.lbl_acccheck.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_acccheck.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_acccheck.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_acccheck.Location = new System.Drawing.Point(153, 262);
+            this.lbl_acccheck.Location = new System.Drawing.Point(153, 260);
             this.lbl_acccheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_acccheck.Name = "lbl_acccheck";
             this.lbl_acccheck.Size = new System.Drawing.Size(277, 37);
@@ -144,7 +144,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.No;
             this.label1.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(156, 343);
+            this.label1.Location = new System.Drawing.Point(156, 341);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 37);
@@ -172,7 +172,7 @@
             this.Btn_buying.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.Btn_buying.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_buying.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_buying.Location = new System.Drawing.Point(547, 105);
+            this.Btn_buying.Location = new System.Drawing.Point(547, 97);
             this.Btn_buying.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_buying.Name = "Btn_buying";
             this.Btn_buying.Size = new System.Drawing.Size(260, 52);
@@ -187,7 +187,7 @@
             this.Btn_othersales.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.Btn_othersales.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_othersales.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_othersales.Location = new System.Drawing.Point(547, 175);
+            this.Btn_othersales.Location = new System.Drawing.Point(547, 177);
             this.Btn_othersales.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_othersales.Name = "Btn_othersales";
             this.Btn_othersales.Size = new System.Drawing.Size(260, 52);
@@ -202,7 +202,7 @@
             this.Btn_check.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.Btn_check.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_check.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_check.Location = new System.Drawing.Point(547, 255);
+            this.Btn_check.Location = new System.Drawing.Point(547, 257);
             this.Btn_check.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_check.Name = "Btn_check";
             this.Btn_check.Size = new System.Drawing.Size(260, 52);

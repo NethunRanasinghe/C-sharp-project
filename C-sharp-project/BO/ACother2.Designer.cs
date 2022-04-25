@@ -36,15 +36,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.PRCD = new System.Windows.Forms.Button();
-            this.BCK = new System.Windows.Forms.Button();
             this.CLEAR = new System.Windows.Forms.Button();
-            this.EXTbtn = new System.Windows.Forms.Button();
             this.OTHERdt = new System.Windows.Forms.DateTimePicker();
             this.SRVCE = new System.Windows.Forms.TextBox();
             this.ESTOTHERcst = new System.Windows.Forms.TextBox();
             this.CSTother = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.INFO = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -130,7 +132,7 @@
             this.PRCD.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PRCD.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.PRCD.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.PRCD.Location = new System.Drawing.Point(295, 515);
+            this.PRCD.Location = new System.Drawing.Point(418, 469);
             this.PRCD.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PRCD.Name = "PRCD";
             this.PRCD.Size = new System.Drawing.Size(79, 34);
@@ -139,26 +141,12 @@
             this.PRCD.UseVisualStyleBackColor = false;
             this.PRCD.Click += new System.EventHandler(this.PRCD_Click);
             // 
-            // BCK
-            // 
-            this.BCK.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BCK.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
-            this.BCK.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BCK.Location = new System.Drawing.Point(643, 567);
-            this.BCK.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.BCK.Name = "BCK";
-            this.BCK.Size = new System.Drawing.Size(75, 37);
-            this.BCK.TabIndex = 20;
-            this.BCK.Text = "Back";
-            this.BCK.UseVisualStyleBackColor = false;
-            this.BCK.Click += new System.EventHandler(this.BCK_Click);
-            // 
             // CLEAR
             // 
             this.CLEAR.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CLEAR.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.CLEAR.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CLEAR.Location = new System.Drawing.Point(295, 567);
+            this.CLEAR.Location = new System.Drawing.Point(575, 469);
             this.CLEAR.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CLEAR.Name = "CLEAR";
             this.CLEAR.Size = new System.Drawing.Size(79, 37);
@@ -166,20 +154,6 @@
             this.CLEAR.Text = "Clear";
             this.CLEAR.UseVisualStyleBackColor = false;
             this.CLEAR.Click += new System.EventHandler(this.CLEAR_Click);
-            // 
-            // EXTbtn
-            // 
-            this.EXTbtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EXTbtn.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
-            this.EXTbtn.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.EXTbtn.Location = new System.Drawing.Point(643, 515);
-            this.EXTbtn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.EXTbtn.Name = "EXTbtn";
-            this.EXTbtn.Size = new System.Drawing.Size(75, 34);
-            this.EXTbtn.TabIndex = 22;
-            this.EXTbtn.Text = "Exit";
-            this.EXTbtn.UseVisualStyleBackColor = false;
-            this.EXTbtn.Click += new System.EventHandler(this.EXTbtn_Click);
             // 
             // OTHERdt
             // 
@@ -217,6 +191,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(968, 181);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -236,22 +211,46 @@
             this.INFO.TabIndex = 29;
             this.INFO.Text = "";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.back;
+            this.pictureBox1.Location = new System.Drawing.Point(840, 506);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.exit;
+            this.pictureBox2.Location = new System.Drawing.Point(922, 506);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // ACother2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1002, 616);
+            this.ClientSize = new System.Drawing.Size(1002, 572);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.INFO);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.CSTother);
             this.Controls.Add(this.ESTOTHERcst);
             this.Controls.Add(this.SRVCE);
             this.Controls.Add(this.OTHERdt);
-            this.Controls.Add(this.EXTbtn);
             this.Controls.Add(this.CLEAR);
-            this.Controls.Add(this.BCK);
             this.Controls.Add(this.PRCD);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -266,6 +265,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasingha Saw Mills";
             this.Load += new System.EventHandler(this.ACother2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,14 +281,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button PRCD;
-        private System.Windows.Forms.Button BCK;
         private System.Windows.Forms.Button CLEAR;
-        private System.Windows.Forms.Button EXTbtn;
         private System.Windows.Forms.DateTimePicker OTHERdt;
         private System.Windows.Forms.TextBox SRVCE;
         private System.Windows.Forms.TextBox ESTOTHERcst;
         private System.Windows.Forms.TextBox CSTother;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.RichTextBox INFO;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

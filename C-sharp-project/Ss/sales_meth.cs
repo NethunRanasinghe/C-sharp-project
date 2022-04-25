@@ -79,7 +79,7 @@ namespace C_sharp_project
 
         private void sales_usr_Click(object sender, EventArgs e)
         {
-            this.sales_usr.Text = login_form.passingText;
+            sales_usr.Text = login_form.passingText;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
