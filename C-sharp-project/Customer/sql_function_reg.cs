@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace C_sharp_project
 {
@@ -11,15 +11,15 @@ namespace C_sharp_project
     {
         public void function_sql_execute()
         {
-            SqlConnection connection = new SqlConnection(getdbconn());
-            SqlCommand cmd = new SqlCommand(get_rgsql(), connection);
+            MySqlConnection connection = new MySqlConnection(getdbconn());
+            MySqlCommand cmd = new MySqlCommand(get_rgsql(), connection);
             try
             {
                 connection.Open();  
                 cmd.ExecuteNonQuery();
                 
             }
-            catch (SqlException ecr)
+            catch (MySqlException ecr)
             {
                 Console.WriteLine(ecr.ToString());
             }

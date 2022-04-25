@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace C_sharp_project
 {
@@ -42,6 +43,11 @@ namespace C_sharp_project
         }
 
         private void fname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rst_Click(object sender, EventArgs e)
         {
 
         }
