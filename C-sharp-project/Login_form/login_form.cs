@@ -233,5 +233,11 @@ namespace C_sharp_project
             Customer_data  objcstd= new Customer_data();
             objcstd.Show();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Customer_data customer_Data= new Customer_data();
+            customer_Data.Show();
+        }
     }
 }

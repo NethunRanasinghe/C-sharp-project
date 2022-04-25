@@ -48,6 +48,7 @@
             this.login_txtusr = new System.Windows.Forms.TextBox();
             this.login_tt = new System.Windows.Forms.ToolTip(this.components);
             this.login_errp = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -64,12 +65,14 @@
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackgroundImage = global::C_sharp_project.Properties.Resources.login_bgl_6_;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer1.Panel1.Controls.Add(this.button3);
             this.splitContainer1.Panel1.Controls.Add(this.button2);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.login_lpanel);
@@ -86,17 +89,15 @@
             this.splitContainer1.Panel2.Controls.Add(this.login_lbllogin);
             this.splitContainer1.Panel2.Controls.Add(this.login_panelr);
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.splitContainer1.Size = new System.Drawing.Size(1007, 553);
-            this.splitContainer1.SplitterDistance = 579;
-            this.splitContainer1.SplitterWidth = 5;
+            this.splitContainer1.Size = new System.Drawing.Size(881, 415);
+            this.splitContainer1.SplitterDistance = 506;
             this.splitContainer1.TabIndex = 0;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(93, 27);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(128, 14);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 31);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
             this.button2.Text = "jmp_usereg";
             this.button2.UseVisualStyleBackColor = true;
@@ -104,10 +105,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(251, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button1.Location = new System.Drawing.Point(215, 14);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 27);
+            this.button1.Size = new System.Drawing.Size(78, 20);
             this.button1.TabIndex = 5;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -119,9 +120,10 @@
             this.login_lpanel.Controls.Add(this.label3);
             this.login_lpanel.Controls.Add(this.label2);
             this.login_lpanel.Controls.Add(this.label1);
-            this.login_lpanel.Location = new System.Drawing.Point(21, 87);
+            this.login_lpanel.Location = new System.Drawing.Point(18, 65);
+            this.login_lpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_lpanel.Name = "login_lpanel";
-            this.login_lpanel.Size = new System.Drawing.Size(537, 380);
+            this.login_lpanel.Size = new System.Drawing.Size(470, 285);
             this.login_lpanel.TabIndex = 4;
             this.login_lpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.login_lpanel_Paint);
             // 
@@ -131,9 +133,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(81, 287);
+            this.label3.Location = new System.Drawing.Point(71, 215);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(350, 59);
+            this.label3.Size = new System.Drawing.Size(283, 48);
             this.label3.TabIndex = 2;
             this.label3.Text = "Timber Stores";
             // 
@@ -143,9 +145,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(213, 153);
+            this.label2.Location = new System.Drawing.Point(186, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 59);
+            this.label2.Size = new System.Drawing.Size(89, 48);
             this.label2.TabIndex = 1;
             this.label2.Text = "and";
             // 
@@ -155,9 +157,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(7, 21);
+            this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(509, 59);
+            this.label1.Size = new System.Drawing.Size(410, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ranasinghe Saw Mill";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -167,9 +169,10 @@
             this.login_picnewusr.BackColor = System.Drawing.Color.Transparent;
             this.login_picnewusr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_picnewusr.Image = ((System.Drawing.Image)(resources.GetObject("login_picnewusr.Image")));
-            this.login_picnewusr.Location = new System.Drawing.Point(289, 491);
+            this.login_picnewusr.Location = new System.Drawing.Point(253, 368);
+            this.login_picnewusr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_picnewusr.Name = "login_picnewusr";
-            this.login_picnewusr.Size = new System.Drawing.Size(40, 40);
+            this.login_picnewusr.Size = new System.Drawing.Size(35, 30);
             this.login_picnewusr.TabIndex = 10;
             this.login_picnewusr.TabStop = false;
             this.login_tt.SetToolTip(this.login_picnewusr, "Click here to sign up as a new user.");
@@ -180,9 +183,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(361, 491);
+            this.pictureBox1.Location = new System.Drawing.Point(316, 368);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 30);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.login_tt.SetToolTip(this.pictureBox1, "Click here to see login help.");
@@ -193,9 +197,10 @@
             this.login_btnclear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.login_btnclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_btnclear.ForeColor = System.Drawing.Color.White;
-            this.login_btnclear.Location = new System.Drawing.Point(289, 421);
+            this.login_btnclear.Location = new System.Drawing.Point(253, 316);
+            this.login_btnclear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_btnclear.Name = "login_btnclear";
-            this.login_btnclear.Size = new System.Drawing.Size(120, 45);
+            this.login_btnclear.Size = new System.Drawing.Size(105, 34);
             this.login_btnclear.TabIndex = 8;
             this.login_btnclear.Text = "Clear";
             this.login_btnclear.UseVisualStyleBackColor = true;
@@ -206,9 +211,10 @@
             this.login_btnlogin.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.login_btnlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_btnlogin.ForeColor = System.Drawing.Color.White;
-            this.login_btnlogin.Location = new System.Drawing.Point(144, 421);
+            this.login_btnlogin.Location = new System.Drawing.Point(126, 316);
+            this.login_btnlogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_btnlogin.Name = "login_btnlogin";
-            this.login_btnlogin.Size = new System.Drawing.Size(120, 45);
+            this.login_btnlogin.Size = new System.Drawing.Size(105, 34);
             this.login_btnlogin.TabIndex = 7;
             this.login_btnlogin.Text = "Login";
             this.login_btnlogin.UseVisualStyleBackColor = true;
@@ -220,9 +226,9 @@
             this.login_lbllogin.BackColor = System.Drawing.Color.Transparent;
             this.login_lbllogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.login_lbllogin.ForeColor = System.Drawing.Color.DarkRed;
-            this.login_lbllogin.Location = new System.Drawing.Point(21, 76);
+            this.login_lbllogin.Location = new System.Drawing.Point(18, 57);
             this.login_lbllogin.Name = "login_lbllogin";
-            this.login_lbllogin.Size = new System.Drawing.Size(96, 38);
+            this.login_lbllogin.Size = new System.Drawing.Size(80, 31);
             this.login_lbllogin.TabIndex = 0;
             this.login_lbllogin.Text = "Login";
             // 
@@ -232,9 +238,10 @@
             this.login_panelr.Controls.Add(this.login_txtforgotpw);
             this.login_panelr.Controls.Add(this.login_txtpw);
             this.login_panelr.Controls.Add(this.login_txtusr);
-            this.login_panelr.Location = new System.Drawing.Point(21, 147);
+            this.login_panelr.Location = new System.Drawing.Point(18, 110);
+            this.login_panelr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_panelr.Name = "login_panelr";
-            this.login_panelr.Size = new System.Drawing.Size(391, 239);
+            this.login_panelr.Size = new System.Drawing.Size(342, 179);
             this.login_panelr.TabIndex = 6;
             // 
             // login_txtforgotpw
@@ -244,9 +251,9 @@
             this.login_txtforgotpw.BackColor = System.Drawing.Color.Transparent;
             this.login_txtforgotpw.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.login_txtforgotpw.LinkColor = System.Drawing.Color.DarkRed;
-            this.login_txtforgotpw.Location = new System.Drawing.Point(204, 215);
+            this.login_txtforgotpw.Location = new System.Drawing.Point(178, 161);
             this.login_txtforgotpw.Name = "login_txtforgotpw";
-            this.login_txtforgotpw.Size = new System.Drawing.Size(184, 24);
+            this.login_txtforgotpw.Size = new System.Drawing.Size(152, 18);
             this.login_txtforgotpw.TabIndex = 4;
             this.login_txtforgotpw.TabStop = true;
             this.login_txtforgotpw.Text = "Forgot Password ?";
@@ -259,10 +266,11 @@
             this.login_txtpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.login_txtpw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.login_txtpw.ForeColor = System.Drawing.Color.DarkRed;
-            this.login_txtpw.Location = new System.Drawing.Point(33, 129);
+            this.login_txtpw.Location = new System.Drawing.Point(29, 97);
+            this.login_txtpw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_txtpw.Multiline = true;
             this.login_txtpw.Name = "login_txtpw";
-            this.login_txtpw.Size = new System.Drawing.Size(327, 64);
+            this.login_txtpw.Size = new System.Drawing.Size(286, 48);
             this.login_txtpw.TabIndex = 3;
             this.login_txtpw.Text = "Password";
             this.login_txtpw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -276,11 +284,12 @@
             this.login_txtusr.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.login_txtusr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.login_txtusr.ForeColor = System.Drawing.Color.DarkRed;
-            this.login_txtusr.Location = new System.Drawing.Point(33, 43);
+            this.login_txtusr.Location = new System.Drawing.Point(29, 32);
+            this.login_txtusr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_txtusr.MaxLength = 200;
             this.login_txtusr.Multiline = true;
             this.login_txtusr.Name = "login_txtusr";
-            this.login_txtusr.Size = new System.Drawing.Size(327, 64);
+            this.login_txtusr.Size = new System.Drawing.Size(286, 48);
             this.login_txtusr.TabIndex = 2;
             this.login_txtusr.Text = "First Name";
             this.login_txtusr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -293,14 +302,25 @@
             // 
             this.login_errp.ContainerControl = this;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(307, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(148, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "jmp_to_customer_data";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // login_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 553);
+            this.ClientSize = new System.Drawing.Size(881, 415);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "login_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -342,5 +362,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -20,7 +20,7 @@ namespace C_sharp_project
 
         private void sv_Click(object sender, EventArgs e)
         {
-           int n = Convert.ToInt32(this.nicno.Text);
+            string n = this.nicno.Text;
             string fnr = this.fname.Text;
             string lnr = this.lname.Text;
             string ad1 = this.adrsl1.Text;

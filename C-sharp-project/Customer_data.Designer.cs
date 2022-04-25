@@ -35,10 +35,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.nictxtbox = new System.Windows.Forms.TextBox();
-            this.fn = new System.Windows.Forms.TextBox();
-            this.ln = new System.Windows.Forms.TextBox();
+            this.fntxtbx = new System.Windows.Forms.TextBox();
+            this.lntxtbx = new System.Windows.Forms.TextBox();
             this.prvnctxtbx = new System.Windows.Forms.TextBox();
-            this.phn = new System.Windows.Forms.TextBox();
+            this.phntxtbx = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -119,19 +119,19 @@
             this.nictxtbox.Size = new System.Drawing.Size(289, 23);
             this.nictxtbox.TabIndex = 1;
             // 
-            // fn
+            // fntxtbx
             // 
-            this.fn.Location = new System.Drawing.Point(33, 126);
-            this.fn.Name = "fn";
-            this.fn.Size = new System.Drawing.Size(125, 23);
-            this.fn.TabIndex = 2;
+            this.fntxtbx.Location = new System.Drawing.Point(33, 126);
+            this.fntxtbx.Name = "fntxtbx";
+            this.fntxtbx.Size = new System.Drawing.Size(125, 23);
+            this.fntxtbx.TabIndex = 2;
             // 
-            // ln
+            // lntxtbx
             // 
-            this.ln.Location = new System.Drawing.Point(176, 126);
-            this.ln.Name = "ln";
-            this.ln.Size = new System.Drawing.Size(146, 23);
-            this.ln.TabIndex = 3;
+            this.lntxtbx.Location = new System.Drawing.Point(176, 126);
+            this.lntxtbx.Name = "lntxtbx";
+            this.lntxtbx.Size = new System.Drawing.Size(146, 23);
+            this.lntxtbx.TabIndex = 3;
             // 
             // prvnctxtbx
             // 
@@ -140,12 +140,12 @@
             this.prvnctxtbx.Size = new System.Drawing.Size(289, 23);
             this.prvnctxtbx.TabIndex = 6;
             // 
-            // phn
+            // phntxtbx
             // 
-            this.phn.Location = new System.Drawing.Point(443, 67);
-            this.phn.Name = "phn";
-            this.phn.Size = new System.Drawing.Size(289, 23);
-            this.phn.TabIndex = 4;
+            this.phntxtbx.Location = new System.Drawing.Point(443, 67);
+            this.phntxtbx.Name = "phntxtbx";
+            this.phntxtbx.Size = new System.Drawing.Size(289, 23);
+            this.phntxtbx.TabIndex = 4;
             // 
             // button1
             // 
@@ -165,6 +165,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -219,6 +220,7 @@
             this.button3.TabIndex = 15;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -264,9 +266,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.prvnctxtbx);
-            this.Controls.Add(this.phn);
-            this.Controls.Add(this.ln);
-            this.Controls.Add(this.fn);
+            this.Controls.Add(this.phntxtbx);
+            this.Controls.Add(this.lntxtbx);
+            this.Controls.Add(this.fntxtbx);
             this.Controls.Add(this.nictxtbox);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Customer_data";
@@ -283,10 +285,10 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox nictxtbox;
-        private System.Windows.Forms.TextBox fn;
-        private System.Windows.Forms.TextBox ln;
+        private System.Windows.Forms.TextBox fntxtbx;
+        private System.Windows.Forms.TextBox lntxtbx;
         private System.Windows.Forms.TextBox prvnctxtbx;
-        private System.Windows.Forms.TextBox phn;
+        private System.Windows.Forms.TextBox phntxtbx;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
