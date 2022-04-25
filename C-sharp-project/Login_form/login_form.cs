@@ -215,5 +215,11 @@ namespace C_sharp_project
         {
             
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ProfitNloss profitNloss = new ProfitNloss();
+            profitNloss.Show();
+        }
     }
 }
