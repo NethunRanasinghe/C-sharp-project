@@ -79,7 +79,7 @@
             this.GroupBox_menu.Controls.Add(this.LBL_sales);
             this.GroupBox_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GroupBox_menu.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.GroupBox_menu.Location = new System.Drawing.Point(92, 179);
+            this.GroupBox_menu.Location = new System.Drawing.Point(92, 156);
             this.GroupBox_menu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GroupBox_menu.Name = "GroupBox_menu";
             this.GroupBox_menu.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -301,7 +301,7 @@
             this.BTN_Clear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_Clear.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_Clear.ForeColor = System.Drawing.Color.Snow;
-            this.BTN_Clear.Location = new System.Drawing.Point(639, 838);
+            this.BTN_Clear.Location = new System.Drawing.Point(639, 809);
             this.BTN_Clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(133, 52);
@@ -316,7 +316,7 @@
             this.BTN_sumbit.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_sumbit.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_sumbit.ForeColor = System.Drawing.Color.Snow;
-            this.BTN_sumbit.Location = new System.Drawing.Point(875, 838);
+            this.BTN_sumbit.Location = new System.Drawing.Point(875, 809);
             this.BTN_sumbit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_sumbit.Name = "BTN_sumbit";
             this.BTN_sumbit.Size = new System.Drawing.Size(133, 52);
@@ -340,7 +340,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.exit;
-            this.pictureBox1.Location = new System.Drawing.Point(968, 946);
+            this.pictureBox1.Location = new System.Drawing.Point(968, 894);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 24;
@@ -351,7 +351,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.back;
-            this.pictureBox2.Location = new System.Drawing.Point(875, 946);
+            this.pictureBox2.Location = new System.Drawing.Point(875, 894);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 25;
@@ -364,7 +364,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1100, 1025);
+            this.ClientSize = new System.Drawing.Size(1100, 951);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sales_usr);
@@ -376,6 +376,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "form_sales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasinghe Sawmills";
             this.Load += new System.EventHandler(this.form_sales_Load);
             this.GroupBox_menu.ResumeLayout(false);

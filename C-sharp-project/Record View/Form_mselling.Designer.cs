@@ -185,6 +185,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form_mselling";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Monthly_selling";
             this.Load += new System.EventHandler(this.Form_mselling_Load);
             this.ResumeLayout(false);

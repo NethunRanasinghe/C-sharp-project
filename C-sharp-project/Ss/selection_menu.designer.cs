@@ -303,6 +303,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "form_selectionmenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasinghe Sawmills";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.GroupBox_menu.ResumeLayout(false);
