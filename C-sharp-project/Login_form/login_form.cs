@@ -13,7 +13,12 @@ namespace C_sharp_project
 {
     public partial class login_form : Form
     {
-        string connection_string = "server=localhost; user id=root; database=ranasinghesawmilldb";
+        string connection_string =  "datasource=rsmt-management-system-do-user-11431826-0.b.db.ondigitalocean.com; " +
+                                    "port=25060; " +
+                                    "username=doadmin; " +
+                                    "password=AVNS_xJ37XvPtSUi3vzk; " +
+                                    "database=ranasinghesawmilldb;";
+
         public static string passingText;
         public login_form()
         {
