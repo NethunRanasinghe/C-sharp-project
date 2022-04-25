@@ -79,5 +79,15 @@ namespace C_sharp_project
             //SCNDfrm.Show();
         //kalin form eka dnne
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

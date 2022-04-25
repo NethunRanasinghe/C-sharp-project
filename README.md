@@ -10,7 +10,7 @@
 <h3 align="center">C# Assignment</h3>
 
   <p align="center">
-    Need to be submitted before 24th of April.
+    Need to be submitted before 1st of May.
     <br />
     <br />
     <a href="https://github.com/NethunRanasinghe/C-sharp-project/archive/refs/heads/master.zip">Download Repo</a>

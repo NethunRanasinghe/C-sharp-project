@@ -35,14 +35,16 @@
             this.BTN_buyingclear = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.LBL_buying = new System.Windows.Forms.Label();
-            this.BTN_mbuyback = new System.Windows.Forms.Button();
-            this.BTN_mbuymain = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(91, 262);
+            this.monthCalendar1.Location = new System.Drawing.Point(88, 255);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 2;
@@ -62,7 +64,7 @@
             "2024",
             "2025",
             "2026"});
-            this.listBox2.Location = new System.Drawing.Point(115, 157);
+            this.listBox2.Location = new System.Drawing.Point(88, 158);
             this.listBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(94, 27);
@@ -74,7 +76,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(251, 35);
+            this.label1.Location = new System.Drawing.Point(208, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(338, 56);
             this.label1.TabIndex = 7;
@@ -86,7 +88,7 @@
             // 
             this.BTN_buyingclear.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_buyingclear.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.BTN_buyingclear.Location = new System.Drawing.Point(624, 151);
+            this.BTN_buyingclear.Location = new System.Drawing.Point(587, 151);
             this.BTN_buyingclear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BTN_buyingclear.Name = "BTN_buyingclear";
             this.BTN_buyingclear.Size = new System.Drawing.Size(90, 34);
@@ -114,7 +116,7 @@
             "Oct",
             "Nov",
             "Dec"});
-            this.listBox1.Location = new System.Drawing.Point(261, 157);
+            this.listBox1.Location = new System.Drawing.Point(248, 157);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(102, 27);
@@ -125,51 +127,45 @@
             this.LBL_buying.AutoSize = true;
             this.LBL_buying.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_buying.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_buying.Location = new System.Drawing.Point(465, 157);
+            this.LBL_buying.Location = new System.Drawing.Point(428, 157);
             this.LBL_buying.Name = "LBL_buying";
             this.LBL_buying.Size = new System.Drawing.Size(114, 23);
             this.LBL_buying.TabIndex = 10;
             this.LBL_buying.Text = "........";
             this.LBL_buying.Click += new System.EventHandler(this.label2_Click);
             // 
-            // BTN_mbuyback
-            // 
-            this.BTN_mbuyback.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
-            this.BTN_mbuyback.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BTN_mbuyback.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BTN_mbuyback.Location = new System.Drawing.Point(597, 395);
-            this.BTN_mbuyback.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BTN_mbuyback.Name = "BTN_mbuyback";
-            this.BTN_mbuyback.Size = new System.Drawing.Size(117, 41);
-            this.BTN_mbuyback.TabIndex = 11;
-            this.BTN_mbuyback.Text = "BACK";
-            this.BTN_mbuyback.UseVisualStyleBackColor = true;
-            this.BTN_mbuyback.Click += new System.EventHandler(this.BTN_mbuyback_Click);
-            // 
-            // BTN_mbuymain
-            // 
-            this.BTN_mbuymain.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
-            this.BTN_mbuymain.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BTN_mbuymain.ForeColor = System.Drawing.Color.Snow;
-            this.BTN_mbuymain.Location = new System.Drawing.Point(426, 395);
-            this.BTN_mbuymain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BTN_mbuymain.Name = "BTN_mbuymain";
-            this.BTN_mbuymain.Size = new System.Drawing.Size(117, 41);
-            this.BTN_mbuymain.TabIndex = 12;
-            this.BTN_mbuymain.Text = "MAIN MENU";
-            this.BTN_mbuymain.UseVisualStyleBackColor = true;
-            this.BTN_mbuymain.Click += new System.EventHandler(this.BTN_mbuymain_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("SimSun", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(410, 157);
+            this.label2.Location = new System.Drawing.Point(373, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 24);
             this.label2.TabIndex = 18;
             this.label2.Text = "Rs.";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.exit;
+            this.pictureBox1.Location = new System.Drawing.Point(637, 422);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.back;
+            this.pictureBox2.Location = new System.Drawing.Point(559, 422);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form_mbuying
             // 
@@ -177,10 +173,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 562);
+            this.ClientSize = new System.Drawing.Size(754, 493);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.BTN_mbuymain);
-            this.Controls.Add(this.BTN_mbuyback);
             this.Controls.Add(this.LBL_buying);
             this.Controls.Add(this.BTN_buyingclear);
             this.Controls.Add(this.label1);
@@ -190,8 +186,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form_mbuying";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "monthly_buying";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,9 +203,9 @@
         private System.Windows.Forms.Button BTN_buyingclear;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label LBL_buying;
-        private System.Windows.Forms.Button BTN_mbuyback;
-        private System.Windows.Forms.Button BTN_mbuymain;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
