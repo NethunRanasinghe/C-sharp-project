@@ -227,5 +227,11 @@ namespace C_sharp_project
             user_reg objtst= new user_reg();
             objtst.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Customer_data  objcstd= new Customer_data();
+            objcstd.Show();
+        }
     }
 }
