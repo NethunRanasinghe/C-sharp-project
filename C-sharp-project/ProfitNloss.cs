@@ -875,7 +875,7 @@ namespace C_sharp_project
                         {
                             ytdsell = ytdsell + (Convert.ToDouble(reader2["selling_price"]));
                             ytdval = ytdval + (Convert.ToDouble(reader2["value"]));
-                            ytdothrcsts = ytdothrcsts + (Convert.ToDouble(reader2["other_costs"]));
+                            ytdothrcsts = ytdothrcsts + (Convert.ToDouble(reader2["additional_charges"]));
                         }
 
                     }
@@ -895,7 +895,7 @@ namespace C_sharp_project
 
                             ttlsell = ttlsell + (Convert.ToDouble(reader["selling_price"]));
                             ttlval = ttlval + (Convert.ToDouble(reader["value"]));
-                            ttlothrcsts = ttlothrcsts + (Convert.ToDouble(reader["other_costs"]));
+                            ttlothrcsts = ttlothrcsts + (Convert.ToDouble(reader["additional_charges"]));
                             x++;
                             switch (x)
                             {
@@ -904,10 +904,10 @@ namespace C_sharp_project
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r1c1.Text = Convert.ToString(reader["ID"]);
-                                    this.r1c2.Text = Convert.ToString(reader["name"]);
+                                    this.r1c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r1c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r1c4.Text = Convert.ToString(reader["profit"]);
-                                    this.rate1.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    this.rate1.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
                                     break;
 
                                 case 2:
@@ -915,10 +915,10 @@ namespace C_sharp_project
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r2c1.Text = Convert.ToString(reader["ID"]);
-                                    this.r2c2.Text = Convert.ToString(reader["name"]);
+                                    this.r2c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r2c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r2c4.Text = Convert.ToString(reader["profit"]);
-                                    this.rate2.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    this.rate2.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
                                     break;
 
                                 case 3:
@@ -926,10 +926,10 @@ namespace C_sharp_project
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r3c1.Text = Convert.ToString(reader["ID"]);
-                                    this.r3c2.Text = Convert.ToString(reader["name"]);
+                                    this.r3c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r3c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r3c4.Text = Convert.ToString(reader["profit"]);
-                                    this.rate3.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    this.rate3.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
                                     break;
 
                                 case 4:
@@ -937,10 +937,10 @@ namespace C_sharp_project
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r4c1.Text = Convert.ToString(reader["ID"]);
-                                    this.r4c2.Text = Convert.ToString(reader["name"]);
+                                    this.r4c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r4c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r4c4.Text = Convert.ToString(reader["profit"]);
-                                    this.rate4.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    this.rate4.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
                                     break;
 
                                 case 5:
@@ -948,10 +948,10 @@ namespace C_sharp_project
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r5c1.Text = Convert.ToString(reader["ID"]);
-                                    this.r5c2.Text = Convert.ToString(reader["name"]);
+                                    this.r5c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r5c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r5c4.Text = Convert.ToString(reader["profit"]);
-                                    this.rate5.Text = Convert.ToString((sell - val) / 100 + "%");
+                                    this.rate5.Text = Convert.ToString(((sell - val) / val)*100 + "%");
                                     break;
 
                             }
@@ -968,7 +968,7 @@ namespace C_sharp_project
                         {
                             if(tdrevrt>0)
                             {
-                                this.ttlrevrt.ForeColor=Color.Green;
+                                this.ttlrevrt.ForeColor=Color.Lime;
                                 this.ttlrevrt.Text =  "+"+ Convert.ToString(tdrevrt)+ "%";
                             }
                             else
@@ -978,7 +978,7 @@ namespace C_sharp_project
                             }
                             if(tdprftrt>0)
                             {
-                                this.ttlprftrt.ForeColor = Color.Green;
+                                this.ttlprftrt.ForeColor = Color.Lime;
                                 this.ttlprftrt.Text = "+" + Convert.ToString(tdprftrt) + "%";
                             }
                             else
