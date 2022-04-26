@@ -24,8 +24,8 @@ namespace C_sharp_project
             string fnr = this.fname.Text;
             string lnr = this.lname.Text;
             string ad1 = this.adrsl1.Text;
-            string ad2 = this.adrsl1.Text;
-            int ph = Convert.ToInt32(this.phonum.Text);
+            string ad2 = this.adrsl2.Text;
+            int ph = int.Parse(this.phonum.Text);
             string ml = this.eml.Text;
             string pr = this.prvnce.Text;
 

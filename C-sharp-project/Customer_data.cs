@@ -77,6 +77,7 @@ namespace C_sharp_project
                 sql_execute(customer_Data_SQL.get_cstdatasqlname());
             }
         }
+
     }
 }
 //&& (this.nictxtbox.Text.All(char.IsDigit))==true

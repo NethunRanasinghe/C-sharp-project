@@ -32,7 +32,7 @@ namespace C_sharp_project
 
         public void set_rgsql()
         {
-            sql_reg = "INSERT INTO customer_registration(nic,first_name,last_name,address,phone_number,email,province) VALUES('" + nc + "','" + fnm + "','" + lnm + "','" + adl1 + "','" + phn + "','" + eml + "','" + prvnce + "')";
+            sql_reg = "INSERT INTO customer_registration(nic,first_name,last_name,address,phone_number,email,province) VALUES('" + nc + "','" + fnm + "','" + lnm + "','" + (adl1 +" "+ adl2)+ "','" + phn + "','" + eml + "','" + prvnce + "')";
         }
         public string get_rgsql() 
         {

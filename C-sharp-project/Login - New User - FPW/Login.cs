@@ -185,5 +185,23 @@ namespace C_sharp_project
                 login_errp.SetError(login_txtpw, "");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Customer_data customer_Data = new Customer_data();
+            customer_Data.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            user_reg user_Reg = new user_reg();
+            user_Reg.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ProfitNloss profitNloss = new ProfitNloss();
+            profitNloss.Show();
+        }
     }
 }
