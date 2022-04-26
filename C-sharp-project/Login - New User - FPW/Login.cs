@@ -13,38 +13,38 @@ namespace C_sharp_project
 {
     public partial class login_form : Form
     {
-        string connection_string =  "datasource=rsmt-management-system-do-user-11431826-0.b.db.ondigitalocean.com; " +
+        string connection_string = "datasource=rsmt-management-system-do-user-11431826-0.b.db.ondigitalocean.com; " +
                                     "port=25060; " +
                                     "username=doadmin; " +
                                     "password=AVNS_xJ37XvPtSUi3vzk; " +
                                     "database=ranasinghesawmilldb;";
+        
+        public static string ?passingText;
 
-        public static string passingText;
         public login_form()
         {
             InitializeComponent();
-            this.login_panelr.BackColor = Color.FromArgb(125, Color.White);
-            this.login_lpanel.BackColor = Color.FromArgb(125, Color.White);
-
-
+            this.login_bpanel.BackColor = Color.FromArgb(125, Color.Bisque);
         }
 
-        private void login_form_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void login_txtforgotpw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void login_lblfpw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            var forgot_pw = new forgot_pw();
-            forgot_pw.Show();
+            forgot_pw objforgotpw = new forgot_pw();
+            objforgotpw.Show();
         }
 
         private void login_btnclear_Click(object sender, EventArgs e)
         {
-            this.login_txtusr.Text = "";
-            this.login_txtpw.Text = "";
+            this.login_txtusr.Texts = "";
+            this.login_txtpw.Texts  = "";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            sign_up objsignup = new sign_up();
+            objsignup.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -57,19 +57,22 @@ namespace C_sharp_project
 
             string title = "Login Help";
 
-            MessageBox.Show(message,title,MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void login_btnlgin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var sign_up = new sign_up();
-            sign_up.Show();
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                passingText = login_txtusr.Texts;
+                Action_login();
+            }
         }
 
-        public void login()
+        //..Custom Methods..//
+        public void Action_login()
         {
-            string query = "SELECT * FROM `user_details` WHERE first_name = '" + login_txtusr.Text + "' AND password = '" + login_txtpw.Text + "'";
+            string query = "SELECT * FROM `user_details` WHERE first_name = '" + login_txtusr.Texts + "' AND password = '" +login_txtpw.Texts + "'";
 
             // Prepare the connection
             MySqlConnection databaseConnection = new MySqlConnection(connection_string);
@@ -95,26 +98,20 @@ namespace C_sharp_project
                 databaseConnection.Close();
 
 
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Error : " + ex.Message);
             }
         }
 
-        private void login_btnlogin_Click(object sender, EventArgs e)
-        {
-            if (ValidateChildren(ValidationConstraints.Enabled))
-            {
-                passingText = login_txtusr.Text;
-                login();
-            }
-        }
+        //..Event Handlers..//
 
         private void login_txtusr_Enter(object sender, EventArgs e)
         {
-            if (login_txtusr.Text == "First Name")
+            if (login_txtusr.Texts == "First Name")
             {
-                login_txtusr.Text = null;
+                login_txtusr.Texts = null;
             }
             else
             {
@@ -124,9 +121,9 @@ namespace C_sharp_project
 
         private void login_txtusr_Leave(object sender, EventArgs e)
         {
-            if (login_txtusr.Text == "")
+            if (login_txtusr.Texts == "")
             {
-                login_txtusr.Text = "First Name";
+                login_txtusr.Texts = "First Name";
             }
             else
             {
@@ -136,10 +133,10 @@ namespace C_sharp_project
 
         private void login_txtpw_Enter(object sender, EventArgs e)
         {
-            if (login_txtpw.Text == "Password")
+            if (login_txtpw.Texts == "Password")
             {
-                login_txtpw.Text = null;
-                login_txtpw.PasswordChar = '*';
+                login_txtpw.Texts = null;
+                login_txtpw.PasswordChar = true;
             }
             else
             {
@@ -149,9 +146,9 @@ namespace C_sharp_project
 
         private void login_txtpw_Leave(object sender, EventArgs e)
         {
-            if (login_txtpw.Text == "")
+            if (login_txtpw.Texts == "")
             {
-                login_txtpw.Text = "Password";
+                login_txtpw.Texts = "Password";
             }
             else
             {
@@ -161,7 +158,7 @@ namespace C_sharp_project
 
         private void login_txtusr_Validating(object sender, CancelEventArgs e)
         {
-            if (login_txtusr.Text == "First Name")
+            if (login_txtusr.Texts == "First Name")
             {
                 e.Cancel = true;
                 login_txtusr.Focus();
@@ -176,7 +173,7 @@ namespace C_sharp_project
 
         private void login_txtpw_Validating(object sender, CancelEventArgs e)
         {
-            if (login_txtpw.Text == "Password")
+            if (login_txtpw.Texts == "Password")
             {
                 e.Cancel = true;
                 login_txtpw.Focus();
@@ -187,45 +184,6 @@ namespace C_sharp_project
                 e.Cancel = false;
                 login_errp.SetError(login_txtpw, "");
             }
-        }
-
-        private void login_txtusr_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ProfitNloss objmp= new ProfitNloss();
-            objmp.Show();
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void login_lpanel_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            ProfitNloss profitNloss = new ProfitNloss();
-            profitNloss.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            user_reg objtst= new user_reg();
-            objtst.Show();
         }
     }
 }
