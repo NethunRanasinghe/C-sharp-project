@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_sharp_project
 {
-    internal class customer_reg_sql:DBConn
+    internal class customer_reg_sql:Select_DBConn
     {
         private string nc="";
         private string fnm="";
