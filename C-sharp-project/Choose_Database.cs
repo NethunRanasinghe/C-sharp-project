@@ -33,7 +33,7 @@ namespace C_sharp_project
         {
             if (this.cdb_combo.Text == "1. Local Database (XAMPP)")
             {
-                usrdb = "server=localhost; user id=root; database=ranasinghesawmilldb";
+                usrdb = "server=localhost; user id=root; database=systDB";
             }
             else if (this.cdb_combo.Text == "2. Remote Database (DigitalOcean) - Recommended")
             {
