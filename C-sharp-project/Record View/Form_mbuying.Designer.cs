@@ -37,9 +37,9 @@
             this.LBL_buying = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.mbuy_back = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mbuy_back)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -156,16 +156,16 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // mbuy_back
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.back;
-            this.pictureBox2.Location = new System.Drawing.Point(559, 422);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.mbuy_back.BackColor = System.Drawing.Color.Transparent;
+            this.mbuy_back.Image = global::C_sharp_project.Properties.Resources.back;
+            this.mbuy_back.Location = new System.Drawing.Point(559, 422);
+            this.mbuy_back.Name = "mbuy_back";
+            this.mbuy_back.Size = new System.Drawing.Size(40, 40);
+            this.mbuy_back.TabIndex = 20;
+            this.mbuy_back.TabStop = false;
+            this.mbuy_back.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form_mbuying
             // 
@@ -174,7 +174,7 @@
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(754, 493);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.mbuy_back);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LBL_buying);
@@ -190,7 +190,7 @@
             this.Text = "monthly_buying";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mbuy_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,7 +205,7 @@
         private System.Windows.Forms.Label LBL_buying;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox mbuy_back;
     }
 }
 

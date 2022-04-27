@@ -49,11 +49,6 @@ namespace C_sharp_project
 
         }
 
-        private void chart1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
 
@@ -64,25 +59,11 @@ namespace C_sharp_project
 
         }
 
-        private void BTN_mbuymain_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
             var form_selectionmenu = new form_selectionmenu();
             form_selectionmenu.Show();
-            //SAHANSAGE selection main menu eka danna
-        }
-
-        private void BTN_mbuyback_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            //var SCNDfrm = new SCNDfrm();
-            //SCNDfrm.Show();
-        //kalin form eka dnne
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

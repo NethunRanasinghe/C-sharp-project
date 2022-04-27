@@ -22,20 +22,11 @@ namespace C_sharp_project
             LBL_sellings.Text = "RS._______";
         }
 
-        private void BTN_mbuyback_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            //var SCNDfrm = new SCNDfrm();
-            //SCNDfrm.Show();
-            //kalin form eka dnne
-        }
-
         private void BTN_mbuymain_Click(object sender, EventArgs e)
         {
             this.Hide();
             var form_selectionmenu = new form_selectionmenu();
-           form_selectionmenu.Show();
-            //SAHANSAGE selection main menu eka danna
+            form_selectionmenu.Show();
 
         }
 

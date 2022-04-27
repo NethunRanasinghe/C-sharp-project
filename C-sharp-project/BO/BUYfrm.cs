@@ -15,6 +15,8 @@ namespace C_sharp_project
 {
     public partial class BUYfrm : Form
     {
+        string connection_string = Choose_Database.usrdb;
+
         public BUYfrm()
         {
             InitializeComponent();
@@ -54,7 +56,7 @@ namespace C_sharp_project
 
         private void prcd_Click(object sender, EventArgs e)
         {
-            MySqlConnection connection = new MySqlConnection("server=localhost;user id=root;database=process;SslMode=none");
+            MySqlConnection connection = new MySqlConnection(connection_string);
             string insertQuery = "INSERT INTO buy(Date,CustomerName,Type,woodCnd,specialNotes,EstimatedPrice,TotalCost)VALUES('" + DTbuy.Text + "','" + CUnm.Text + "','" + BUYtype.Text + "','" + BUYcnd2.Text + "','" + BUYrsn.Text + "','" + BUYEScst.Text + "','" + BUYTP.Text + "')";
             connection.Open();
             MySqlCommand command = new MySqlCommand(insertQuery, connection);

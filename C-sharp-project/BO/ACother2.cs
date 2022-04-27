@@ -13,7 +13,10 @@ using MySql.Data.MySqlClient;
 namespace C_sharp_project
 {
     public partial class ACother2 : Form
+
     {
+        string connection_string = Choose_Database.usrdb;
+
         public ACother2()
         {
             InitializeComponent();
@@ -63,7 +66,7 @@ namespace C_sharp_project
         private void PRCD_Click(object sender, EventArgs e)
         {
 
-            MySqlConnection connection = new MySqlConnection("server=localhost;user id=root;database=process;SslMode=none");
+            MySqlConnection connection = new MySqlConnection(connection_string);
             string insertQuery = "INSERT INTO otransaction(Date,Service ,AboutService,EstimatedCost,TotalCost)VALUES('" + OTHERdt.Text + "','" + SRVCE.Text + "','" + INFO.Text + "','" + ESTOTHERcst.Text + "','" + CSTother.Text + "')";
             connection.Open();
             MySqlCommand command = new MySqlCommand(insertQuery, connection);

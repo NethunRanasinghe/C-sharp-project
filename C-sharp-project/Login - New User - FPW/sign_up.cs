@@ -15,11 +15,7 @@ namespace C_sharp_project
 {
     public partial class sign_up : Form
     {
-        string connection_string = "datasource=rsmt-management-system-do-user-11431826-0.b.db.ondigitalocean.com; " +
-                            "port=25060; " +
-                            "username=doadmin; " +
-                            "password=AVNS_xJ37XvPtSUi3vzk; " +
-                            "database=ranasinghesawmilldb;";
+        string connection_string = Choose_Database.usrdb;
 
 
         public int generated_code = 0;
