@@ -32,8 +32,8 @@ namespace C_sharp_project
         }
         private void sql_execute(string sqlqry)
         {
-            DBConn dBConn = new DBConn();
-            using (MySqlConnection con = new MySqlConnection(dBConn.getdbconn()))
+            Select_DBConn dBConn = new Select_DBConn();
+            using (MySqlConnection con = new MySqlConnection(dBConn.GetDBConn()))
             {
                 con.Open();
                 MySqlDataAdapter adapter = new MySqlDataAdapter(sqlqry, con);

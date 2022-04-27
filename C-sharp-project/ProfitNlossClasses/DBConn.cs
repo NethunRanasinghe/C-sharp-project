@@ -15,12 +15,21 @@ namespace C_sharp_project
 {
     internal class DBConn
     {
-        private readonly string connstringdbx = Choose_Database.usrdb;
-        //@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\source\repos\C-sharp-project\C-sharp-project\Databases\DB1\systmDB.mdf;Integrated Security=True;Connect Timeout=30"
+        private readonly string connstringdbxmpp = "server=localhost; user id=root; database=systDB";
+        private readonly string connstringdbxdcean = "datasource=rsmt-management-system-do-user-11431826-0.b.db.ondigitalocean.com; " +
+                                    "port=25060; " +
+                                    "username=doadmin; " +
+                                    "password=AVNS_xJ37XvPtSUi3vzk; " +
+                                    "database=ranasinghesawmilldb;";
 
-        public string getdbconn()
+        public string getdbconnxmpp()
         {
-            return connstringdbx;
+            return connstringdbxmpp;
+
+        }
+        public string getdbconndcean()
+        {
+            return connstringdbxdcean;
 
         }
 

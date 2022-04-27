@@ -12,7 +12,7 @@ namespace C_sharp_project
     {
         public void function_sql_execute()
         {
-            MySqlConnection connection = new MySqlConnection(getdbconn());
+            MySqlConnection connection = new MySqlConnection(GetDBConn());
             MySqlCommand cmd = new MySqlCommand(get_rgsql(), connection);
             try
             {
