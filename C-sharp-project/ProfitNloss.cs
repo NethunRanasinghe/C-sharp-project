@@ -854,7 +854,6 @@ namespace C_sharp_project
             double ytdsell = 0;
             double ytdval = 0;
             double ytdothrcsts = 0;
-            string getdb="";
             Select_DBConn obj = new Select_DBConn();
             MySqlConnection connection = new MySqlConnection(obj.GetDBConn());
             MySqlDataAdapter da = new MySqlDataAdapter(sqlqry3, connection);

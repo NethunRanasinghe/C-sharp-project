@@ -14,7 +14,7 @@ namespace C_sharp_project
     {
         public static string usrdb;
         public static string login_info;
-        public static string? DBType="";
+        public static string DBType="";
         public Choose_Database()
         {
             InitializeComponent();
