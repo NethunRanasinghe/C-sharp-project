@@ -855,20 +855,18 @@ namespace C_sharp_project
             double ytdval = 0;
             double ytdothrcsts = 0;
             DBConn obj = new DBConn();
+            MySqlConnection connection = new MySqlConnection(obj.getdbconn());
+            MySqlDataAdapter da = new MySqlDataAdapter(sqlqry3, connection);
+            DataSet ds = new DataSet();
             try
             {
-                MySqlConnection connection = new MySqlConnection(obj.getdbconn());
-                String sql = sqlqry1;
-                String sql2 = sqlqry2;
-                String sql3 = sqlqry3;
-                MySqlDataAdapter da = new MySqlDataAdapter(sql3, connection);
-                DataSet ds = new DataSet();
-                int results = da.Fill(ds, "id");
+                //con open
+                connection.Open();
 
+                int results = da.Fill(ds, "id");
                 this.DataOrderCount.Text = results.ToString();
-                using (MySqlCommand command2 = new MySqlCommand(sql2, connection))
+                using (MySqlCommand command2 = new MySqlCommand(sqlqry2, connection))
                 {
-                    connection.Open();
                     using (MySqlDataReader reader2 = command2.ExecuteReader())
                     {
                         while (reader2.Read())
@@ -879,12 +877,10 @@ namespace C_sharp_project
                         }
 
                     }
-                    connection.Close();
                 }
 
-                using (MySqlCommand command = new MySqlCommand(sql, connection))
+                using (MySqlCommand command = new MySqlCommand(sqlqry1, connection))
                 {
-                    connection.Open();
                     using (MySqlDataReader reader = command.ExecuteReader())
                     {
                         while (reader.Read())
@@ -956,6 +952,9 @@ namespace C_sharp_project
 
                             }
                         }
+                        //con close
+                        connection.Close();
+
                         double tdprft = ttlsell - (ttlval + ttlothrcsts);
                         double ytdprft = ytdsell - (ytdval + ytdothrcsts);
                         double tdrev = ttlsell - ttlval;
@@ -995,8 +994,6 @@ namespace C_sharp_project
                         
 
                     }
-                    connection.Close();
-
                 }
 
             }

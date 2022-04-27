@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace C_sharp_project
 {
@@ -16,12 +17,20 @@ namespace C_sharp_project
             try
             {
                 connection.Open();  
-                cmd.ExecuteNonQuery();
+                int res=cmd.ExecuteNonQuery();
+                if(res!=0)
+                {
+                    MessageBox.Show("Record Inserted Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Record Insertion Failed");
+                }
                 
             }
             catch (MySqlException ecr)
             {
-                Console.WriteLine(ecr.ToString());
+                MessageBox.Show(ecr.ToString());
             }
             finally
             {
