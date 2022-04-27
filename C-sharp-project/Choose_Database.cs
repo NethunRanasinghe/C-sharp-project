@@ -12,14 +12,11 @@ namespace C_sharp_project
 {
     public partial class Choose_Database : Form
     {
-<<<<<<< HEAD
+
         public static string usrdb = "";
         public static string login_info = "";
-=======
-        public static string usrdb;
-        public static string login_info;
         public static string? DBType="";
->>>>>>> f9b3846fbf4c87e17b8a8f25fabfe1bdfda45bcf
+
         public Choose_Database()
         {
             InitializeComponent();
