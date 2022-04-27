@@ -148,6 +148,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.exit;
             this.pictureBox1.Location = new System.Drawing.Point(637, 422);
             this.pictureBox1.Name = "pictureBox1";
@@ -159,6 +160,7 @@
             // mbuy_back
             // 
             this.mbuy_back.BackColor = System.Drawing.Color.Transparent;
+            this.mbuy_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.mbuy_back.Image = global::C_sharp_project.Properties.Resources.back;
             this.mbuy_back.Location = new System.Drawing.Point(559, 422);
             this.mbuy_back.Name = "mbuy_back";

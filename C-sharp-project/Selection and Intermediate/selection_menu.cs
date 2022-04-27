@@ -12,7 +12,7 @@ namespace C_sharp_project
 {
     public partial class form_selectionmenu : Form
     {
-        int parse = 0;
+        private string usrname = login_form.passingText;
     /*
         //fields
         private int borderRadius = 30;
@@ -32,7 +32,7 @@ namespace C_sharp_project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            selection_usr.Text = login_form.passingText;
+            selection_usr.Text = usrname;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -78,9 +78,9 @@ namespace C_sharp_project
 
         private void btn_check_Click(object sender, EventArgs e)
         {
-           // this.Hide();
-             //var Intermediate  = new Intermediate();
-            //Intermediate.Show();
+            this.Hide();
+            Acc_form objAcc_form = new Acc_form();
+            objAcc_form.Show();
         }
 
         private void btn_list_Click(object sender, EventArgs e)

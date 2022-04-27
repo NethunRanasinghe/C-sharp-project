@@ -62,8 +62,8 @@ namespace C_sharp_project
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var form_selectionmenu = new form_selectionmenu();
-            form_selectionmenu.Show();
+            Acc_form objacfrm = new Acc_form();
+            objacfrm.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -39,5 +39,12 @@ namespace C_sharp_project
         {
             Application.Exit();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Acc_form objacfrm = new Acc_form();
+            objacfrm.Show();
+        }
     }
 }
