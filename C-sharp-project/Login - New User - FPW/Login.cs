@@ -103,7 +103,7 @@ namespace C_sharp_project
         {
             if (login_txtusr.Texts == "First Name")
             {
-                login_txtusr.Texts = null;
+                login_txtusr.Texts = "";
             }
             else
             {
@@ -127,7 +127,7 @@ namespace C_sharp_project
         {
             if (login_txtpw.Texts == "Password")
             {
-                login_txtpw.Texts = null;
+                login_txtpw.Texts = "";
                 login_txtpw.PasswordChar = true;
             }
             else
