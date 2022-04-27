@@ -78,6 +78,19 @@ namespace C_sharp_project
             }
         }
 
+        private void jmp_user_reg_Click(object sender, EventArgs e)
+        {
+            user_reg user_Reg = new user_reg();
+            this.Hide();
+            user_Reg.Show();
+        }
+
+        private void jmp_to_prftnlss_Click(object sender, EventArgs e)
+        {
+            ProfitNloss profitNloss = new ProfitNloss();
+            this.Hide();
+            profitNloss.Show();
+        }
     }
 }
 //&& (this.nictxtbox.Text.All(char.IsDigit))==true
