@@ -14,6 +14,7 @@ namespace C_sharp_project
     {
         public static string usrdb;
         public static string login_info;
+        public static string? DBType="";
         public Choose_Database()
         {
             InitializeComponent();
@@ -37,6 +38,7 @@ namespace C_sharp_project
         {
             if (this.cdb_combo.Text == "1. Local Database (XAMPP)")
             {
+                DBType = "xampp";
                 usrdb = "server=localhost; user id=root; database=systDB";
 
                 login_info = "#1. Check Your User Name and Password again.\n" +
@@ -47,6 +49,7 @@ namespace C_sharp_project
             }
             else if (this.cdb_combo.Text == "2. Remote Database (DigitalOcean) - Recommended")
             {
+                DBType = "dcean";
                 usrdb = "datasource=rsmt-management-system-do-user-11431826-0.b.db.ondigitalocean.com; " +
                                     "port=25060; " +
                                     "username=doadmin; " +
