@@ -41,7 +41,7 @@ namespace C_sharp_project
             if (this.cdb_combo.Text == "1. Local Database (XAMPP)")
             {
                 DBType = "xampp";
-                usrdb = "server=localhost; user id=root; database=systDB";
+                usrdb = "server=localhost; user id=root; database=systdb";
 
                 login_info = "#1. Check Your User Name and Password again.\n" +
                 "#2. Make sure Apache and MySql servers are  running.\n" +
@@ -56,7 +56,7 @@ namespace C_sharp_project
                                     "port=25060; " +
                                     "username=doadmin; " +
                                     "password=AVNS_xJ37XvPtSUi3vzk; " +
-                                    "database=systDB;";
+                                    "database=systdb;";
 
                 login_info = "#1. Check Your User Name and Password again.\n" +
                 "#2. Check your internet connection\n" +

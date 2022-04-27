@@ -291,7 +291,7 @@
             this.LBL_salesrecords.Cursor = System.Windows.Forms.Cursors.No;
             this.LBL_salesrecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LBL_salesrecords.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.LBL_salesrecords.Location = new System.Drawing.Point(435, 19);
+            this.LBL_salesrecords.Location = new System.Drawing.Point(377, 19);
             this.LBL_salesrecords.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LBL_salesrecords.Name = "LBL_salesrecords";
             this.LBL_salesrecords.Size = new System.Drawing.Size(344, 57);
