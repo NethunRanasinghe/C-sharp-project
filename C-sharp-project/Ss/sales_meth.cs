@@ -14,6 +14,7 @@ namespace C_sharp_project
     public partial class form_sales : Form
     {
         string connection_string = Choose_Database.usrdb;
+
         public form_sales()
         {
             InitializeComponent();
@@ -88,11 +89,6 @@ namespace C_sharp_project
 
         }
 
-        private void sales_usr_Click(object sender, EventArgs e)
-        {
-            sales_usr.Text = login_form.passingText;
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -103,6 +99,11 @@ namespace C_sharp_project
             this.Hide();
             var form_Selectionmenu = new form_selectionmenu();
             form_Selectionmenu.Show();
+        }
+
+        private void sales_usrn_Click(object sender, EventArgs e)
+        {
+            sales_usrn.Text = login_form.passingText;
         }
     }
 }
