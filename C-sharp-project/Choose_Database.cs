@@ -12,8 +12,8 @@ namespace C_sharp_project
 {
     public partial class Choose_Database : Form
     {
-        public static string usrdb;
-        public static string login_info;
+        public static string usrdb = "";
+        public static string login_info = "";
         public Choose_Database()
         {
             InitializeComponent();
