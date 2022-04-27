@@ -23,9 +23,12 @@ namespace C_sharp_project
         {
             Setusrdb();
 
-            this.Hide();
-            login_form objlogin_form = new login_form();
-            objlogin_form.Show();
+            if (usrdb != "error")
+            {
+                this.Hide();
+                login_form objlogin_form = new login_form();
+                objlogin_form.Show();
+            }
 
         }
 
@@ -59,6 +62,7 @@ namespace C_sharp_project
             else
             {
                 MessageBox.Show("Invalid input !", "Error");
+                usrdb = "error";
             }
         }
 
