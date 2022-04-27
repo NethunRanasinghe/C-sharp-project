@@ -240,7 +240,7 @@
             this.GroupBox_menu.Controls.Add(this.lbl_buying);
             this.GroupBox_menu.Controls.Add(this.lbl_sales);
             this.GroupBox_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GroupBox_menu.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.GroupBox_menu.ForeColor = System.Drawing.Color.Transparent;
             this.GroupBox_menu.Location = new System.Drawing.Point(172, 218);
             this.GroupBox_menu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GroupBox_menu.Name = "GroupBox_menu";

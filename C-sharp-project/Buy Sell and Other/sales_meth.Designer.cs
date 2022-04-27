@@ -50,9 +50,9 @@
             this.LBL_salesrecords = new System.Windows.Forms.Label();
             this.BTN_Clear = new System.Windows.Forms.Button();
             this.BTN_sumbit = new System.Windows.Forms.Button();
-            this.sales_usr = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.sales_usrn = new System.Windows.Forms.Label();
             this.GroupBox_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +60,8 @@
             // 
             // GroupBox_menu
             // 
+            this.GroupBox_menu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.GroupBox_menu.AutoSize = true;
             this.GroupBox_menu.BackColor = System.Drawing.Color.Transparent;
             this.GroupBox_menu.Controls.Add(this.TXTBX_otherservices);
             this.GroupBox_menu.Controls.Add(this.TXTBX_extra);
@@ -78,19 +80,19 @@
             this.GroupBox_menu.Controls.Add(this.LBL_cname);
             this.GroupBox_menu.Controls.Add(this.LBL_sales);
             this.GroupBox_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GroupBox_menu.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.GroupBox_menu.ForeColor = System.Drawing.Color.Black;
             this.GroupBox_menu.Location = new System.Drawing.Point(91, 156);
-            this.GroupBox_menu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.GroupBox_menu.Margin = new System.Windows.Forms.Padding(5);
             this.GroupBox_menu.Name = "GroupBox_menu";
-            this.GroupBox_menu.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.GroupBox_menu.Size = new System.Drawing.Size(917, 627);
+            this.GroupBox_menu.Padding = new System.Windows.Forms.Padding(5);
+            this.GroupBox_menu.Size = new System.Drawing.Size(917, 628);
             this.GroupBox_menu.TabIndex = 18;
             this.GroupBox_menu.TabStop = false;
             // 
             // TXTBX_otherservices
             // 
             this.TXTBX_otherservices.Location = new System.Drawing.Point(547, 373);
-            this.TXTBX_otherservices.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_otherservices.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_otherservices.Multiline = true;
             this.TXTBX_otherservices.Name = "TXTBX_otherservices";
             this.TXTBX_otherservices.Size = new System.Drawing.Size(268, 89);
@@ -100,7 +102,7 @@
             // TXTBX_extra
             // 
             this.TXTBX_extra.Location = new System.Drawing.Point(547, 571);
-            this.TXTBX_extra.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_extra.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_extra.Name = "TXTBX_extra";
             this.TXTBX_extra.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_extra.TabIndex = 28;
@@ -108,7 +110,7 @@
             // TXTBX_other
             // 
             this.TXTBX_other.Location = new System.Drawing.Point(547, 504);
-            this.TXTBX_other.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_other.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_other.Name = "TXTBX_other";
             this.TXTBX_other.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_other.TabIndex = 27;
@@ -116,7 +118,7 @@
             // TXTBX_estimation
             // 
             this.TXTBX_estimation.Location = new System.Drawing.Point(547, 307);
-            this.TXTBX_estimation.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_estimation.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_estimation.Name = "TXTBX_estimation";
             this.TXTBX_estimation.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_estimation.TabIndex = 26;
@@ -124,7 +126,7 @@
             // TXTBX_woodtype
             // 
             this.TXTBX_woodtype.Location = new System.Drawing.Point(547, 240);
-            this.TXTBX_woodtype.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_woodtype.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_woodtype.Name = "TXTBX_woodtype";
             this.TXTBX_woodtype.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_woodtype.TabIndex = 25;
@@ -132,7 +134,7 @@
             // TXTBX_Producttype
             // 
             this.TXTBX_Producttype.Location = new System.Drawing.Point(547, 173);
-            this.TXTBX_Producttype.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_Producttype.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_Producttype.Name = "TXTBX_Producttype";
             this.TXTBX_Producttype.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_Producttype.TabIndex = 24;
@@ -140,7 +142,7 @@
             // TXTBX_Cname
             // 
             this.TXTBX_Cname.Location = new System.Drawing.Point(547, 107);
-            this.TXTBX_Cname.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_Cname.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_Cname.Name = "TXTBX_Cname";
             this.TXTBX_Cname.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_Cname.TabIndex = 23;
@@ -191,7 +193,7 @@
             // dateTimePicker
             // 
             this.dateTimePicker.Location = new System.Drawing.Point(547, 37);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(268, 27);
             this.dateTimePicker.TabIndex = 12;
@@ -268,6 +270,7 @@
             // 
             // Lbl_user
             // 
+            this.Lbl_user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Lbl_user.AutoSize = true;
             this.Lbl_user.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_user.Cursor = System.Windows.Forms.Cursors.No;
@@ -298,12 +301,14 @@
             // 
             // BTN_Clear
             // 
+            this.BTN_Clear.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTN_Clear.AutoSize = true;
             this.BTN_Clear.BackColor = System.Drawing.Color.Transparent;
             this.BTN_Clear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_Clear.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_Clear.ForeColor = System.Drawing.Color.Snow;
             this.BTN_Clear.Location = new System.Drawing.Point(639, 809);
-            this.BTN_Clear.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_Clear.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(133, 52);
             this.BTN_Clear.TabIndex = 21;
@@ -313,12 +318,14 @@
             // 
             // BTN_sumbit
             // 
+            this.BTN_sumbit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTN_sumbit.AutoSize = true;
             this.BTN_sumbit.BackColor = System.Drawing.Color.White;
             this.BTN_sumbit.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BTN_sumbit.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_sumbit.ForeColor = System.Drawing.Color.Snow;
             this.BTN_sumbit.Location = new System.Drawing.Point(875, 809);
-            this.BTN_sumbit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_sumbit.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_sumbit.Name = "BTN_sumbit";
             this.BTN_sumbit.Size = new System.Drawing.Size(133, 52);
             this.BTN_sumbit.TabIndex = 22;
@@ -326,19 +333,9 @@
             this.BTN_sumbit.UseVisualStyleBackColor = false;
             this.BTN_sumbit.Click += new System.EventHandler(this.BTN_sumbit_Click);
             // 
-            // sales_usr
-            // 
-            this.sales_usr.AutoSize = true;
-            this.sales_usr.BackColor = System.Drawing.Color.Transparent;
-            this.sales_usr.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sales_usr.Location = new System.Drawing.Point(267, 111);
-            this.sales_usr.Name = "sales_usr";
-            this.sales_usr.Size = new System.Drawing.Size(0, 26);
-            this.sales_usr.TabIndex = 23;
-            this.sales_usr.Click += new System.EventHandler(this.sales_usr_Click);
-            // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.exit;
@@ -351,6 +348,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.back;
@@ -361,25 +359,38 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // sales_usrn
+            // 
+            this.sales_usrn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sales_usrn.AutoSize = true;
+            this.sales_usrn.BackColor = System.Drawing.Color.Transparent;
+            this.sales_usrn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sales_usrn.Location = new System.Drawing.Point(268, 111);
+            this.sales_usrn.Name = "sales_usrn";
+            this.sales_usrn.Size = new System.Drawing.Size(0, 26);
+            this.sales_usrn.TabIndex = 26;
+            this.sales_usrn.Click += new System.EventHandler(this.sales_usrn_Click);
+            // 
             // form_sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1099, 951);
+            this.Controls.Add(this.sales_usrn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.sales_usr);
             this.Controls.Add(this.BTN_sumbit);
             this.Controls.Add(this.BTN_Clear);
             this.Controls.Add(this.GroupBox_menu);
             this.Controls.Add(this.Lbl_user);
             this.Controls.Add(this.LBL_salesrecords);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "form_sales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasinghe Sawmills";
@@ -415,8 +426,8 @@
         private System.Windows.Forms.TextBox TXTBX_Cname;
         private System.Windows.Forms.TextBox TXTBX_otherservices;
         private System.Windows.Forms.TextBox TXTBX_extra;
-        private System.Windows.Forms.Label sales_usr;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label sales_usrn;
     }
 }
