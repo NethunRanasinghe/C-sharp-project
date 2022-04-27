@@ -32,15 +32,23 @@ namespace C_sharp_project
         }
         private void sql_execute(string sqlqry)
         {
-            Select_DBConn dBConn = new Select_DBConn();
-            using (MySqlConnection con = new MySqlConnection(dBConn.GetDBConn()))
+            try
             {
-                con.Open();
-                MySqlDataAdapter adapter = new MySqlDataAdapter(sqlqry, con);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                dataGridView1.DataSource = dt;
+                Select_DBConn dBConn = new Select_DBConn();
+                using (MySqlConnection con = new MySqlConnection(dBConn.GetDBConn()))
+                {
+                    con.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(sqlqry, con);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Databases\Customer Registration\" />
     <Folder Include="Databases\UPDATED SALESRECORDS\" />
   </ItemGroup>
 
