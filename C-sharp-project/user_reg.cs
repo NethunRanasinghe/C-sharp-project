@@ -49,5 +49,20 @@ namespace C_sharp_project
             this.prvnce.Text = "";
 
         }
+
+        private void jmp_user_reg_Click(object sender, EventArgs e)
+        {
+            ProfitNloss profitNloss = new ProfitNloss();
+            this.Hide();
+            profitNloss.Show();
+
+        }
+
+        private void jmp_to_customer_data_Click(object sender, EventArgs e)
+        {
+            Customer_data customer_Data = new Customer_data();
+            this.Hide();
+            customer_Data.Show();
+        }
     }
 }

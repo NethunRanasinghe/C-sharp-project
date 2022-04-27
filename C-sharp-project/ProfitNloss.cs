@@ -1039,6 +1039,20 @@ namespace C_sharp_project
 
         }
 
+        private void jmp_user_reg_Click(object sender, EventArgs e)
+        {
+            user_reg user_Reg = new user_reg();
+            this.Hide();
+            user_Reg.Show();
+        }
+
+        private void jmp_to_customer_data_Click(object sender, EventArgs e)
+        {
+            Customer_data customer_Data = new Customer_data();
+            this.Hide();
+            customer_Data.Show();
+
+        }
 
     }
 }

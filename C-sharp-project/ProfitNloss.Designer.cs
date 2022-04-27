@@ -30,8 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfitNloss));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.prftls = new System.Windows.Forms.Button();
-            this.prftgn = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.jmp_to_customer_data = new System.Windows.Forms.Button();
+            this.jmp_user_reg = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DataOrderCount = new System.Windows.Forms.Label();
@@ -106,39 +109,69 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
-            this.panel1.Controls.Add(this.prftls);
-            this.panel1.Controls.Add(this.prftgn);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.jmp_to_customer_data);
+            this.panel1.Controls.Add(this.jmp_user_reg);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(909, 39);
+            this.panel1.Size = new System.Drawing.Size(909, 45);
             this.panel1.TabIndex = 0;
             // 
-            // prftls
+            // button6
             // 
-            this.prftls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(77)))), ((int)(((byte)(75)))));
-            this.prftls.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.prftls.ForeColor = System.Drawing.Color.White;
-            this.prftls.Location = new System.Drawing.Point(470, 0);
-            this.prftls.Name = "prftls";
-            this.prftls.Size = new System.Drawing.Size(391, 39);
-            this.prftls.TabIndex = 1;
-            this.prftls.Text = "Profit Loss";
-            this.prftls.UseVisualStyleBackColor = false;
+            this.button6.Location = new System.Drawing.Point(628, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 39);
+            this.button6.TabIndex = 4;
+            this.button6.UseVisualStyleBackColor = true;
             // 
-            // prftgn
+            // button4
             // 
-            this.prftgn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(176)))), ((int)(((byte)(76)))));
-            this.prftgn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.prftgn.ForeColor = System.Drawing.Color.White;
-            this.prftgn.Location = new System.Drawing.Point(38, 0);
-            this.prftgn.Name = "prftgn";
-            this.prftgn.Size = new System.Drawing.Size(391, 39);
-            this.prftgn.TabIndex = 0;
-            this.prftgn.Text = "Profit Gain";
-            this.prftgn.UseVisualStyleBackColor = false;
-            this.prftgn.Click += new System.EventHandler(this.prftgn_Click);
+            this.button4.Location = new System.Drawing.Point(522, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 39);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(412, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 39);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // jmp_to_customer_data
+            // 
+            this.jmp_to_customer_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
+            this.jmp_to_customer_data.BackgroundImage = global::C_sharp_project.Properties.Resources.user_search;
+            this.jmp_to_customer_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_to_customer_data.FlatAppearance.BorderSize = 0;
+            this.jmp_to_customer_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_to_customer_data.Location = new System.Drawing.Point(294, 3);
+            this.jmp_to_customer_data.Name = "jmp_to_customer_data";
+            this.jmp_to_customer_data.Size = new System.Drawing.Size(54, 39);
+            this.jmp_to_customer_data.TabIndex = 1;
+            this.jmp_to_customer_data.UseVisualStyleBackColor = false;
+            this.jmp_to_customer_data.Click += new System.EventHandler(this.jmp_to_customer_data_Click);
+            // 
+            // jmp_user_reg
+            // 
+            this.jmp_user_reg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
+            this.jmp_user_reg.BackgroundImage = global::C_sharp_project.Properties.Resources.add;
+            this.jmp_user_reg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_user_reg.FlatAppearance.BorderSize = 0;
+            this.jmp_user_reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_user_reg.Location = new System.Drawing.Point(177, 3);
+            this.jmp_user_reg.Name = "jmp_user_reg";
+            this.jmp_user_reg.Size = new System.Drawing.Size(54, 39);
+            this.jmp_user_reg.TabIndex = 0;
+            this.jmp_user_reg.UseVisualStyleBackColor = false;
+            this.jmp_user_reg.Click += new System.EventHandler(this.jmp_user_reg_Click);
             // 
             // panel2
             // 
@@ -154,9 +187,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.sales42;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -195,9 +229,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.revenue42;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(7, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
@@ -248,9 +283,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::C_sharp_project.Properties.Resources.profit42;
-            this.pictureBox3.Location = new System.Drawing.Point(6, 7);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
@@ -351,9 +387,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::C_sharp_project.Properties.Resources.date60;
-            this.pictureBox4.Location = new System.Drawing.Point(118, 28);
+            this.pictureBox4.Location = new System.Drawing.Point(111, 20);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox4.Size = new System.Drawing.Size(60, 54);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
             // 
@@ -483,9 +520,10 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.pictureBox5.Image = global::C_sharp_project.Properties.Resources.sales__35;
-            this.pictureBox5.Location = new System.Drawing.Point(202, 25);
+            this.pictureBox5.Location = new System.Drawing.Point(196, 15);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 25);
+            this.pictureBox5.Size = new System.Drawing.Size(41, 38);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 30;
             this.pictureBox5.TabStop = false;
             // 
@@ -884,8 +922,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button prftls;
-        private System.Windows.Forms.Button prftgn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblOrderCount;
         private System.Windows.Forms.Panel panel3;
@@ -944,5 +980,10 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button jmp_to_customer_data;
+        private System.Windows.Forms.Button jmp_user_reg;
     }
 }

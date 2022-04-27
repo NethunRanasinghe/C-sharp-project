@@ -50,15 +50,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.fname = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.jmp_to_customer_data = new System.Windows.Forms.Button();
+            this.jmp_prftnlss = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -66,13 +72,14 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(214)))), ((int)(((byte)(223)))));
             this.label1.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(26, 30);
+            this.label1.Location = new System.Drawing.Point(25, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(729, 57);
@@ -317,10 +324,21 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label9);
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(26, 112);
+            this.panel1.Location = new System.Drawing.Point(25, 153);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(353, 83);
             this.panel1.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(176, 63);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Last Name";
             // 
             // panel2
             // 
@@ -329,7 +347,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label12);
             this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(26, 231);
+            this.panel2.Location = new System.Drawing.Point(25, 272);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(353, 83);
             this.panel2.TabIndex = 25;
@@ -343,7 +361,7 @@
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(26, 337);
+            this.panel3.Location = new System.Drawing.Point(25, 378);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(353, 152);
             this.panel3.TabIndex = 26;
@@ -355,54 +373,10 @@
             this.panel4.Controls.Add(this.phonum);
             this.panel4.Controls.Add(this.label5);
             this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(402, 112);
+            this.panel4.Location = new System.Drawing.Point(401, 153);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(353, 83);
             this.panel4.TabIndex = 27;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.eml);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(402, 228);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(353, 83);
-            this.panel5.TabIndex = 28;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
-            this.panel6.Controls.Add(this.prvnce);
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(402, 337);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(353, 76);
-            this.panel6.TabIndex = 28;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
-            this.panel7.Controls.Add(this.rst);
-            this.panel7.Controls.Add(this.sv);
-            this.panel7.Location = new System.Drawing.Point(402, 431);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(353, 58);
-            this.panel7.TabIndex = 29;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(176, 63);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Last Name";
             // 
             // label13
             // 
@@ -415,6 +389,18 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "Contact Number";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.eml);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(401, 269);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(353, 83);
+            this.panel5.TabIndex = 28;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -426,12 +412,100 @@
             this.label14.TabIndex = 20;
             this.label14.Text = "Email address";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
+            this.panel6.Controls.Add(this.prvnce);
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.ForeColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(401, 378);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(353, 76);
+            this.panel6.TabIndex = 28;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
+            this.panel7.Controls.Add(this.rst);
+            this.panel7.Controls.Add(this.sv);
+            this.panel7.Location = new System.Drawing.Point(401, 472);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(353, 58);
+            this.panel7.TabIndex = 29;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(122)))));
+            this.panel8.Controls.Add(this.button6);
+            this.panel8.Controls.Add(this.button4);
+            this.panel8.Controls.Add(this.button3);
+            this.panel8.Controls.Add(this.jmp_to_customer_data);
+            this.panel8.Controls.Add(this.jmp_prftnlss);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(780, 48);
+            this.panel8.TabIndex = 30;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(628, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 39);
+            this.button6.TabIndex = 4;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(522, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 39);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(412, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 39);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // jmp_to_customer_data
+            // 
+            this.jmp_to_customer_data.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(122)))));
+            this.jmp_to_customer_data.BackgroundImage = global::C_sharp_project.Properties.Resources.user_search;
+            this.jmp_to_customer_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_to_customer_data.FlatAppearance.BorderSize = 0;
+            this.jmp_to_customer_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_to_customer_data.Location = new System.Drawing.Point(294, 4);
+            this.jmp_to_customer_data.Name = "jmp_to_customer_data";
+            this.jmp_to_customer_data.Size = new System.Drawing.Size(54, 39);
+            this.jmp_to_customer_data.TabIndex = 1;
+            this.jmp_to_customer_data.UseVisualStyleBackColor = false;
+            this.jmp_to_customer_data.Click += new System.EventHandler(this.jmp_to_customer_data_Click);
+            // 
+            // jmp_prftnlss
+            // 
+            this.jmp_prftnlss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(122)))));
+            this.jmp_prftnlss.BackgroundImage = global::C_sharp_project.Properties.Resources.analytics;
+            this.jmp_prftnlss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_prftnlss.FlatAppearance.BorderSize = 0;
+            this.jmp_prftnlss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_prftnlss.Location = new System.Drawing.Point(177, 4);
+            this.jmp_prftnlss.Name = "jmp_prftnlss";
+            this.jmp_prftnlss.Size = new System.Drawing.Size(54, 39);
+            this.jmp_prftnlss.TabIndex = 0;
+            this.jmp_prftnlss.UseVisualStyleBackColor = false;
+            this.jmp_prftnlss.Click += new System.EventHandler(this.jmp_user_reg_Click);
+            // 
             // user_reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
-            this.ClientSize = new System.Drawing.Size(780, 530);
+            this.ClientSize = new System.Drawing.Size(780, 553);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -443,6 +517,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "user_reg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "user_reg";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -457,6 +532,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -494,5 +570,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button jmp_to_customer_data;
+        private System.Windows.Forms.Button jmp_prftnlss;
     }
 }
