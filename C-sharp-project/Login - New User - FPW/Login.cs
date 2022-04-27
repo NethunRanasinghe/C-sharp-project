@@ -45,11 +45,7 @@ namespace C_sharp_project
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            string message = "#1. Check Your User Name and Password again.\n" +
-                "#2. Make sure Apache and MySql servers are  running.\n" +
-                "#3. Restart the XAMPP Server.\n" +
-                "#4. If none of above worked, please contact the main admin.\n" +
-                "#5. Contact the developer if step 4 also failed.";
+            string message = Choose_Database.login_info;
 
             string title = "Login Help";
 

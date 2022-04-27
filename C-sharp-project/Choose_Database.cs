@@ -13,6 +13,7 @@ namespace C_sharp_project
     public partial class Choose_Database : Form
     {
         public static string usrdb;
+        public static string login_info;
         public Choose_Database()
         {
             InitializeComponent();
@@ -34,6 +35,12 @@ namespace C_sharp_project
             if (this.cdb_combo.Text == "1. Local Database (XAMPP)")
             {
                 usrdb = "server=localhost; user id=root; database=systDB";
+
+                login_info = "#1. Check Your User Name and Password again.\n" +
+                "#2. Make sure Apache and MySql servers are  running.\n" +
+                "#3. Restart the XAMPP Server.\n" +
+                "#4. If none of above worked, please contact the main admin.\n" +
+                "#5. Contact the developer if step 4 also failed.";
             }
             else if (this.cdb_combo.Text == "2. Remote Database (DigitalOcean) - Recommended")
             {
@@ -42,6 +49,12 @@ namespace C_sharp_project
                                     "username=doadmin; " +
                                     "password=AVNS_xJ37XvPtSUi3vzk; " +
                                     "database=systDB;";
+
+                login_info = "#1. Check Your User Name and Password again.\n" +
+                "#2. Check your internet connection\n" +
+                "#3. Check(Google) whether the digital ocean servers are down or not.\n" +
+                "#4. If none of above worked, please contact the main admin.\n" +
+                "#5. Contact the developer if step 4 also failed.";
             }
             else
             {
