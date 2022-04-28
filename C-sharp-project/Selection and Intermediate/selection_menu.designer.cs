@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_selectionmenu));
             this.lblwelcometext = new System.Windows.Forms.Label();
             this.lbl_user = new System.Windows.Forms.Label();
@@ -42,10 +43,15 @@
             this.Btn_check = new System.Windows.Forms.Button();
             this.Btn_list = new System.Windows.Forms.Button();
             this.GroupBox_menu = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.select_btnAdmin = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.selection_usr = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.select_admin = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBox_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +93,7 @@
             this.lbl_sales.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_sales.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_sales.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_sales.Location = new System.Drawing.Point(153, 17);
+            this.lbl_sales.Location = new System.Drawing.Point(112, 17);
             this.lbl_sales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sales.Name = "lbl_sales";
             this.lbl_sales.Size = new System.Drawing.Size(117, 37);
@@ -102,7 +108,7 @@
             this.lbl_buying.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_buying.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_buying.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_buying.Location = new System.Drawing.Point(153, 98);
+            this.lbl_buying.Location = new System.Drawing.Point(112, 95);
             this.lbl_buying.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_buying.Name = "lbl_buying";
             this.lbl_buying.Size = new System.Drawing.Size(137, 37);
@@ -116,7 +122,7 @@
             this.lbl_othersales.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_othersales.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_othersales.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_othersales.Location = new System.Drawing.Point(153, 179);
+            this.lbl_othersales.Location = new System.Drawing.Point(112, 173);
             this.lbl_othersales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_othersales.Name = "lbl_othersales";
             this.lbl_othersales.Size = new System.Drawing.Size(237, 37);
@@ -130,7 +136,7 @@
             this.lbl_acccheck.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_acccheck.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_acccheck.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_acccheck.Location = new System.Drawing.Point(153, 260);
+            this.lbl_acccheck.Location = new System.Drawing.Point(112, 251);
             this.lbl_acccheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_acccheck.Name = "lbl_acccheck";
             this.lbl_acccheck.Size = new System.Drawing.Size(277, 37);
@@ -144,7 +150,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.No;
             this.label1.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(156, 341);
+            this.label1.Location = new System.Drawing.Point(115, 329);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 37);
@@ -153,11 +159,13 @@
             // 
             // Btn_sales
             // 
+            this.Btn_sales.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Btn_sales.BackColor = System.Drawing.Color.White;
             this.Btn_sales.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.Btn_sales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_sales.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_sales.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_sales.Location = new System.Drawing.Point(547, 17);
+            this.Btn_sales.Location = new System.Drawing.Point(506, 17);
             this.Btn_sales.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_sales.Name = "Btn_sales";
             this.Btn_sales.Size = new System.Drawing.Size(260, 52);
@@ -168,11 +176,13 @@
             // 
             // Btn_buying
             // 
+            this.Btn_buying.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Btn_buying.BackColor = System.Drawing.Color.White;
             this.Btn_buying.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.Btn_buying.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_buying.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_buying.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_buying.Location = new System.Drawing.Point(547, 97);
+            this.Btn_buying.Location = new System.Drawing.Point(506, 96);
             this.Btn_buying.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_buying.Name = "Btn_buying";
             this.Btn_buying.Size = new System.Drawing.Size(260, 52);
@@ -183,11 +193,13 @@
             // 
             // Btn_othersales
             // 
+            this.Btn_othersales.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Btn_othersales.BackColor = System.Drawing.Color.White;
             this.Btn_othersales.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.Btn_othersales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_othersales.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_othersales.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_othersales.Location = new System.Drawing.Point(547, 177);
+            this.Btn_othersales.Location = new System.Drawing.Point(506, 175);
             this.Btn_othersales.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_othersales.Name = "Btn_othersales";
             this.Btn_othersales.Size = new System.Drawing.Size(260, 52);
@@ -198,11 +210,13 @@
             // 
             // Btn_check
             // 
+            this.Btn_check.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Btn_check.BackColor = System.Drawing.Color.White;
             this.Btn_check.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.Btn_check.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_check.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_check.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_check.Location = new System.Drawing.Point(547, 257);
+            this.Btn_check.Location = new System.Drawing.Point(506, 254);
             this.Btn_check.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_check.Name = "Btn_check";
             this.Btn_check.Size = new System.Drawing.Size(260, 52);
@@ -213,11 +227,13 @@
             // 
             // Btn_list
             // 
+            this.Btn_list.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Btn_list.BackColor = System.Drawing.Color.White;
             this.Btn_list.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.Btn_list.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_list.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Btn_list.ForeColor = System.Drawing.Color.Snow;
-            this.Btn_list.Location = new System.Drawing.Point(547, 337);
+            this.Btn_list.Location = new System.Drawing.Point(506, 333);
             this.Btn_list.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Btn_list.Name = "Btn_list";
             this.Btn_list.Size = new System.Drawing.Size(260, 52);
@@ -229,6 +245,9 @@
             // GroupBox_menu
             // 
             this.GroupBox_menu.BackColor = System.Drawing.Color.Transparent;
+            this.GroupBox_menu.Controls.Add(this.pictureBox3);
+            this.GroupBox_menu.Controls.Add(this.select_btnAdmin);
+            this.GroupBox_menu.Controls.Add(this.label2);
             this.GroupBox_menu.Controls.Add(this.Btn_list);
             this.GroupBox_menu.Controls.Add(this.Btn_check);
             this.GroupBox_menu.Controls.Add(this.Btn_othersales);
@@ -241,14 +260,51 @@
             this.GroupBox_menu.Controls.Add(this.lbl_sales);
             this.GroupBox_menu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GroupBox_menu.ForeColor = System.Drawing.Color.Transparent;
-            this.GroupBox_menu.Location = new System.Drawing.Point(172, 218);
+            this.GroupBox_menu.Location = new System.Drawing.Point(137, 184);
             this.GroupBox_menu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GroupBox_menu.Name = "GroupBox_menu";
             this.GroupBox_menu.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.GroupBox_menu.Size = new System.Drawing.Size(879, 437);
+            this.GroupBox_menu.Size = new System.Drawing.Size(879, 471);
             this.GroupBox_menu.TabIndex = 12;
             this.GroupBox_menu.TabStop = false;
             this.GroupBox_menu.Enter += new System.EventHandler(this.groupBox_menu_Enter);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::C_sharp_project.Properties.Resources.warning;
+            this.pictureBox3.Location = new System.Drawing.Point(813, 423);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            this.select_admin.SetToolTip(this.pictureBox3, "This can be only accessed by the main admin - Nethun");
+            // 
+            // select_btnAdmin
+            // 
+            this.select_btnAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.select_btnAdmin.BackColor = System.Drawing.Color.White;
+            this.select_btnAdmin.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.select_btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.select_btnAdmin.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.select_btnAdmin.ForeColor = System.Drawing.Color.Snow;
+            this.select_btnAdmin.Location = new System.Drawing.Point(506, 412);
+            this.select_btnAdmin.Name = "select_btnAdmin";
+            this.select_btnAdmin.Size = new System.Drawing.Size(260, 52);
+            this.select_btnAdmin.TabIndex = 13;
+            this.select_btnAdmin.Text = "Admin";
+            this.select_btnAdmin.UseVisualStyleBackColor = false;
+            this.select_btnAdmin.Click += new System.EventHandler(this.select_btnAdmin_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Location = new System.Drawing.Point(115, 407);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(277, 37);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Admin Control";
             // 
             // selection_usr
             // 
@@ -265,7 +321,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(939, 677);
+            this.pictureBox1.Location = new System.Drawing.Point(1028, 668);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 16;
@@ -277,7 +333,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.exit;
-            this.pictureBox2.Location = new System.Drawing.Point(1011, 677);
+            this.pictureBox2.Location = new System.Drawing.Point(1100, 668);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 17;
@@ -308,6 +364,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.GroupBox_menu.ResumeLayout(false);
             this.GroupBox_menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -333,5 +390,9 @@
         private System.Windows.Forms.Label selection_usr;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ToolTip select_admin;
+        private System.Windows.Forms.Button select_btnAdmin;
+        private System.Windows.Forms.Label label2;
     }
 }

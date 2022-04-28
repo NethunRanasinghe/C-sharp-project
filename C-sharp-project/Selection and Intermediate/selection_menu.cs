@@ -107,5 +107,12 @@ namespace C_sharp_project
             login_form.Show();
 
         }
+
+        private void select_btnAdmin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Control objadminc = new Admin_Control();
+            objadminc.Show();
+        }
     }
 }
