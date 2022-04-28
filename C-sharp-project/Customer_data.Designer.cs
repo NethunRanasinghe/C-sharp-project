@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.nictxtbox = new System.Windows.Forms.TextBox();
             this.fntxtbx = new System.Windows.Forms.TextBox();
@@ -54,11 +54,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.jmp_to_prftnlss = new System.Windows.Forms.Button();
             this.jmp_user_reg = new System.Windows.Forms.Button();
+            this.jmp_sales = new System.Windows.Forms.Button();
+            this.jmp_monthly_sell = new System.Windows.Forms.Button();
+            this.jmp_monthly_buy = new System.Windows.Forms.Button();
+            this.jmp_buyform = new System.Windows.Forms.Button();
+            this.jmp_othr_transaction = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,55 +74,55 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(149)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(149)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(61)))), ((int)(((byte)(98)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(163)))), ((int)(((byte)(164)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(163)))), ((int)(((byte)(164)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(64, 86);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 62;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(699, 323);
             this.dataGridView1.TabIndex = 0;
@@ -341,9 +343,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
-            this.panel5.Controls.Add(this.button6);
-            this.panel5.Controls.Add(this.button5);
-            this.panel5.Controls.Add(this.button7);
+            this.panel5.Controls.Add(this.jmp_sales);
+            this.panel5.Controls.Add(this.jmp_monthly_sell);
+            this.panel5.Controls.Add(this.jmp_monthly_buy);
+            this.panel5.Controls.Add(this.jmp_buyform);
+            this.panel5.Controls.Add(this.jmp_othr_transaction);
             this.panel5.Controls.Add(this.jmp_to_prftnlss);
             this.panel5.Controls.Add(this.jmp_user_reg);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -352,30 +356,6 @@
             this.panel5.Size = new System.Drawing.Size(849, 48);
             this.panel5.TabIndex = 18;
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(628, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 39);
-            this.button6.TabIndex = 4;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(522, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 39);
-            this.button5.TabIndex = 3;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(412, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 39);
-            this.button7.TabIndex = 2;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // jmp_to_prftnlss
             // 
             this.jmp_to_prftnlss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
@@ -383,7 +363,7 @@
             this.jmp_to_prftnlss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_to_prftnlss.FlatAppearance.BorderSize = 0;
             this.jmp_to_prftnlss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_to_prftnlss.Location = new System.Drawing.Point(294, 3);
+            this.jmp_to_prftnlss.Location = new System.Drawing.Point(129, 6);
             this.jmp_to_prftnlss.Name = "jmp_to_prftnlss";
             this.jmp_to_prftnlss.Size = new System.Drawing.Size(54, 39);
             this.jmp_to_prftnlss.TabIndex = 1;
@@ -397,12 +377,77 @@
             this.jmp_user_reg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_user_reg.FlatAppearance.BorderSize = 0;
             this.jmp_user_reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_user_reg.Location = new System.Drawing.Point(177, 3);
+            this.jmp_user_reg.Location = new System.Drawing.Point(12, 6);
             this.jmp_user_reg.Name = "jmp_user_reg";
             this.jmp_user_reg.Size = new System.Drawing.Size(54, 39);
             this.jmp_user_reg.TabIndex = 0;
             this.jmp_user_reg.UseVisualStyleBackColor = false;
             this.jmp_user_reg.Click += new System.EventHandler(this.jmp_user_reg_Click);
+            // 
+            // jmp_sales
+            // 
+            this.jmp_sales.BackgroundImage = global::C_sharp_project.Properties.Resources.writing;
+            this.jmp_sales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_sales.FlatAppearance.BorderSize = 0;
+            this.jmp_sales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_sales.Location = new System.Drawing.Point(756, 6);
+            this.jmp_sales.Name = "jmp_sales";
+            this.jmp_sales.Size = new System.Drawing.Size(51, 39);
+            this.jmp_sales.TabIndex = 40;
+            this.jmp_sales.UseVisualStyleBackColor = true;
+            this.jmp_sales.Click += new System.EventHandler(this.jmp_sales_Click);
+            // 
+            // jmp_monthly_sell
+            // 
+            this.jmp_monthly_sell.BackgroundImage = global::C_sharp_project.Properties.Resources.payday;
+            this.jmp_monthly_sell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_monthly_sell.FlatAppearance.BorderSize = 0;
+            this.jmp_monthly_sell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_monthly_sell.Location = new System.Drawing.Point(631, 6);
+            this.jmp_monthly_sell.Name = "jmp_monthly_sell";
+            this.jmp_monthly_sell.Size = new System.Drawing.Size(53, 39);
+            this.jmp_monthly_sell.TabIndex = 39;
+            this.jmp_monthly_sell.UseVisualStyleBackColor = true;
+            this.jmp_monthly_sell.Click += new System.EventHandler(this.jmp_monthly_sell_Click);
+            // 
+            // jmp_monthly_buy
+            // 
+            this.jmp_monthly_buy.BackgroundImage = global::C_sharp_project.Properties.Resources.calendar;
+            this.jmp_monthly_buy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_monthly_buy.FlatAppearance.BorderSize = 0;
+            this.jmp_monthly_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_monthly_buy.Location = new System.Drawing.Point(499, 6);
+            this.jmp_monthly_buy.Name = "jmp_monthly_buy";
+            this.jmp_monthly_buy.Size = new System.Drawing.Size(54, 39);
+            this.jmp_monthly_buy.TabIndex = 38;
+            this.jmp_monthly_buy.UseVisualStyleBackColor = true;
+            this.jmp_monthly_buy.Click += new System.EventHandler(this.jmp_monthly_buy_Click);
+            // 
+            // jmp_buyform
+            // 
+            this.jmp_buyform.BackgroundImage = global::C_sharp_project.Properties.Resources.buy2;
+            this.jmp_buyform.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_buyform.FlatAppearance.BorderSize = 0;
+            this.jmp_buyform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_buyform.Location = new System.Drawing.Point(380, 6);
+            this.jmp_buyform.Name = "jmp_buyform";
+            this.jmp_buyform.Size = new System.Drawing.Size(50, 39);
+            this.jmp_buyform.TabIndex = 37;
+            this.jmp_buyform.UseVisualStyleBackColor = true;
+            this.jmp_buyform.Click += new System.EventHandler(this.jmp_buyform_Click);
+            // 
+            // jmp_othr_transaction
+            // 
+            this.jmp_othr_transaction.BackgroundImage = global::C_sharp_project.Properties.Resources.transaction;
+            this.jmp_othr_transaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_othr_transaction.FlatAppearance.BorderSize = 0;
+            this.jmp_othr_transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_othr_transaction.Location = new System.Drawing.Point(240, 6);
+            this.jmp_othr_transaction.Name = "jmp_othr_transaction";
+            this.jmp_othr_transaction.Size = new System.Drawing.Size(55, 39);
+            this.jmp_othr_transaction.TabIndex = 36;
+            this.jmp_othr_transaction.UseVisualStyleBackColor = true;
+            this.jmp_othr_transaction.Click += new System.EventHandler(this.jmp_othr_transaction_Click);
             // 
             // Customer_data
             // 
@@ -454,10 +499,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button jmp_to_prftnlss;
         private System.Windows.Forms.Button jmp_user_reg;
+        private System.Windows.Forms.Button jmp_sales;
+        private System.Windows.Forms.Button jmp_monthly_sell;
+        private System.Windows.Forms.Button jmp_monthly_buy;
+        private System.Windows.Forms.Button jmp_buyform;
+        private System.Windows.Forms.Button jmp_othr_transaction;
     }
 }

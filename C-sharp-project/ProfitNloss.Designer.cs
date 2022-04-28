@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfitNloss));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.jmp_monthly_buy = new System.Windows.Forms.Button();
+            this.jmp_buyform = new System.Windows.Forms.Button();
+            this.jmp_othr_transaction = new System.Windows.Forms.Button();
             this.jmp_to_customer_data = new System.Windows.Forms.Button();
             this.jmp_user_reg = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -93,6 +93,8 @@
             this.datec = new System.Windows.Forms.Label();
             this.namec = new System.Windows.Forms.Label();
             this.idc = new System.Windows.Forms.Label();
+            this.jmp_monthly_sell = new System.Windows.Forms.Button();
+            this.jmp_sales = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,9 +112,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.jmp_sales);
+            this.panel1.Controls.Add(this.jmp_monthly_sell);
+            this.panel1.Controls.Add(this.jmp_monthly_buy);
+            this.panel1.Controls.Add(this.jmp_buyform);
+            this.panel1.Controls.Add(this.jmp_othr_transaction);
             this.panel1.Controls.Add(this.jmp_to_customer_data);
             this.panel1.Controls.Add(this.jmp_user_reg);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -121,31 +125,44 @@
             this.panel1.Size = new System.Drawing.Size(909, 45);
             this.panel1.TabIndex = 0;
             // 
-            // button6
+            // jmp_monthly_buy
             // 
-            this.button6.Location = new System.Drawing.Point(628, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 39);
-            this.button6.TabIndex = 4;
-            this.button6.UseVisualStyleBackColor = true;
+            this.jmp_monthly_buy.BackgroundImage = global::C_sharp_project.Properties.Resources.calendar;
+            this.jmp_monthly_buy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_monthly_buy.FlatAppearance.BorderSize = 0;
+            this.jmp_monthly_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_monthly_buy.Location = new System.Drawing.Point(578, 3);
+            this.jmp_monthly_buy.Name = "jmp_monthly_buy";
+            this.jmp_monthly_buy.Size = new System.Drawing.Size(75, 39);
+            this.jmp_monthly_buy.TabIndex = 4;
+            this.jmp_monthly_buy.UseVisualStyleBackColor = true;
+            this.jmp_monthly_buy.Click += new System.EventHandler(this.jmp_monthly_buy_Click);
             // 
-            // button4
+            // jmp_buyform
             // 
-            this.button4.Location = new System.Drawing.Point(522, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 39);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
+            this.jmp_buyform.BackgroundImage = global::C_sharp_project.Properties.Resources.buy2;
+            this.jmp_buyform.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_buyform.FlatAppearance.BorderSize = 0;
+            this.jmp_buyform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_buyform.Location = new System.Drawing.Point(463, 3);
+            this.jmp_buyform.Name = "jmp_buyform";
+            this.jmp_buyform.Size = new System.Drawing.Size(50, 39);
+            this.jmp_buyform.TabIndex = 3;
+            this.jmp_buyform.UseVisualStyleBackColor = true;
+            this.jmp_buyform.Click += new System.EventHandler(this.jmp_buyform_Click);
             // 
-            // button3
+            // jmp_othr_transaction
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(412, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 39);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.jmp_othr_transaction.BackgroundImage = global::C_sharp_project.Properties.Resources.transaction;
+            this.jmp_othr_transaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_othr_transaction.FlatAppearance.BorderSize = 0;
+            this.jmp_othr_transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_othr_transaction.Location = new System.Drawing.Point(331, 3);
+            this.jmp_othr_transaction.Name = "jmp_othr_transaction";
+            this.jmp_othr_transaction.Size = new System.Drawing.Size(55, 39);
+            this.jmp_othr_transaction.TabIndex = 2;
+            this.jmp_othr_transaction.UseVisualStyleBackColor = true;
+            this.jmp_othr_transaction.Click += new System.EventHandler(this.jmp_othr_transaction_Click);
             // 
             // jmp_to_customer_data
             // 
@@ -154,7 +171,7 @@
             this.jmp_to_customer_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_to_customer_data.FlatAppearance.BorderSize = 0;
             this.jmp_to_customer_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_to_customer_data.Location = new System.Drawing.Point(294, 3);
+            this.jmp_to_customer_data.Location = new System.Drawing.Point(209, 3);
             this.jmp_to_customer_data.Name = "jmp_to_customer_data";
             this.jmp_to_customer_data.Size = new System.Drawing.Size(54, 39);
             this.jmp_to_customer_data.TabIndex = 1;
@@ -163,12 +180,11 @@
             // 
             // jmp_user_reg
             // 
-            this.jmp_user_reg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
             this.jmp_user_reg.BackgroundImage = global::C_sharp_project.Properties.Resources.add;
             this.jmp_user_reg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_user_reg.FlatAppearance.BorderSize = 0;
             this.jmp_user_reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_user_reg.Location = new System.Drawing.Point(177, 3);
+            this.jmp_user_reg.Location = new System.Drawing.Point(88, 3);
             this.jmp_user_reg.Name = "jmp_user_reg";
             this.jmp_user_reg.Size = new System.Drawing.Size(54, 39);
             this.jmp_user_reg.TabIndex = 0;
@@ -889,6 +905,32 @@
             this.idc.Text = "ID";
             this.idc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // jmp_monthly_sell
+            // 
+            this.jmp_monthly_sell.BackgroundImage = global::C_sharp_project.Properties.Resources.payday;
+            this.jmp_monthly_sell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_monthly_sell.FlatAppearance.BorderSize = 0;
+            this.jmp_monthly_sell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_monthly_sell.Location = new System.Drawing.Point(713, 3);
+            this.jmp_monthly_sell.Name = "jmp_monthly_sell";
+            this.jmp_monthly_sell.Size = new System.Drawing.Size(75, 39);
+            this.jmp_monthly_sell.TabIndex = 5;
+            this.jmp_monthly_sell.UseVisualStyleBackColor = true;
+            this.jmp_monthly_sell.Click += new System.EventHandler(this.jmp_monthly_sell_Click);
+            // 
+            // jmp_sales
+            // 
+            this.jmp_sales.BackgroundImage = global::C_sharp_project.Properties.Resources.writing;
+            this.jmp_sales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_sales.FlatAppearance.BorderSize = 0;
+            this.jmp_sales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_sales.Location = new System.Drawing.Point(823, 3);
+            this.jmp_sales.Name = "jmp_sales";
+            this.jmp_sales.Size = new System.Drawing.Size(75, 39);
+            this.jmp_sales.TabIndex = 6;
+            this.jmp_sales.UseVisualStyleBackColor = true;
+            this.jmp_sales.Click += new System.EventHandler(this.jmp_sales_Click);
+            // 
             // ProfitNloss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -982,10 +1024,12 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button jmp_monthly_buy;
+        private System.Windows.Forms.Button jmp_buyform;
+        private System.Windows.Forms.Button jmp_othr_transaction;
         private System.Windows.Forms.Button jmp_to_customer_data;
         private System.Windows.Forms.Button jmp_user_reg;
+        private System.Windows.Forms.Button jmp_monthly_sell;
+        private System.Windows.Forms.Button jmp_sales;
     }
 }
