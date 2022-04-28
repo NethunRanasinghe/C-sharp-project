@@ -20,7 +20,7 @@ namespace C_sharp_project
                                     "port=25060; " +
                                     "username=doadmin; " +
                                     "password=AVNS_xJ37XvPtSUi3vzk; " +
-                                    "database=systDB;";
+                                    "database=systdb;";
 
         public string getdbconnxmpp()
         {
