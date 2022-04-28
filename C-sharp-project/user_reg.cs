@@ -64,5 +64,41 @@ namespace C_sharp_project
             this.Hide();
             customer_Data.Show();
         }
+
+        private void jmp_othr_transaction_Click(object sender, EventArgs e)
+        {
+            ACother2 aCother2 = new ACother2();
+            this.Hide();
+            aCother2.Show();
+        }
+
+        private void jmp_buyform_Click(object sender, EventArgs e)
+        {
+            BUYfrm bUYfrm = new BUYfrm();
+            this.Hide();
+            bUYfrm.Show();
+
+        }
+
+        private void jmp_monthly_buy_Click(object sender, EventArgs e)
+        {
+            Form_mbuying form_Mbuying = new Form_mbuying();
+            this.Hide();
+            form_Mbuying.Show();
+        }
+
+        private void jmp_monthly_sell_Click(object sender, EventArgs e)
+        {
+            Form_mselling form_Mselling = new Form_mselling();
+            this.Hide();
+            form_Mselling.Show();
+        }
+
+        private void jmp_sales_Click(object sender, EventArgs e)
+        {
+            form_sales form_Sales = new form_sales();
+            this.Hide();
+            form_Sales.Show();
+        }
     }
 }
