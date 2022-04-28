@@ -364,11 +364,12 @@
             this.sales_usrn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sales_usrn.AutoSize = true;
             this.sales_usrn.BackColor = System.Drawing.Color.Transparent;
-            this.sales_usrn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sales_usrn.Font = new System.Drawing.Font("Arial Narrow", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sales_usrn.Location = new System.Drawing.Point(268, 111);
             this.sales_usrn.Name = "sales_usrn";
-            this.sales_usrn.Size = new System.Drawing.Size(0, 26);
+            this.sales_usrn.Size = new System.Drawing.Size(46, 26);
             this.sales_usrn.TabIndex = 26;
+            this.sales_usrn.Text = "Null";
             this.sales_usrn.Click += new System.EventHandler(this.sales_usrn_Click);
             // 
             // form_sales

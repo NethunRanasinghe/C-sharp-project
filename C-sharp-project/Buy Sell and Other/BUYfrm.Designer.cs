@@ -313,8 +313,9 @@
             this.buy_usr.ForeColor = System.Drawing.Color.Black;
             this.buy_usr.Location = new System.Drawing.Point(172, 84);
             this.buy_usr.Name = "buy_usr";
-            this.buy_usr.Size = new System.Drawing.Size(0, 26);
+            this.buy_usr.Size = new System.Drawing.Size(46, 26);
             this.buy_usr.TabIndex = 26;
+            this.buy_usr.Text = "Null";
             this.buy_usr.Click += new System.EventHandler(this.label9_Click);
             // 
             // BUYfrm
