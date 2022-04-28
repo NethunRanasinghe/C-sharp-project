@@ -147,9 +147,9 @@
             this.label1.Location = new System.Drawing.Point(156, 341);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 37);
+            this.label1.Size = new System.Drawing.Size(277, 37);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Wood List";
+            this.label1.Text = "Customer Data";
             // 
             // Btn_sales
             // 
@@ -222,7 +222,7 @@
             this.Btn_list.Name = "Btn_list";
             this.Btn_list.Size = new System.Drawing.Size(260, 52);
             this.Btn_list.TabIndex = 11;
-            this.Btn_list.Text = "List";
+            this.Btn_list.Text = "Data";
             this.Btn_list.UseVisualStyleBackColor = false;
             this.Btn_list.Click += new System.EventHandler(this.btn_list_Click);
             // 

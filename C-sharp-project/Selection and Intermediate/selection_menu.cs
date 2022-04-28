@@ -86,8 +86,8 @@ namespace C_sharp_project
         private void btn_list_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //var WDlst = new WDlst();
-            //WDlst.Show();
+            cus_form objcus = new cus_form();
+            objcus.Show();
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
