@@ -57,12 +57,13 @@ namespace C_sharp_project
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
                 passingText = login_txtusr.Texts;
+                time_log();
                 Action_login();
             }
         }
 
         //..Custom Methods..//
-        public void Action_login()
+        private void Action_login()
         {
             string query = "SELECT * FROM `user_details` WHERE first_name = '" + login_txtusr.Texts + "' AND password = '" +login_txtpw.Texts + "'";
 
@@ -94,6 +95,27 @@ namespace C_sharp_project
             catch (Exception ex)
             {
                 MessageBox.Show("Error : " + ex.Message);
+            }
+        }
+
+        private void time_log()
+        {
+            string log_query = "INSERT INTO user_details_time(`first_name`) VALUES ('" + login_txtusr.Texts + "')";
+
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(connection_string);
+
+                string selectQuery = log_query;
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand(selectQuery, connection);
+                MySqlDataReader reader = command.ExecuteReader();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
         }
 

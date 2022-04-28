@@ -79,6 +79,7 @@
             // cdb_pic
             // 
             this.cdb_pic.BackColor = System.Drawing.Color.Transparent;
+            this.cdb_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.cdb_pic.Location = new System.Drawing.Point(253, 56);
             this.cdb_pic.Name = "cdb_pic";
             this.cdb_pic.Size = new System.Drawing.Size(55, 55);

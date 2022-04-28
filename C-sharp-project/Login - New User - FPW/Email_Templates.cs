@@ -24,6 +24,13 @@ namespace C_sharp_project
 
             return new_u;
         }
+
+        public string admin_send_email_template(string name)
+        {
+            string send_em = "";
+
+            return send_em;
+        }
     }
     }
 

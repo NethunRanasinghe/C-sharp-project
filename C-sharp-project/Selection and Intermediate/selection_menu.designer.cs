@@ -93,7 +93,7 @@
             this.lbl_sales.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_sales.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_sales.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_sales.Location = new System.Drawing.Point(112, 17);
+            this.lbl_sales.Location = new System.Drawing.Point(112, 21);
             this.lbl_sales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sales.Name = "lbl_sales";
             this.lbl_sales.Size = new System.Drawing.Size(117, 37);
@@ -108,7 +108,7 @@
             this.lbl_buying.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_buying.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_buying.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_buying.Location = new System.Drawing.Point(112, 95);
+            this.lbl_buying.Location = new System.Drawing.Point(112, 100);
             this.lbl_buying.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_buying.Name = "lbl_buying";
             this.lbl_buying.Size = new System.Drawing.Size(137, 37);
@@ -122,7 +122,7 @@
             this.lbl_othersales.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_othersales.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_othersales.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_othersales.Location = new System.Drawing.Point(112, 173);
+            this.lbl_othersales.Location = new System.Drawing.Point(112, 179);
             this.lbl_othersales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_othersales.Name = "lbl_othersales";
             this.lbl_othersales.Size = new System.Drawing.Size(237, 37);
@@ -136,7 +136,7 @@
             this.lbl_acccheck.Cursor = System.Windows.Forms.Cursors.No;
             this.lbl_acccheck.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_acccheck.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_acccheck.Location = new System.Drawing.Point(112, 251);
+            this.lbl_acccheck.Location = new System.Drawing.Point(112, 258);
             this.lbl_acccheck.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_acccheck.Name = "lbl_acccheck";
             this.lbl_acccheck.Size = new System.Drawing.Size(277, 37);
@@ -150,7 +150,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.No;
             this.label1.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(115, 329);
+            this.label1.Location = new System.Drawing.Point(115, 337);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(277, 37);
@@ -271,6 +271,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Help;
             this.pictureBox3.Image = global::C_sharp_project.Properties.Resources.warning;
             this.pictureBox3.Location = new System.Drawing.Point(813, 423);
             this.pictureBox3.Name = "pictureBox3";
@@ -285,6 +286,7 @@
             this.select_btnAdmin.BackColor = System.Drawing.Color.White;
             this.select_btnAdmin.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.select_btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.select_btnAdmin.Enabled = false;
             this.select_btnAdmin.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.select_btnAdmin.ForeColor = System.Drawing.Color.Snow;
             this.select_btnAdmin.Location = new System.Drawing.Point(506, 412);
@@ -300,11 +302,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label2.Location = new System.Drawing.Point(115, 407);
+            this.label2.Location = new System.Drawing.Point(115, 416);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 37);
+            this.label2.Size = new System.Drawing.Size(237, 37);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Admin Control";
+            this.label2.Text = "Admin Panel";
             // 
             // selection_usr
             // 

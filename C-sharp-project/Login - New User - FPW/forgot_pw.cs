@@ -162,7 +162,6 @@ namespace C_sharp_project
         public void pwchange_db()
         {
             string query = "UPDATE `user_details` SET `password`= '" + fpw_txtnpw.Text + "' WHERE email = '"+ fpw_txtemail.Text + "'";
-            string query2 = "SELECT* FROM `user_details` WHERE email = '" + fpw_txtemail.Text + "'";
 
             // Prepare the connection
             MySqlConnection databaseConnection = new MySqlConnection(connection_string);

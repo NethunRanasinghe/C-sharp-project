@@ -24,6 +24,15 @@ namespace C_sharp_project
         public form_selectionmenu()
         {
             InitializeComponent();
+
+            if(login_form.passingText == "Nethun")
+            {
+                select_btnAdmin.Enabled = true;
+            }
+            else
+            {
+                select_btnAdmin.Enabled = false;
+            }
             //this.FormBorderStyle = FormBorderStyle.None;
             //this.Padding = new Padding(bordersize);
         }
