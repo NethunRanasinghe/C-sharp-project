@@ -56,9 +56,16 @@ namespace C_sharp_project
         {
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                passingText = login_txtusr.Texts;
-                time_log();
-                Action_login();
+                if(check_enabled() == 1)
+                {
+                    passingText = login_txtusr.Texts;
+                    time_log();
+                    Action_login();
+                }
+                else
+                {
+                    MessageBox.Show("Your User Account has been disabled !\nContact Main Admin.", "Error");
+                }
             }
         }
 
@@ -117,6 +124,39 @@ namespace C_sharp_project
             {
                 MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
+        }
+
+        private int check_enabled()
+        {
+            string enbc_query = "SELECT * FROM `user_details` WHERE `first_name` = '"+ login_txtusr .Texts+ "' && `enabled` = 0;";
+            int enabled = 1;
+
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(connection_string);
+
+                string selectQuery = enbc_query;
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand(selectQuery, connection);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    enabled = 0;
+                }
+                else
+                {
+                    enabled = 1;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+            }
+
+            return enabled;
         }
 
         //..Event Handlers..//

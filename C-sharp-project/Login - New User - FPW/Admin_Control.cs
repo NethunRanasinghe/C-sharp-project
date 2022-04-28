@@ -14,6 +14,10 @@ namespace C_sharp_project
     public partial class Admin_Control : Form
     {
         string connection_string = Choose_Database.usrdb;
+
+        //For testing
+        //string connection_string = "server=localhost; user id=root; database=systdb";
+
         public string gmail="";
 
         public Admin_Control()
@@ -123,16 +127,25 @@ namespace C_sharp_project
                 MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
 
-
             Email_Templates objemail_templates = new Email_Templates();
 
             string sub = "Urgent Mail From the System Admin (RSMT)";
             string bod = objemail_templates.admin_send_email_template(admin_txtemailc.Text);
-            string dlog = "Check your inbox for the code !";
+            string dlog = "Email Successfully Sent !";
 
             Email_Auth objemail = new Email_Auth();
             objemail.send_code(gmail, sub, bod, dlog);
             
+        }
+
+        private void log()
+        {
+            string log_query = "SELECT `Time` FROM `user_details_time` WHERE `first_name` = '"+admin_cmbusr.Text+"';";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(log_query,connection_string);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            admin_datalog.DataSource = table;
         }
 
 
@@ -220,6 +233,7 @@ namespace C_sharp_project
         private void admin_cmbusr_SelectedIndexChanged(object sender, EventArgs e)
         {
             usrstate();
+            log();
         }
 
        

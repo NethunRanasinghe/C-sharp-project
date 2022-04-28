@@ -33,7 +33,7 @@
             this.admin_exit = new System.Windows.Forms.PictureBox();
             this.admin_cmbusr = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.admin_datalog = new System.Windows.Forms.DataGridView();
             this.admin_txtemailc = new System.Windows.Forms.TextBox();
             this.admin_lblpanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,7 +50,7 @@
             this.admin_btnen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.admin_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_datalog)).BeginInit();
             this.admin_lblpanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -104,19 +104,20 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "User Login Log\r\n";
             // 
-            // dataGridView1
+            // admin_datalog
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(254, 194);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 85);
-            this.dataGridView1.TabIndex = 5;
+            this.admin_datalog.AllowUserToAddRows = false;
+            this.admin_datalog.AllowUserToDeleteRows = false;
+            this.admin_datalog.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.admin_datalog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.admin_datalog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.admin_datalog.Location = new System.Drawing.Point(254, 194);
+            this.admin_datalog.Name = "admin_datalog";
+            this.admin_datalog.ReadOnly = true;
+            this.admin_datalog.RowHeadersWidth = 51;
+            this.admin_datalog.RowTemplate.Height = 29;
+            this.admin_datalog.Size = new System.Drawing.Size(240, 85);
+            this.admin_datalog.TabIndex = 5;
             // 
             // admin_txtemailc
             // 
@@ -151,7 +152,7 @@
             this.tableLayoutPanel1.Controls.Add(this.admin_enb, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.admin_cmbusr, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.admin_datalog, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -328,7 +329,7 @@
             this.Text = "Admin Control Panel";
             ((System.ComponentModel.ISupportInitialize)(this.admin_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.admin_exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.admin_datalog)).EndInit();
             this.admin_lblpanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -346,7 +347,7 @@
         private System.Windows.Forms.PictureBox admin_exit;
         private System.Windows.Forms.ComboBox admin_cmbusr;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView admin_datalog;
         private System.Windows.Forms.TextBox admin_txtemailc;
         private System.Windows.Forms.Panel admin_lblpanel;
         private System.Windows.Forms.Label admin_enb;
