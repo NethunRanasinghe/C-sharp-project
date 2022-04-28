@@ -20,6 +20,7 @@ namespace C_sharp_project
         public BUYfrm()
         {
             InitializeComponent();
+            this.buy_usr.Text = login_form.passingText;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -98,7 +99,7 @@ namespace C_sharp_project
 
         private void label9_Click(object sender, EventArgs e)
         {
-            this.buy_usr.Text = login_form.passingText;
+            
         }
     }
 }

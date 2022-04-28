@@ -62,10 +62,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(340, 7);
+            this.label1.Location = new System.Drawing.Point(389, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 31);
+            this.label1.Size = new System.Drawing.Size(169, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Purchase";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -76,10 +76,10 @@
             this.USERlbl.BackColor = System.Drawing.Color.Transparent;
             this.USERlbl.Font = new System.Drawing.Font("SimSun", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.USERlbl.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.USERlbl.Location = new System.Drawing.Point(26, 63);
+            this.USERlbl.Location = new System.Drawing.Point(30, 84);
             this.USERlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.USERlbl.Name = "USERlbl";
-            this.USERlbl.Size = new System.Drawing.Size(97, 19);
+            this.USERlbl.Size = new System.Drawing.Size(114, 23);
             this.USERlbl.TabIndex = 1;
             this.USERlbl.Text = "User  :-";
             // 
@@ -88,10 +88,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(26, 96);
+            this.label3.Location = new System.Drawing.Point(30, 128);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 16);
+            this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Date";
             // 
@@ -100,10 +100,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(26, 127);
+            this.label4.Location = new System.Drawing.Point(30, 169);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 16);
+            this.label4.Size = new System.Drawing.Size(152, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Customer name";
             // 
@@ -112,10 +112,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(26, 159);
+            this.label5.Location = new System.Drawing.Point(30, 212);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 16);
+            this.label5.Size = new System.Drawing.Size(196, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Way of purchasing";
             // 
@@ -124,10 +124,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(26, 191);
+            this.label6.Location = new System.Drawing.Point(30, 255);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 16);
+            this.label6.Size = new System.Drawing.Size(108, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Situation";
             // 
@@ -136,10 +136,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(26, 226);
+            this.label7.Location = new System.Drawing.Point(30, 302);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 16);
+            this.label7.Size = new System.Drawing.Size(185, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Estimated amount";
             // 
@@ -148,10 +148,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("SimSun", 13.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(26, 356);
+            this.label2.Location = new System.Drawing.Point(30, 475);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 19);
+            this.label2.Size = new System.Drawing.Size(244, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "Total amount spent";
             // 
@@ -160,10 +160,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(26, 259);
+            this.label8.Location = new System.Drawing.Point(30, 345);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(268, 16);
+            this.label8.Size = new System.Drawing.Size(328, 20);
             this.label8.TabIndex = 8;
             this.label8.Text = "Reason to purchase if damaged";
             // 
@@ -172,10 +172,10 @@
             this.prcd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.prcd.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.prcd.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.prcd.Location = new System.Drawing.Point(319, 401);
-            this.prcd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prcd.Location = new System.Drawing.Point(365, 535);
+            this.prcd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.prcd.Name = "prcd";
-            this.prcd.Size = new System.Drawing.Size(78, 34);
+            this.prcd.Size = new System.Drawing.Size(89, 45);
             this.prcd.TabIndex = 9;
             this.prcd.Text = "Verify";
             this.prcd.UseVisualStyleBackColor = false;
@@ -186,10 +186,10 @@
             this.Clear.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Clear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.Clear.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Clear.Location = new System.Drawing.Point(481, 401);
-            this.Clear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Clear.Location = new System.Drawing.Point(550, 535);
+            this.Clear.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(78, 34);
+            this.Clear.Size = new System.Drawing.Size(89, 45);
             this.Clear.TabIndex = 11;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = false;
@@ -197,50 +197,50 @@
             // 
             // BUYEScst
             // 
-            this.BUYEScst.Location = new System.Drawing.Point(319, 224);
-            this.BUYEScst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYEScst.Location = new System.Drawing.Point(365, 299);
+            this.BUYEScst.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BUYEScst.Name = "BUYEScst";
-            this.BUYEScst.Size = new System.Drawing.Size(486, 23);
+            this.BUYEScst.Size = new System.Drawing.Size(555, 27);
             this.BUYEScst.TabIndex = 14;
             // 
             // BUYTP
             // 
-            this.BUYTP.Location = new System.Drawing.Point(319, 356);
-            this.BUYTP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYTP.Location = new System.Drawing.Point(365, 475);
+            this.BUYTP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BUYTP.Name = "BUYTP";
-            this.BUYTP.Size = new System.Drawing.Size(486, 23);
+            this.BUYTP.Size = new System.Drawing.Size(555, 27);
             this.BUYTP.TabIndex = 16;
             // 
             // BUYcnd2
             // 
-            this.BUYcnd2.Location = new System.Drawing.Point(319, 187);
-            this.BUYcnd2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYcnd2.Location = new System.Drawing.Point(365, 249);
+            this.BUYcnd2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BUYcnd2.Name = "BUYcnd2";
-            this.BUYcnd2.Size = new System.Drawing.Size(486, 23);
+            this.BUYcnd2.Size = new System.Drawing.Size(555, 27);
             this.BUYcnd2.TabIndex = 17;
             // 
             // BUYtype
             // 
-            this.BUYtype.Location = new System.Drawing.Point(319, 154);
-            this.BUYtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYtype.Location = new System.Drawing.Point(365, 206);
+            this.BUYtype.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BUYtype.Name = "BUYtype";
-            this.BUYtype.Size = new System.Drawing.Size(486, 23);
+            this.BUYtype.Size = new System.Drawing.Size(555, 27);
             this.BUYtype.TabIndex = 18;
             // 
             // CUnm
             // 
-            this.CUnm.Location = new System.Drawing.Point(319, 124);
-            this.CUnm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CUnm.Location = new System.Drawing.Point(365, 165);
+            this.CUnm.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CUnm.Name = "CUnm";
-            this.CUnm.Size = new System.Drawing.Size(486, 23);
+            this.CUnm.Size = new System.Drawing.Size(555, 27);
             this.CUnm.TabIndex = 19;
             // 
             // DTbuy
             // 
-            this.DTbuy.Location = new System.Drawing.Point(319, 92);
-            this.DTbuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTbuy.Location = new System.Drawing.Point(365, 123);
+            this.DTbuy.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.DTbuy.Name = "DTbuy";
-            this.DTbuy.Size = new System.Drawing.Size(240, 23);
+            this.DTbuy.Size = new System.Drawing.Size(274, 27);
             this.DTbuy.TabIndex = 20;
             // 
             // linkLabel1
@@ -249,10 +249,10 @@
             this.linkLabel1.BackColor = System.Drawing.Color.White;
             this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(821, 160);
+            this.linkLabel1.Location = new System.Drawing.Point(938, 214);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(12, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(16, 20);
             this.linkLabel1.TabIndex = 21;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "?";
@@ -263,10 +263,10 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(821, 193);
+            this.linkLabel2.Location = new System.Drawing.Point(938, 257);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(12, 15);
+            this.linkLabel2.Size = new System.Drawing.Size(16, 20);
             this.linkLabel2.TabIndex = 22;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "?";
@@ -274,10 +274,10 @@
             // 
             // BUYrsn
             // 
-            this.BUYrsn.Location = new System.Drawing.Point(319, 256);
-            this.BUYrsn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYrsn.Location = new System.Drawing.Point(365, 342);
+            this.BUYrsn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BUYrsn.Name = "BUYrsn";
-            this.BUYrsn.Size = new System.Drawing.Size(486, 73);
+            this.BUYrsn.Size = new System.Drawing.Size(555, 96);
             this.BUYrsn.TabIndex = 23;
             this.BUYrsn.Text = "";
             // 
@@ -286,11 +286,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.exit;
-            this.pictureBox1.Location = new System.Drawing.Point(770, 446);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(880, 595);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -300,11 +298,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.back;
-            this.pictureBox2.Location = new System.Drawing.Point(694, 446);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(793, 595);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -313,21 +309,22 @@
             // 
             this.buy_usr.AutoSize = true;
             this.buy_usr.BackColor = System.Drawing.Color.Transparent;
-            this.buy_usr.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buy_usr.Font = new System.Drawing.Font("Arial Narrow", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buy_usr.ForeColor = System.Drawing.Color.Black;
-            this.buy_usr.Location = new System.Drawing.Point(150, 63);
+            this.buy_usr.Location = new System.Drawing.Point(172, 84);
             this.buy_usr.Name = "buy_usr";
-            this.buy_usr.Size = new System.Drawing.Size(0, 22);
+            this.buy_usr.Size = new System.Drawing.Size(46, 26);
             this.buy_usr.TabIndex = 26;
+            this.buy_usr.Text = "Null";
             this.buy_usr.Click += new System.EventHandler(this.label9_Click);
             // 
             // BUYfrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(852, 497);
+            this.ClientSize = new System.Drawing.Size(974, 663);
             this.Controls.Add(this.buy_usr);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -353,7 +350,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "BUYfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasigha Saw Mills";

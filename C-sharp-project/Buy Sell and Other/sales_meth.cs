@@ -18,6 +18,7 @@ namespace C_sharp_project
         public form_sales()
         {
             InitializeComponent();
+            sales_usrn.Text = login_form.passingText;
         }
 
         private void LBL_additionalcharges_Click(object sender, EventArgs e)
@@ -103,7 +104,7 @@ namespace C_sharp_project
 
         private void sales_usrn_Click(object sender, EventArgs e)
         {
-            sales_usrn.Text = login_form.passingText;
+            
         }
     }
 }
