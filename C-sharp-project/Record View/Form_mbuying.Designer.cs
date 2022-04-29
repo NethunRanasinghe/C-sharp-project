@@ -86,7 +86,7 @@
             this.buy_record.AllowUserToResizeColumns = false;
             this.buy_record.AllowUserToResizeRows = false;
             this.buy_record.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buy_record.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.buy_record.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.buy_record.BackgroundColor = System.Drawing.Color.Bisque;
             this.buy_record.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.buy_record.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;

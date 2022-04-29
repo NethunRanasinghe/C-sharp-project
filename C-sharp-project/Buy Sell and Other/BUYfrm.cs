@@ -33,16 +33,11 @@ namespace C_sharp_project
 
             DTbuy.Text = "";
             CUnm.Text = "";
-            BUYtype.Text = "";
-            BUYcnd2.Text = "";
+            buy_cmbtype.Text = null;
+            buy_cmbcond.Text = null;
             BUYEScst.Text = "";
             BUYrsn.Text = "";
             BUYTP.Text = "";
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            MessageBox.Show("Note the fragmented timber as (1), / as if (2), and otherwise as (3). ");
         }
 
         private void extbtn_Click(object sender, EventArgs e)
@@ -58,32 +53,43 @@ namespace C_sharp_project
         private void prcd_Click(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection(connection_string);
-            string insertQuery = "INSERT INTO buy(Date,CustomerName,Type,woodCnd,specialNotes,EstimatedPrice,TotalCost)VALUES('" + DTbuy.Text + "','" + CUnm.Text + "','" + BUYtype.Text + "','" + BUYcnd2.Text + "','" + BUYrsn.Text + "','" + BUYEScst.Text + "','" + BUYTP.Text + "')";
+
+            string insertQuery = "INSERT INTO buy(Date,SupplierName,Type,woodCnd,specialNotes,EstimatedPrice,TotalCost)VALUES('"
+                + DTbuy.Value.ToString("yyyy-MM-dd")
+                + "','"
+                + CUnm.Text
+                + "','"
+                + buy_cmbtype.Text
+                + "','"
+                + buy_cmbcond.Text
+                + "','"
+                + BUYrsn.Text
+                + "','"
+                + BUYEScst.Text
+                + "','"
+                + BUYTP.Text
+                + "')";
+            
             connection.Open();
             MySqlCommand command = new MySqlCommand(insertQuery, connection);
             if (command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("Added Successfully");
+                MessageBox.Show("Added Successfully","Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DTbuy.Text = "";
                 CUnm.Text = "";
-                BUYtype.Text = "";
-                BUYcnd2.Text = "";
+                buy_cmbtype.Text = null;
+                buy_cmbcond.Text = null;
                 BUYEScst.Text = "";
                 BUYrsn.Text = "";
                 BUYTP.Text = "";
             }
             else
             {
-                MessageBox.Show("Unsucessful");
+                MessageBox.Show("Unsucessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            MessageBox.Show("Indicate the condition of the item / item you are purchasing or about to purchase (condition is very good) (1) / Normal (2) / Damaged (3)  ");
-            MessageBox.Show("Explain the reason for buying it if it is damaged or the condition is not so good ");
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -100,6 +106,14 @@ namespace C_sharp_project
         private void label9_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void buy_cmbcond_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(buy_cmbcond.SelectedIndex == 2)
+            {
+                MessageBox.Show("Explain the reason for buying it, if it is damaged or the condition is not so good.","Explain",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
         }
     }
 }

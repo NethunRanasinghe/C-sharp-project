@@ -62,7 +62,7 @@ namespace C_sharp_project
             MySqlCommand command = new MySqlCommand(insertQuery, connection);
             if (command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("Added sucessfully");
+                MessageBox.Show("Added sucessfully","Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 OTHERdt.Text = "";
                 SRVCE.Text = null;
@@ -72,7 +72,7 @@ namespace C_sharp_project
             }
             else
             {
-                MessageBox.Show("Unsucessful");
+                MessageBox.Show("Unsucessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();
         }
