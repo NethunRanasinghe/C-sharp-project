@@ -108,14 +108,14 @@ namespace C_sharp_project
                     }
                     else
                     {
-                        MessageBox.Show("Your User Account has been disabled !\nContact Main Admin.", "Error");
+                        MessageBox.Show("Your User Account has been disabled !\nContact Main Admin.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                     
                 }
                 else
                 {
-                    MessageBox.Show("User name and Password does not match !");
+                    MessageBox.Show("User name and Password does not match !","Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 databaseConnection.Close();
 
