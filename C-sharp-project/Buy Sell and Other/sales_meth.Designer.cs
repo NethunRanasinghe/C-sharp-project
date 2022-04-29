@@ -96,7 +96,7 @@
             this.BTN_Clear.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_Clear.ForeColor = System.Drawing.Color.SaddleBrown;
             this.BTN_Clear.Location = new System.Drawing.Point(724, 575);
-            this.BTN_Clear.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_Clear.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(89, 46);
             this.BTN_Clear.TabIndex = 21;
@@ -113,11 +113,11 @@
             this.BTN_sumbit.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_sumbit.ForeColor = System.Drawing.Color.SaddleBrown;
             this.BTN_sumbit.Location = new System.Drawing.Point(545, 575);
-            this.BTN_sumbit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_sumbit.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_sumbit.Name = "BTN_sumbit";
             this.BTN_sumbit.Size = new System.Drawing.Size(91, 46);
             this.BTN_sumbit.TabIndex = 22;
-            this.BTN_sumbit.Text = "Sumbit";
+            this.BTN_sumbit.Text = "Submit";
             this.BTN_sumbit.UseVisualStyleBackColor = false;
             this.BTN_sumbit.Click += new System.EventHandler(this.BTN_sumbit_Click);
             // 
@@ -163,7 +163,7 @@
             // TXTBX_otherservices
             // 
             this.TXTBX_otherservices.Location = new System.Drawing.Point(545, 370);
-            this.TXTBX_otherservices.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_otherservices.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_otherservices.Multiline = true;
             this.TXTBX_otherservices.Name = "TXTBX_otherservices";
             this.TXTBX_otherservices.Size = new System.Drawing.Size(268, 89);
@@ -172,7 +172,7 @@
             // TXTBX_extra
             // 
             this.TXTBX_extra.Location = new System.Drawing.Point(545, 538);
-            this.TXTBX_extra.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_extra.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_extra.Name = "TXTBX_extra";
             this.TXTBX_extra.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_extra.TabIndex = 44;
@@ -180,7 +180,7 @@
             // TXTBX_other
             // 
             this.TXTBX_other.Location = new System.Drawing.Point(545, 486);
-            this.TXTBX_other.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_other.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_other.Name = "TXTBX_other";
             this.TXTBX_other.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_other.TabIndex = 43;
@@ -188,7 +188,7 @@
             // TXTBX_estimation
             // 
             this.TXTBX_estimation.Location = new System.Drawing.Point(545, 318);
-            this.TXTBX_estimation.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_estimation.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_estimation.Name = "TXTBX_estimation";
             this.TXTBX_estimation.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_estimation.TabIndex = 42;
@@ -196,7 +196,7 @@
             // TXTBX_woodtype
             // 
             this.TXTBX_woodtype.Location = new System.Drawing.Point(545, 266);
-            this.TXTBX_woodtype.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_woodtype.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_woodtype.Name = "TXTBX_woodtype";
             this.TXTBX_woodtype.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_woodtype.TabIndex = 41;
@@ -204,7 +204,7 @@
             // TXTBX_Producttype
             // 
             this.TXTBX_Producttype.Location = new System.Drawing.Point(545, 214);
-            this.TXTBX_Producttype.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_Producttype.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_Producttype.Name = "TXTBX_Producttype";
             this.TXTBX_Producttype.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_Producttype.TabIndex = 40;
@@ -212,7 +212,7 @@
             // TXTBX_Cname
             // 
             this.TXTBX_Cname.Location = new System.Drawing.Point(545, 162);
-            this.TXTBX_Cname.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TXTBX_Cname.Margin = new System.Windows.Forms.Padding(5);
             this.TXTBX_Cname.Name = "TXTBX_Cname";
             this.TXTBX_Cname.Size = new System.Drawing.Size(268, 27);
             this.TXTBX_Cname.TabIndex = 39;
@@ -261,8 +261,9 @@
             // 
             // dateTimePicker
             // 
+            this.dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateTimePicker.Location = new System.Drawing.Point(545, 110);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(268, 27);
             this.dateTimePicker.TabIndex = 35;
@@ -371,7 +372,7 @@
             this.Controls.Add(this.Lbl_user);
             this.Controls.Add(this.LBL_salesrecords);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "form_sales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasinghe Sawmills";

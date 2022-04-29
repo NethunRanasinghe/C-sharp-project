@@ -68,8 +68,7 @@ namespace C_sharp_project
 
         private void buy_btnre_Click(object sender, EventArgs e)
         {
-            buy_record = null;
-            buy_date = null;
+            buy_record.DataSource = null;
         }
     }
 }

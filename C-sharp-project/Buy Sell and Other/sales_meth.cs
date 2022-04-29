@@ -21,58 +21,58 @@ namespace C_sharp_project
             sales_usrn.Text = login_form.passingText;
         }
 
-        private void LBL_additionalcharges_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Btn_prevMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var form_Selectionmenu = new form_selectionmenu();
-            form_Selectionmenu.Show();
-        }
-
         private void BTN_sumbit_Click(object sender, EventArgs e)
         {
+            MySqlConnection connection = new MySqlConnection(connection_string);
+
             /*
             string insertQuery = "INSERT INTO salesrecords(" +
               "Date,CustomerName,ProductType,WoodType,Estimation,OtherServices,ExtraCharges,)VALUES('" + dateTimePicker.Text + "','" + TXTBX_Cname.Text + "','" + TXTBX_Producttype.Text + "','" + TXTBX_woodtype.Text + "','" + TXTBX_estimation.Text + "','" + TXTBX_otherservices.Text + "','" + TXTBX_extra.Text + "')";
             */
 
-            string insertQuery = "INSERT INTO `salesrecords` (`Customer_ID`, `Date`, `Customer_name`, `Product_type`, `Wood_type`, `Estimation`, `Other_Services`, `Additional_charges`, `Extra_charges`) VALUES (NULL, '" + dateTimePicker.Text + "', '" + TXTBX_Cname.Text + "', '" + TXTBX_Producttype + "', '+ TXTBX_woodtype.Text +', '" + TXTBX_estimation.Text + "', '+ TXTBX_otherservices.Text +', 'TXTBX_other.Text', 'TXTBX_extra.Text');";
+            string insertQuery = "INSERT INTO `salesrecords` (`Date`, `Customer_name`, `Product_type`, `Product_name`, `Selling_price`, `Other_Services`, `Additional_charges`, `Value`) VALUES('"
+                + dateTimePicker.Value.ToString("yyyy-MM-dd")
+                + "', '"
+                + TXTBX_Cname.Text
+                + "', '"
+                + TXTBX_Producttype.Text
+                + "', '"
+                + TXTBX_woodtype.Text
+                + "', '"
+                + TXTBX_estimation.Text
+                + "', '"
+                + TXTBX_otherservices.Text
+                + "', '"
+                + TXTBX_other.Text
+                + "', '"
+                + TXTBX_extra.Text
+                + "');";
 
-            MySqlConnection connection = new MySqlConnection(connection_string);                     
+            connection.Open();
             MySqlCommand command = new MySqlCommand(insertQuery, connection);
+
             try
-            {
+            {                  
                 if (command.ExecuteNonQuery() == 1)
                 {
-                    connection.Open();
-                    MessageBox.Show("Added Successfully");
-                    TXTBX_other.Text = ""; TXTBX_extra.Text = ""; TXTBX_otherservices.Text = ""; TXTBX_estimation.Text = ""; TXTBX_woodtype.Text = ""; TXTBX_Producttype.Text = ""; TXTBX_Cname.Text = "";
-                    connection.Close();
-
-
+                    MessageBox.Show("Added Successfully","Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TXTBX_other.Text = ""; 
+                    TXTBX_extra.Text = ""; 
+                    TXTBX_otherservices.Text = ""; 
+                    TXTBX_estimation.Text = ""; 
+                    TXTBX_woodtype.Text = ""; 
+                    TXTBX_Producttype.Text = ""; 
+                    TXTBX_Cname.Text = "";
                 }
- 
+                connection.Close();
+
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Attempt Unsuccessful, Error : - " + ex + "Error");
+                MessageBox.Show("Attempt Unsuccessful, Error : - " + ex,"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
           
-        }
-
-        private void TXTBX_otherservices_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void BTN_Clear_Click(object sender, EventArgs e)

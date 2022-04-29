@@ -42,16 +42,14 @@
             this.Clear = new System.Windows.Forms.Button();
             this.BUYEScst = new System.Windows.Forms.TextBox();
             this.BUYTP = new System.Windows.Forms.TextBox();
-            this.BUYcnd2 = new System.Windows.Forms.TextBox();
-            this.BUYtype = new System.Windows.Forms.TextBox();
             this.CUnm = new System.Windows.Forms.TextBox();
             this.DTbuy = new System.Windows.Forms.DateTimePicker();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.BUYrsn = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buy_usr = new System.Windows.Forms.Label();
+            this.buy_cmbtype = new System.Windows.Forms.ComboBox();
+            this.buy_cmbcond = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -175,7 +173,7 @@
             this.prcd.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.prcd.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.prcd.Location = new System.Drawing.Point(507, 512);
-            this.prcd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prcd.Margin = new System.Windows.Forms.Padding(2);
             this.prcd.Name = "prcd";
             this.prcd.Size = new System.Drawing.Size(89, 46);
             this.prcd.TabIndex = 9;
@@ -189,7 +187,7 @@
             this.Clear.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.Clear.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Clear.Location = new System.Drawing.Point(701, 512);
-            this.Clear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Clear.Margin = new System.Windows.Forms.Padding(2);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(89, 46);
             this.Clear.TabIndex = 11;
@@ -199,8 +197,8 @@
             // 
             // BUYEScst
             // 
-            this.BUYEScst.Location = new System.Drawing.Point(507, 305);
-            this.BUYEScst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYEScst.Location = new System.Drawing.Point(507, 303);
+            this.BUYEScst.Margin = new System.Windows.Forms.Padding(2);
             this.BUYEScst.Name = "BUYEScst";
             this.BUYEScst.Size = new System.Drawing.Size(274, 27);
             this.BUYEScst.TabIndex = 14;
@@ -208,31 +206,15 @@
             // BUYTP
             // 
             this.BUYTP.Location = new System.Drawing.Point(507, 481);
-            this.BUYTP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYTP.Margin = new System.Windows.Forms.Padding(2);
             this.BUYTP.Name = "BUYTP";
             this.BUYTP.Size = new System.Drawing.Size(274, 27);
             this.BUYTP.TabIndex = 16;
             // 
-            // BUYcnd2
-            // 
-            this.BUYcnd2.Location = new System.Drawing.Point(507, 256);
-            this.BUYcnd2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BUYcnd2.Name = "BUYcnd2";
-            this.BUYcnd2.Size = new System.Drawing.Size(274, 27);
-            this.BUYcnd2.TabIndex = 17;
-            // 
-            // BUYtype
-            // 
-            this.BUYtype.Location = new System.Drawing.Point(507, 212);
-            this.BUYtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BUYtype.Name = "BUYtype";
-            this.BUYtype.Size = new System.Drawing.Size(274, 27);
-            this.BUYtype.TabIndex = 18;
-            // 
             // CUnm
             // 
             this.CUnm.Location = new System.Drawing.Point(507, 172);
-            this.CUnm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CUnm.Margin = new System.Windows.Forms.Padding(2);
             this.CUnm.Name = "CUnm";
             this.CUnm.Size = new System.Drawing.Size(274, 27);
             this.CUnm.TabIndex = 19;
@@ -240,44 +222,15 @@
             // DTbuy
             // 
             this.DTbuy.Location = new System.Drawing.Point(507, 129);
-            this.DTbuy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTbuy.Margin = new System.Windows.Forms.Padding(2);
             this.DTbuy.Name = "DTbuy";
             this.DTbuy.Size = new System.Drawing.Size(274, 27);
             this.DTbuy.TabIndex = 20;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.White;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(793, 217);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(16, 20);
-            this.linkLabel1.TabIndex = 21;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "?";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(793, 262);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(16, 20);
-            this.linkLabel2.TabIndex = 22;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "?";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
             // BUYrsn
             // 
-            this.BUYrsn.Location = new System.Drawing.Point(507, 348);
-            this.BUYrsn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BUYrsn.Location = new System.Drawing.Point(507, 346);
+            this.BUYrsn.Margin = new System.Windows.Forms.Padding(2);
             this.BUYrsn.Name = "BUYrsn";
             this.BUYrsn.Size = new System.Drawing.Size(274, 96);
             this.BUYrsn.TabIndex = 23;
@@ -324,6 +277,34 @@
             this.buy_usr.Text = "Null";
             this.buy_usr.Click += new System.EventHandler(this.label9_Click);
             // 
+            // buy_cmbtype
+            // 
+            this.buy_cmbtype.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buy_cmbtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.buy_cmbtype.FormattingEnabled = true;
+            this.buy_cmbtype.Items.AddRange(new object[] {
+            "(1). Fragmented timber.",
+            "(2). As if.",
+            "(3). Other."});
+            this.buy_cmbtype.Location = new System.Drawing.Point(507, 215);
+            this.buy_cmbtype.Name = "buy_cmbtype";
+            this.buy_cmbtype.Size = new System.Drawing.Size(274, 28);
+            this.buy_cmbtype.TabIndex = 27;
+            // 
+            // buy_cmbcond
+            // 
+            this.buy_cmbcond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.buy_cmbcond.FormattingEnabled = true;
+            this.buy_cmbcond.Items.AddRange(new object[] {
+            "(1). Very Good.",
+            "(2). Normal.",
+            "(3). Damaged."});
+            this.buy_cmbcond.Location = new System.Drawing.Point(507, 259);
+            this.buy_cmbcond.Name = "buy_cmbcond";
+            this.buy_cmbcond.Size = new System.Drawing.Size(274, 28);
+            this.buy_cmbcond.TabIndex = 28;
+            this.buy_cmbcond.SelectedIndexChanged += new System.EventHandler(this.buy_cmbcond_SelectedIndexChanged);
+            // 
             // BUYfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -331,16 +312,14 @@
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(974, 662);
+            this.Controls.Add(this.buy_cmbcond);
+            this.Controls.Add(this.buy_cmbtype);
             this.Controls.Add(this.buy_usr);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BUYrsn);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.DTbuy);
             this.Controls.Add(this.CUnm);
-            this.Controls.Add(this.BUYtype);
-            this.Controls.Add(this.BUYcnd2);
             this.Controls.Add(this.BUYTP);
             this.Controls.Add(this.BUYEScst);
             this.Controls.Add(this.Clear);
@@ -356,7 +335,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BUYfrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasigha Saw Mills";
@@ -383,16 +362,14 @@
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.TextBox BUYEScst;
         private System.Windows.Forms.TextBox BUYTP;
-        private System.Windows.Forms.TextBox BUYcnd2;
-        private System.Windows.Forms.TextBox BUYtype;
         private System.Windows.Forms.TextBox CUnm;
         private System.Windows.Forms.DateTimePicker DTbuy;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.RichTextBox BUYrsn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label buy_usr;
+        private System.Windows.Forms.ComboBox buy_cmbtype;
+        private System.Windows.Forms.ComboBox buy_cmbcond;
     }
 }
 
