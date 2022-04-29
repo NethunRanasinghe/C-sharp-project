@@ -85,10 +85,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("SimSun", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(191, 168);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 24);
+            this.label3.Size = new System.Drawing.Size(68, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "Date";
             // 
@@ -96,10 +96,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("SimSun", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(191, 220);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 24);
+            this.label4.Size = new System.Drawing.Size(194, 26);
             this.label4.TabIndex = 3;
             this.label4.Text = "Supplier name";
             // 
@@ -107,10 +107,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("SimSun", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(191, 273);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(231, 24);
+            this.label5.Size = new System.Drawing.Size(250, 26);
             this.label5.TabIndex = 4;
             this.label5.Text = "Way of purchasing";
             // 
@@ -118,10 +118,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("SimSun", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(191, 326);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 24);
+            this.label6.Size = new System.Drawing.Size(138, 26);
             this.label6.TabIndex = 5;
             this.label6.Text = "Situation";
             // 
@@ -129,10 +129,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("SimSun", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(191, 385);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(218, 24);
+            this.label7.Size = new System.Drawing.Size(236, 26);
             this.label7.TabIndex = 6;
             this.label7.Text = "Estimated amount";
             // 
@@ -151,10 +151,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("SimSun", 11.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("SimSun", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(191, 440);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(387, 24);
+            this.label8.Size = new System.Drawing.Size(418, 26);
             this.label8.TabIndex = 8;
             this.label8.Text = "Reason to purchase if damaged";
             // 
