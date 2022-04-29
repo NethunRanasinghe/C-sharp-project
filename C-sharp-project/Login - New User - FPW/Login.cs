@@ -16,6 +16,8 @@ namespace C_sharp_project
         string connection_string = Choose_Database.usrdb;
 
         public static string ?passingText;
+        public static bool mainadmin;
+        string gmail = "";
 
         public login_form()
         {
@@ -54,19 +56,18 @@ namespace C_sharp_project
 
         private void login_btnlgin_Click(object sender, EventArgs e)
         {
+            Cursor tempCursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
+
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                if(check_enabled() == 1)
-                {
-                    passingText = login_txtusr.Texts;
-                    time_log();
-                    Action_login();
-                }
-                else
-                {
-                    MessageBox.Show("Your User Account has been disabled !\nContact Main Admin.", "Error");
-                }
+                passingText = login_txtusr.Texts;
+                Action_login();
+                time_log();
+
             }
+
+            Cursor.Current = tempCursor;
         }
 
         //..Custom Methods..//
@@ -87,9 +88,30 @@ namespace C_sharp_project
 
                 if (reader.HasRows)
                 {
-                    this.Hide();
-                    form_selectionmenu objsel = new form_selectionmenu();
-                    objsel.Show();
+                    reader.Read();
+                    if(reader.GetString("email") == "nethun223@gmail.com")
+                    {
+                        mainadmin = true;
+                    }
+                    else
+                    {
+                        mainadmin = false;
+                    }
+                    gmail = reader.GetString("email");
+
+
+                    if(reader.GetInt32("enabled") == 1)
+                    {
+                        this.Hide();
+                        form_selectionmenu objsel = new form_selectionmenu();
+                        objsel.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Your User Account has been disabled !\nContact Main Admin.", "Error");
+                    }
+
+                    
                 }
                 else
                 {
@@ -107,7 +129,7 @@ namespace C_sharp_project
 
         private void time_log()
         {
-            string log_query = "INSERT INTO user_details_time(`first_name`) VALUES ('" + login_txtusr.Texts + "')";
+            string log_query = "INSERT INTO user_details_time(`first_name`,`email`) VALUES ('" + login_txtusr.Texts + "' , '"+gmail+"')";
 
             try
             {
@@ -124,39 +146,6 @@ namespace C_sharp_project
             {
                 MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
-        }
-
-        private int check_enabled()
-        {
-            string enbc_query = "SELECT * FROM `user_details` WHERE `first_name` = '"+ login_txtusr .Texts+ "' && `enabled` = 0;";
-            int enabled = 1;
-
-            try
-            {
-                MySqlConnection connection = new MySqlConnection(connection_string);
-
-                string selectQuery = enbc_query;
-                connection.Open();
-
-                MySqlCommand command = new MySqlCommand(selectQuery, connection);
-                MySqlDataReader reader = command.ExecuteReader();
-
-                if (reader.HasRows)
-                {
-                    enabled = 0;
-                }
-                else
-                {
-                    enabled = 1;
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
-            }
-
-            return enabled;
         }
 
         //..Event Handlers..//

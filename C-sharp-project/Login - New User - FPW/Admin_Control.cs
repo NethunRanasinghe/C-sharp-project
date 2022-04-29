@@ -14,6 +14,7 @@ namespace C_sharp_project
     public partial class Admin_Control : Form
     {
         string connection_string = Choose_Database.usrdb;
+        string user="";
 
         //For testing
         //string connection_string = "server=localhost; user id=root; database=systdb";
@@ -44,7 +45,7 @@ namespace C_sharp_project
 
         private void fill_combo()
         {
-            string select_query = "SELECT first_name FROM `user_details` WHERE first_name NOT IN('Nethun');";
+            string select_query = "SELECT CONCAT(`first_name`,' ',`last_name`) AS full_name FROM `user_details` WHERE `email` NOT IN('nethun223@gmail.com');";
 
             try
             {
@@ -59,7 +60,7 @@ namespace C_sharp_project
 
                 while (reader.Read())
                 {
-                    admin_cmbusr.Items.Add(reader.GetString("first_name"));
+                    admin_cmbusr.Items.Add(reader.GetString("full_name"));
                 }
             }
             catch (Exception ex)
@@ -71,7 +72,7 @@ namespace C_sharp_project
 
         private void usrstate()
         {
-            string state_query = "SELECT enabled FROM `user_details` WHERE `first_name` = '"+admin_cmbusr.Text+"';";
+            string state_query = "SELECT enabled FROM `user_details` WHERE `first_name` = '"+ user + "';";
 
             try
             {
@@ -104,7 +105,7 @@ namespace C_sharp_project
 
         private void sendemail()
         {
-            string state_query = "SELECT `email` FROM `user_details` WHERE `first_name` = '"+admin_cmbusr.Text+"';";
+            string state_query = "SELECT `email` FROM `user_details` WHERE `first_name` = '"+ user + "';";
 
             try
             {
@@ -140,7 +141,7 @@ namespace C_sharp_project
 
         private void log()
         {
-            string log_query = "SELECT `Time` FROM `user_details_time` WHERE `first_name` = '"+admin_cmbusr.Text+"';";
+            string log_query = "SELECT `Time` FROM `user_details_time` WHERE `first_name` = '"+user+"' && `email` NOT IN('nethun223@gmail.com');";
             MySqlDataAdapter adapter = new MySqlDataAdapter(log_query,connection_string);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -159,7 +160,10 @@ namespace C_sharp_project
         private void admin_btndis_Click(object sender, EventArgs e)
         {
 
-            string update_query = "UPDATE `user_details` SET `enabled` = '0' WHERE `first_name` = '"+admin_cmbusr.Text+"';";
+            string update_query = "UPDATE `user_details` SET `enabled` = '0' WHERE `first_name` = '"+ user + "';";
+            
+            Cursor tempCursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
 
             try
             {
@@ -178,11 +182,16 @@ namespace C_sharp_project
                 MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
 
+            Cursor.Current = tempCursor;
+
         }
 
         private void admin_btnen_Click(object sender, EventArgs e)
         {
-            string update_query = "UPDATE `user_details` SET `enabled` = '1' WHERE `first_name` = '" + admin_cmbusr.Text + "';";
+            string update_query = "UPDATE `user_details` SET `enabled` = '1' WHERE `first_name` = '" + user + "';";
+
+            Cursor tempCursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
 
             try
             {
@@ -200,11 +209,16 @@ namespace C_sharp_project
             {
                 MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
+
+            Cursor.Current = tempCursor;
         }
 
         private void admin_btndlt_Click(object sender, EventArgs e)
         {
-            string delete_query = "DELETE FROM `user_details` WHERE `user_details`.`first_name` = '"+admin_cmbusr.Text+"'";
+            string delete_query = "DELETE FROM `user_details` WHERE `user_details`.`first_name` = '"+ user + "'";
+
+            Cursor tempCursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
 
             try
             {
@@ -222,18 +236,35 @@ namespace C_sharp_project
             {
                 MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
+
+            Cursor.Current = tempCursor;
         }
 
 
         private void admin_btnsende_Click(object sender, EventArgs e)
         {
+            Cursor tempCursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
+
             sendemail();
+
+            Cursor.Current = tempCursor;
         }
 
         private void admin_cmbusr_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Cursor tempCursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
+
+            string[] usrsplit = admin_cmbusr.Text.Split();
+            user = usrsplit[0];
+
+            //string[] usrsplit = admin_cmbusr.Text.Split('\u002C');
+
             usrstate();
             log();
+
+            Cursor.Current = tempCursor;
         }
 
        
