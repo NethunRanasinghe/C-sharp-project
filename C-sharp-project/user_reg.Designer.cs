@@ -60,6 +60,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.menu_close = new System.Windows.Forms.Button();
             this.jmp_sales = new System.Windows.Forms.Button();
             this.jmp_monthly_sell = new System.Windows.Forms.Button();
             this.jmp_to_customer_data = new System.Windows.Forms.Button();
@@ -67,6 +68,8 @@
             this.jmp_prftnlss = new System.Windows.Forms.Button();
             this.jmp_buyform = new System.Windows.Forms.Button();
             this.jmp_othr_transaction = new System.Windows.Forms.Button();
+            this.menu = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -438,6 +441,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(122)))));
+            this.panel8.Controls.Add(this.menu_close);
             this.panel8.Controls.Add(this.jmp_sales);
             this.panel8.Controls.Add(this.jmp_monthly_sell);
             this.panel8.Controls.Add(this.jmp_to_customer_data);
@@ -451,15 +455,28 @@
             this.panel8.Size = new System.Drawing.Size(780, 53);
             this.panel8.TabIndex = 30;
             // 
+            // menu_close
+            // 
+            this.menu_close.BackgroundImage = global::C_sharp_project.Properties.Resources.cancel;
+            this.menu_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.menu_close.FlatAppearance.BorderSize = 0;
+            this.menu_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_close.Location = new System.Drawing.Point(731, 6);
+            this.menu_close.Name = "menu_close";
+            this.menu_close.Size = new System.Drawing.Size(40, 40);
+            this.menu_close.TabIndex = 33;
+            this.menu_close.UseVisualStyleBackColor = true;
+            this.menu_close.Click += new System.EventHandler(this.menu_close_Click);
+            // 
             // jmp_sales
             // 
             this.jmp_sales.BackgroundImage = global::C_sharp_project.Properties.Resources.writing;
             this.jmp_sales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_sales.FlatAppearance.BorderSize = 0;
             this.jmp_sales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_sales.Location = new System.Drawing.Point(693, 6);
+            this.jmp_sales.Location = new System.Drawing.Point(590, 8);
             this.jmp_sales.Name = "jmp_sales";
-            this.jmp_sales.Size = new System.Drawing.Size(75, 39);
+            this.jmp_sales.Size = new System.Drawing.Size(49, 39);
             this.jmp_sales.TabIndex = 35;
             this.jmp_sales.UseVisualStyleBackColor = true;
             this.jmp_sales.Click += new System.EventHandler(this.jmp_sales_Click);
@@ -470,9 +487,9 @@
             this.jmp_monthly_sell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_monthly_sell.FlatAppearance.BorderSize = 0;
             this.jmp_monthly_sell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_monthly_sell.Location = new System.Drawing.Point(583, 6);
+            this.jmp_monthly_sell.Location = new System.Drawing.Point(517, 6);
             this.jmp_monthly_sell.Name = "jmp_monthly_sell";
-            this.jmp_monthly_sell.Size = new System.Drawing.Size(75, 39);
+            this.jmp_monthly_sell.Size = new System.Drawing.Size(46, 39);
             this.jmp_monthly_sell.TabIndex = 34;
             this.jmp_monthly_sell.UseVisualStyleBackColor = true;
             this.jmp_monthly_sell.Click += new System.EventHandler(this.jmp_monthly_sell_Click);
@@ -484,9 +501,9 @@
             this.jmp_to_customer_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_to_customer_data.FlatAppearance.BorderSize = 0;
             this.jmp_to_customer_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_to_customer_data.Location = new System.Drawing.Point(115, 6);
+            this.jmp_to_customer_data.Location = new System.Drawing.Point(221, 6);
             this.jmp_to_customer_data.Name = "jmp_to_customer_data";
-            this.jmp_to_customer_data.Size = new System.Drawing.Size(54, 39);
+            this.jmp_to_customer_data.Size = new System.Drawing.Size(48, 39);
             this.jmp_to_customer_data.TabIndex = 1;
             this.jmp_to_customer_data.UseVisualStyleBackColor = false;
             this.jmp_to_customer_data.Click += new System.EventHandler(this.jmp_to_customer_data_Click);
@@ -497,9 +514,9 @@
             this.jmp_monthly_buy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_monthly_buy.FlatAppearance.BorderSize = 0;
             this.jmp_monthly_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_monthly_buy.Location = new System.Drawing.Point(457, 6);
+            this.jmp_monthly_buy.Location = new System.Drawing.Point(444, 6);
             this.jmp_monthly_buy.Name = "jmp_monthly_buy";
-            this.jmp_monthly_buy.Size = new System.Drawing.Size(75, 39);
+            this.jmp_monthly_buy.Size = new System.Drawing.Size(46, 39);
             this.jmp_monthly_buy.TabIndex = 33;
             this.jmp_monthly_buy.UseVisualStyleBackColor = true;
             this.jmp_monthly_buy.Click += new System.EventHandler(this.jmp_monthly_buy_Click);
@@ -511,9 +528,9 @@
             this.jmp_prftnlss.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_prftnlss.FlatAppearance.BorderSize = 0;
             this.jmp_prftnlss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_prftnlss.Location = new System.Drawing.Point(12, 6);
+            this.jmp_prftnlss.Location = new System.Drawing.Point(144, 6);
             this.jmp_prftnlss.Name = "jmp_prftnlss";
-            this.jmp_prftnlss.Size = new System.Drawing.Size(54, 39);
+            this.jmp_prftnlss.Size = new System.Drawing.Size(50, 39);
             this.jmp_prftnlss.TabIndex = 0;
             this.jmp_prftnlss.UseVisualStyleBackColor = false;
             this.jmp_prftnlss.Click += new System.EventHandler(this.jmp_user_reg_Click);
@@ -524,9 +541,9 @@
             this.jmp_buyform.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_buyform.FlatAppearance.BorderSize = 0;
             this.jmp_buyform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_buyform.Location = new System.Drawing.Point(354, 6);
+            this.jmp_buyform.Location = new System.Drawing.Point(371, 6);
             this.jmp_buyform.Name = "jmp_buyform";
-            this.jmp_buyform.Size = new System.Drawing.Size(50, 39);
+            this.jmp_buyform.Size = new System.Drawing.Size(46, 39);
             this.jmp_buyform.TabIndex = 32;
             this.jmp_buyform.UseVisualStyleBackColor = true;
             this.jmp_buyform.Click += new System.EventHandler(this.jmp_buyform_Click);
@@ -537,12 +554,35 @@
             this.jmp_othr_transaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_othr_transaction.FlatAppearance.BorderSize = 0;
             this.jmp_othr_transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_othr_transaction.Location = new System.Drawing.Point(228, 6);
+            this.jmp_othr_transaction.Location = new System.Drawing.Point(296, 6);
             this.jmp_othr_transaction.Name = "jmp_othr_transaction";
-            this.jmp_othr_transaction.Size = new System.Drawing.Size(55, 39);
+            this.jmp_othr_transaction.Size = new System.Drawing.Size(48, 39);
             this.jmp_othr_transaction.TabIndex = 31;
             this.jmp_othr_transaction.UseVisualStyleBackColor = true;
             this.jmp_othr_transaction.Click += new System.EventHandler(this.jmp_othr_transaction_Click);
+            // 
+            // menu
+            // 
+            this.menu.BackgroundImage = global::C_sharp_project.Properties.Resources.menu;
+            this.menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.menu.FlatAppearance.BorderSize = 0;
+            this.menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu.Location = new System.Drawing.Point(7, 6);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(40, 40);
+            this.menu.TabIndex = 32;
+            this.menu.UseVisualStyleBackColor = true;
+            this.menu.Click += new System.EventHandler(this.menu_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.AutoSize = true;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 53);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(780, 0);
+            this.panel9.TabIndex = 31;
             // 
             // user_reg
             // 
@@ -550,6 +590,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(42)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(780, 553);
+            this.Controls.Add(this.menu);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
@@ -579,6 +621,7 @@
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -623,5 +666,8 @@
         private System.Windows.Forms.Button jmp_monthly_buy;
         private System.Windows.Forms.Button jmp_buyform;
         private System.Windows.Forms.Button jmp_othr_transaction;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button menu;
+        private System.Windows.Forms.Button menu_close;
     }
 }

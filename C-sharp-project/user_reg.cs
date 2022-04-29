@@ -16,6 +16,7 @@ namespace C_sharp_project
         public user_reg()
         {
             InitializeComponent();
+            panel8.Visible=false;
         }
 
         private void sv_Click(object sender, EventArgs e)
@@ -99,6 +100,23 @@ namespace C_sharp_project
             form_sales form_Sales = new form_sales();
             this.Hide();
             form_Sales.Show();
+        }
+
+        private void button_menu_Click(object sender, EventArgs e)
+        {
+            panel8.Hide();
+        }
+
+        private void menu_Click(object sender, EventArgs e)
+        {
+            panel8.Visible = true;
+            menu.Visible = false;
+        }
+
+        private void menu_close_Click(object sender, EventArgs e)
+        {
+            panel8.Visible = false;
+            menu.Visible = true;
         }
     }
 }
