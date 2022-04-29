@@ -109,6 +109,7 @@
             this.admin_datalog.AllowUserToAddRows = false;
             this.admin_datalog.AllowUserToDeleteRows = false;
             this.admin_datalog.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.admin_datalog.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.admin_datalog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.admin_datalog.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin_datalog.Location = new System.Drawing.Point(254, 194);
