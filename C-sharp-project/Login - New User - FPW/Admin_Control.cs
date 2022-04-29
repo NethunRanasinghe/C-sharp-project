@@ -65,7 +65,7 @@ namespace C_sharp_project
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -99,7 +99,7 @@ namespace C_sharp_project
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -125,7 +125,7 @@ namespace C_sharp_project
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Email_Templates objemail_templates = new Email_Templates();
@@ -174,12 +174,12 @@ namespace C_sharp_project
 
                 MySqlCommand command = new MySqlCommand(selectQuery, connection);
                 MySqlDataReader reader = command.ExecuteReader();
-                MessageBox.Show("User Disabled !", "Successful");
+                MessageBox.Show("User Disabled !", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Cursor.Current = tempCursor;
@@ -202,12 +202,12 @@ namespace C_sharp_project
 
                 MySqlCommand command = new MySqlCommand(selectQuery, connection);
                 MySqlDataReader reader = command.ExecuteReader();
-                MessageBox.Show("User Enabled !", "Successful");
+                MessageBox.Show("User Enabled !", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Cursor.Current = tempCursor;
@@ -229,12 +229,12 @@ namespace C_sharp_project
 
                 MySqlCommand command = new MySqlCommand(selectQuery, connection);
                 MySqlDataReader reader = command.ExecuteReader();
-                MessageBox.Show("User Deleted !", "Successful");
+                MessageBox.Show("User Deleted !", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             Cursor.Current = tempCursor;

@@ -7,27 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace C_sharp_project
 {
     public partial class Form_mselling : Form
     {
+        int month_num = 0;
+        string connection_string = Choose_Database.usrdb;
+
         public Form_mselling()
         {
             InitializeComponent();
         }
 
-        private void BTN_sellingclear_Click(object sender, EventArgs e)
+        private void record_show()
         {
-            LBL_sellings.Text = "RS._______";
-        }
+            month_num = Convert.ToDateTime(sell_date.Value).Month;
+            string log_query = "SELECT * FROM `salesrecords` WHERE MONTH(DATE) = '"+month_num+"';";
 
-        private void BTN_mbuymain_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var form_selectionmenu = new form_selectionmenu();
-            form_selectionmenu.Show();
+            MySqlDataAdapter adapter = new MySqlDataAdapter(log_query, connection_string);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
 
+            sell_record.DataSource = table;
         }
 
         private void Form_mselling_Load(object sender, EventArgs e)
@@ -45,6 +48,16 @@ namespace C_sharp_project
             this.Hide();
             Acc_form objacfrm = new Acc_form();
             objacfrm.Show();
+        }
+
+        private void sell_btnsub_Click(object sender, EventArgs e)
+        {
+            record_show();
+        }
+
+        private void sell_btnreset_Click(object sender, EventArgs e)
+        {
+            sell_record.DataSource = null;
         }
     }
 }
