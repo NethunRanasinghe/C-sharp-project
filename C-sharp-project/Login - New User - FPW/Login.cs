@@ -16,6 +16,8 @@ namespace C_sharp_project
         string connection_string = Choose_Database.usrdb;
 
         public static string ?passingText;
+        public static bool mainadmin;
+        string gmail = "";
 
         public login_form()
         {
@@ -54,15 +56,22 @@ namespace C_sharp_project
 
         private void login_btnlgin_Click(object sender, EventArgs e)
         {
+            Cursor tempCursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
+
             if (ValidateChildren(ValidationConstraints.Enabled))
             {
                 passingText = login_txtusr.Texts;
                 Action_login();
+                time_log();
+
             }
+
+            Cursor.Current = tempCursor;
         }
 
         //..Custom Methods..//
-        public void Action_login()
+        private void Action_login()
         {
             string query = "SELECT * FROM `user_details` WHERE first_name = '" + login_txtusr.Texts + "' AND password = '" +login_txtpw.Texts + "'";
 
@@ -79,9 +88,30 @@ namespace C_sharp_project
 
                 if (reader.HasRows)
                 {
-                    this.Hide();
-                    form_selectionmenu objsel = new form_selectionmenu();
-                    objsel.Show();
+                    reader.Read();
+                    if(reader.GetString("email") == "nethun223@gmail.com")
+                    {
+                        mainadmin = true;
+                    }
+                    else
+                    {
+                        mainadmin = false;
+                    }
+                    gmail = reader.GetString("email");
+
+
+                    if(reader.GetInt32("enabled") == 1)
+                    {
+                        this.Hide();
+                        form_selectionmenu objsel = new form_selectionmenu();
+                        objsel.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Your User Account has been disabled !\nContact Main Admin.", "Error");
+                    }
+
+                    
                 }
                 else
                 {
@@ -94,6 +124,27 @@ namespace C_sharp_project
             catch (Exception ex)
             {
                 MessageBox.Show("Error : " + ex.Message);
+            }
+        }
+
+        private void time_log()
+        {
+            string log_query = "INSERT INTO user_details_time(`first_name`,`email`) VALUES ('" + login_txtusr.Texts + "' , '"+gmail+"')";
+
+            try
+            {
+                MySqlConnection connection = new MySqlConnection(connection_string);
+
+                string selectQuery = log_query;
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand(selectQuery, connection);
+                MySqlDataReader reader = command.ExecuteReader();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
             }
         }
 

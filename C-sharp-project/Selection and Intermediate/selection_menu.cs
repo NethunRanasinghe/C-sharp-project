@@ -13,6 +13,7 @@ namespace C_sharp_project
     public partial class form_selectionmenu : Form
     {
         private string usrname = login_form.passingText;
+        private bool mainadmin = login_form.mainadmin;
     /*
         //fields
         private int borderRadius = 30;
@@ -24,6 +25,15 @@ namespace C_sharp_project
         public form_selectionmenu()
         {
             InitializeComponent();
+
+            if(login_form.passingText == "Nethun" && mainadmin == true)
+            {
+                select_btnAdmin.Enabled = true;
+            }
+            else
+            {
+                select_btnAdmin.Enabled = false;
+            }
             //this.FormBorderStyle = FormBorderStyle.None;
             //this.Padding = new Padding(bordersize);
         }

@@ -183,6 +183,7 @@
             // fpw_btncpw
             // 
             this.fpw_btncpw.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
+            this.fpw_btncpw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fpw_btncpw.Font = new System.Drawing.Font("Baskerville Old Face", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fpw_btncpw.ForeColor = System.Drawing.Color.Snow;
             this.fpw_btncpw.Location = new System.Drawing.Point(58, 396);

@@ -38,13 +38,12 @@
             this.PRCD = new System.Windows.Forms.Button();
             this.CLEAR = new System.Windows.Forms.Button();
             this.OTHERdt = new System.Windows.Forms.DateTimePicker();
-            this.SRVCE = new System.Windows.Forms.TextBox();
             this.ESTOTHERcst = new System.Windows.Forms.TextBox();
             this.CSTother = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.INFO = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.SRVCE = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -132,10 +131,10 @@
             this.PRCD.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PRCD.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.PRCD.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.PRCD.Location = new System.Drawing.Point(418, 469);
+            this.PRCD.Location = new System.Drawing.Point(426, 461);
             this.PRCD.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PRCD.Name = "PRCD";
-            this.PRCD.Size = new System.Drawing.Size(79, 34);
+            this.PRCD.Size = new System.Drawing.Size(85, 37);
             this.PRCD.TabIndex = 19;
             this.PRCD.Text = "Verify";
             this.PRCD.UseVisualStyleBackColor = false;
@@ -146,10 +145,10 @@
             this.CLEAR.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CLEAR.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.CLEAR.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CLEAR.Location = new System.Drawing.Point(575, 469);
+            this.CLEAR.Location = new System.Drawing.Point(569, 461);
             this.CLEAR.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CLEAR.Name = "CLEAR";
-            this.CLEAR.Size = new System.Drawing.Size(79, 37);
+            this.CLEAR.Size = new System.Drawing.Size(85, 37);
             this.CLEAR.TabIndex = 21;
             this.CLEAR.Text = "Clear";
             this.CLEAR.UseVisualStyleBackColor = false;
@@ -157,24 +156,17 @@
             // 
             // OTHERdt
             // 
-            this.OTHERdt.Location = new System.Drawing.Point(418, 123);
+            this.OTHERdt.CustomFormat = "yyyy-mm-dd";
+            this.OTHERdt.Location = new System.Drawing.Point(426, 123);
             this.OTHERdt.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.OTHERdt.Name = "OTHERdt";
             this.OTHERdt.Size = new System.Drawing.Size(302, 27);
             this.OTHERdt.TabIndex = 23;
             this.OTHERdt.Value = new System.DateTime(2022, 4, 19, 22, 37, 6, 0);
             // 
-            // SRVCE
-            // 
-            this.SRVCE.Location = new System.Drawing.Point(418, 175);
-            this.SRVCE.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.SRVCE.Name = "SRVCE";
-            this.SRVCE.Size = new System.Drawing.Size(546, 27);
-            this.SRVCE.TabIndex = 24;
-            // 
             // ESTOTHERcst
             // 
-            this.ESTOTHERcst.Location = new System.Drawing.Point(418, 358);
+            this.ESTOTHERcst.Location = new System.Drawing.Point(426, 358);
             this.ESTOTHERcst.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ESTOTHERcst.Name = "ESTOTHERcst";
             this.ESTOTHERcst.Size = new System.Drawing.Size(546, 27);
@@ -182,29 +174,15 @@
             // 
             // CSTother
             // 
-            this.CSTother.Location = new System.Drawing.Point(418, 415);
+            this.CSTother.Location = new System.Drawing.Point(426, 415);
             this.CSTother.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CSTother.Name = "CSTother";
             this.CSTother.Size = new System.Drawing.Size(546, 27);
             this.CSTother.TabIndex = 27;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(968, 181);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(16, 20);
-            this.linkLabel1.TabIndex = 28;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "?";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // INFO
             // 
-            this.INFO.Location = new System.Drawing.Point(418, 231);
+            this.INFO.Location = new System.Drawing.Point(426, 231);
             this.INFO.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.INFO.Name = "INFO";
             this.INFO.Size = new System.Drawing.Size(546, 96);
@@ -235,6 +213,19 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // SRVCE
+            // 
+            this.SRVCE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SRVCE.FormattingEnabled = true;
+            this.SRVCE.Items.AddRange(new object[] {
+            "(1) Purchase of new machinery.",
+            "(2) Sale of old machinery.",
+            "(3) Repair of machinery."});
+            this.SRVCE.Location = new System.Drawing.Point(426, 176);
+            this.SRVCE.Name = "SRVCE";
+            this.SRVCE.Size = new System.Drawing.Size(546, 28);
+            this.SRVCE.TabIndex = 32;
+            // 
             // ACother2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -242,13 +233,12 @@
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1002, 572);
+            this.Controls.Add(this.SRVCE);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.INFO);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.CSTother);
             this.Controls.Add(this.ESTOTHERcst);
-            this.Controls.Add(this.SRVCE);
             this.Controls.Add(this.OTHERdt);
             this.Controls.Add(this.CLEAR);
             this.Controls.Add(this.PRCD);
@@ -283,12 +273,11 @@
         private System.Windows.Forms.Button PRCD;
         private System.Windows.Forms.Button CLEAR;
         private System.Windows.Forms.DateTimePicker OTHERdt;
-        private System.Windows.Forms.TextBox SRVCE;
         private System.Windows.Forms.TextBox ESTOTHERcst;
         private System.Windows.Forms.TextBox CSTother;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.RichTextBox INFO;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox SRVCE;
     }
 }
