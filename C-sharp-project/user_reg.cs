@@ -21,21 +21,35 @@ namespace C_sharp_project
 
         private void sv_Click(object sender, EventArgs e)
         {
-            string n = this.nicno.Text;
-            string fnr = this.fname.Text;
-            string lnr = this.lname.Text;
-            string ad1 = this.adrsl1.Text;
-            string ad2 = this.adrsl2.Text;
-            int ph = int.Parse(this.phonum.Text);
-            string ml = this.eml.Text;
-            string pr = this.prvnce.Text;
+            if (this.nicno.Text=="" &(this.fname.Text=="" && this.lname.Text == "")&(this.adrsl1.Text == "" && this.adrsl2.Text == "")& this.phonum.Text == "")
+            {
+                MessageBox.Show("NIC Number, \nPhone Number ,\nEither one name and Either one adress line Must be filled");
+            }
+            else if((this.phonum.Text.All(char.IsDigit)) == false)
+            {
+                MessageBox.Show("Value of the Phone Number should be numeric");
+            }
+            else if(this.nicno.Text != "" & (this.fname.Text != "" || this.lname.Text != "") & (this.adrsl1.Text != "" || this.adrsl2.Text != "") & this.phonum.Text != "" & (this.phonum.Text.All(char.IsDigit)) == true)
+            {
+                string n = this.nicno.Text;
+                string fnr = this.fname.Text;
+                string lnr = this.lname.Text;
+                string ad1 = this.adrsl1.Text;
+                string ad2 = this.adrsl2.Text;
+                int ph = int.Parse(this.phonum.Text);
+                string ml = this.eml.Text;
+                string pr = this.prvnce.Text;
 
-            sql_function_reg objcr = new sql_function_reg();
-            objcr.set_regvr(n, fnr, lnr,ad1,ad2, ph,ml, pr);
-            objcr.set_rgsql();
-            objcr.function_sql_execute();
-            customer_reg_sql customer_Reg_Sql = new customer_reg_sql();
-           
+                sql_function_reg objcr = new sql_function_reg();
+                objcr.set_regvr(n, fnr, lnr, ad1, ad2, ph, ml, pr);
+                objcr.set_rgsql();
+                objcr.function_sql_execute();
+            }
+            else
+            {
+                MessageBox.Show("NIC Number, \nPhone Number ,\nEither one name and Either one adress line Must be filled");
+            }
+       
         }
 
         private void rst_Click(object sender, EventArgs e)
