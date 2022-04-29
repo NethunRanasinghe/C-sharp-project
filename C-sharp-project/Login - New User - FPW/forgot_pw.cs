@@ -155,7 +155,7 @@ namespace C_sharp_project
             }
             else
             {
-                MessageBox.Show("Invalid Email !", "Error");
+                MessageBox.Show("Invalid Email !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -178,11 +178,11 @@ namespace C_sharp_project
 
                 if (reader.RecordsAffected == 1)
                 {
-                    MessageBox.Show("Password Change Complete !\nNo. of Records affected : " +reader.RecordsAffected, "Success");
+                    MessageBox.Show("Password Change Complete !\nNo. of Records affected : " +reader.RecordsAffected, "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("No. of Records Affected : " + reader.RecordsAffected);
+                    MessageBox.Show("No. of Records Affected : " + reader.RecordsAffected,"Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 databaseConnection.Close();
@@ -191,7 +191,7 @@ namespace C_sharp_project
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error : " + ex.Message);
+                MessageBox.Show("Error : " + ex.Message,"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -226,7 +226,7 @@ namespace C_sharp_project
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error : " + ex.Message);
+                MessageBox.Show("Error : " + ex.Message,"Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return emailcheck;
