@@ -18,6 +18,7 @@ namespace C_sharp_project
             InitializeComponent();
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.ColumnHeadersHeight = 30;
+            panel5.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -134,6 +135,18 @@ namespace C_sharp_project
             form_sales form_Sales = new form_sales();
             this.Hide();
             form_Sales.Show();
+        }
+
+        private void menu_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = true;
+            menu.Visible = false;
+        }
+
+        private void menu_close_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = false;
+            menu.Visible = true;
         }
     }
 }

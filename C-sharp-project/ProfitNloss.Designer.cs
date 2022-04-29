@@ -30,11 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfitNloss));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.menu_close = new System.Windows.Forms.Button();
+            this.jmp_sales = new System.Windows.Forms.Button();
+            this.jmp_monthly_sell = new System.Windows.Forms.Button();
             this.jmp_monthly_buy = new System.Windows.Forms.Button();
             this.jmp_buyform = new System.Windows.Forms.Button();
             this.jmp_othr_transaction = new System.Windows.Forms.Button();
             this.jmp_to_customer_data = new System.Windows.Forms.Button();
             this.jmp_user_reg = new System.Windows.Forms.Button();
+            this.menu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DataOrderCount = new System.Windows.Forms.Label();
@@ -93,8 +97,6 @@
             this.datec = new System.Windows.Forms.Label();
             this.namec = new System.Windows.Forms.Label();
             this.idc = new System.Windows.Forms.Label();
-            this.jmp_monthly_sell = new System.Windows.Forms.Button();
-            this.jmp_sales = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -112,6 +114,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(36)))), ((int)(((byte)(97)))));
+            this.panel1.Controls.Add(this.menu_close);
             this.panel1.Controls.Add(this.jmp_sales);
             this.panel1.Controls.Add(this.jmp_monthly_sell);
             this.panel1.Controls.Add(this.jmp_monthly_buy);
@@ -122,8 +125,47 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(909, 45);
+            this.panel1.Size = new System.Drawing.Size(909, 47);
             this.panel1.TabIndex = 0;
+            // 
+            // menu_close
+            // 
+            this.menu_close.BackgroundImage = global::C_sharp_project.Properties.Resources.cancel;
+            this.menu_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.menu_close.FlatAppearance.BorderSize = 0;
+            this.menu_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_close.Location = new System.Drawing.Point(864, 2);
+            this.menu_close.Name = "menu_close";
+            this.menu_close.Size = new System.Drawing.Size(40, 40);
+            this.menu_close.TabIndex = 35;
+            this.menu_close.UseVisualStyleBackColor = true;
+            this.menu_close.Click += new System.EventHandler(this.menu_close_Click);
+            // 
+            // jmp_sales
+            // 
+            this.jmp_sales.BackgroundImage = global::C_sharp_project.Properties.Resources.writing;
+            this.jmp_sales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_sales.FlatAppearance.BorderSize = 0;
+            this.jmp_sales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_sales.Location = new System.Drawing.Point(700, 2);
+            this.jmp_sales.Name = "jmp_sales";
+            this.jmp_sales.Size = new System.Drawing.Size(58, 39);
+            this.jmp_sales.TabIndex = 6;
+            this.jmp_sales.UseVisualStyleBackColor = true;
+            this.jmp_sales.Click += new System.EventHandler(this.jmp_sales_Click);
+            // 
+            // jmp_monthly_sell
+            // 
+            this.jmp_monthly_sell.BackgroundImage = global::C_sharp_project.Properties.Resources.payday;
+            this.jmp_monthly_sell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.jmp_monthly_sell.FlatAppearance.BorderSize = 0;
+            this.jmp_monthly_sell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jmp_monthly_sell.Location = new System.Drawing.Point(609, 2);
+            this.jmp_monthly_sell.Name = "jmp_monthly_sell";
+            this.jmp_monthly_sell.Size = new System.Drawing.Size(54, 39);
+            this.jmp_monthly_sell.TabIndex = 5;
+            this.jmp_monthly_sell.UseVisualStyleBackColor = true;
+            this.jmp_monthly_sell.Click += new System.EventHandler(this.jmp_monthly_sell_Click);
             // 
             // jmp_monthly_buy
             // 
@@ -131,9 +173,9 @@
             this.jmp_monthly_buy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_monthly_buy.FlatAppearance.BorderSize = 0;
             this.jmp_monthly_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_monthly_buy.Location = new System.Drawing.Point(578, 3);
+            this.jmp_monthly_buy.Location = new System.Drawing.Point(512, 5);
             this.jmp_monthly_buy.Name = "jmp_monthly_buy";
-            this.jmp_monthly_buy.Size = new System.Drawing.Size(75, 39);
+            this.jmp_monthly_buy.Size = new System.Drawing.Size(60, 39);
             this.jmp_monthly_buy.TabIndex = 4;
             this.jmp_monthly_buy.UseVisualStyleBackColor = true;
             this.jmp_monthly_buy.Click += new System.EventHandler(this.jmp_monthly_buy_Click);
@@ -144,7 +186,7 @@
             this.jmp_buyform.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_buyform.FlatAppearance.BorderSize = 0;
             this.jmp_buyform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_buyform.Location = new System.Drawing.Point(463, 3);
+            this.jmp_buyform.Location = new System.Drawing.Point(425, 2);
             this.jmp_buyform.Name = "jmp_buyform";
             this.jmp_buyform.Size = new System.Drawing.Size(50, 39);
             this.jmp_buyform.TabIndex = 3;
@@ -157,7 +199,7 @@
             this.jmp_othr_transaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_othr_transaction.FlatAppearance.BorderSize = 0;
             this.jmp_othr_transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_othr_transaction.Location = new System.Drawing.Point(331, 3);
+            this.jmp_othr_transaction.Location = new System.Drawing.Point(333, 3);
             this.jmp_othr_transaction.Name = "jmp_othr_transaction";
             this.jmp_othr_transaction.Size = new System.Drawing.Size(55, 39);
             this.jmp_othr_transaction.TabIndex = 2;
@@ -171,7 +213,7 @@
             this.jmp_to_customer_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_to_customer_data.FlatAppearance.BorderSize = 0;
             this.jmp_to_customer_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_to_customer_data.Location = new System.Drawing.Point(209, 3);
+            this.jmp_to_customer_data.Location = new System.Drawing.Point(242, 4);
             this.jmp_to_customer_data.Name = "jmp_to_customer_data";
             this.jmp_to_customer_data.Size = new System.Drawing.Size(54, 39);
             this.jmp_to_customer_data.TabIndex = 1;
@@ -184,12 +226,25 @@
             this.jmp_user_reg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.jmp_user_reg.FlatAppearance.BorderSize = 0;
             this.jmp_user_reg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_user_reg.Location = new System.Drawing.Point(88, 3);
+            this.jmp_user_reg.Location = new System.Drawing.Point(151, 5);
             this.jmp_user_reg.Name = "jmp_user_reg";
             this.jmp_user_reg.Size = new System.Drawing.Size(54, 39);
             this.jmp_user_reg.TabIndex = 0;
             this.jmp_user_reg.UseVisualStyleBackColor = false;
             this.jmp_user_reg.Click += new System.EventHandler(this.jmp_user_reg_Click);
+            // 
+            // menu
+            // 
+            this.menu.BackgroundImage = global::C_sharp_project.Properties.Resources.menu;
+            this.menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.menu.FlatAppearance.BorderSize = 0;
+            this.menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu.Location = new System.Drawing.Point(7, 5);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(40, 40);
+            this.menu.TabIndex = 34;
+            this.menu.UseVisualStyleBackColor = true;
+            this.menu.Click += new System.EventHandler(this.menu_Click);
             // 
             // panel2
             // 
@@ -550,9 +605,9 @@
             this.rate5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate5.Location = new System.Drawing.Point(505, 306);
+            this.rate5.Location = new System.Drawing.Point(512, 306);
             this.rate5.Name = "rate5";
-            this.rate5.Size = new System.Drawing.Size(60, 35);
+            this.rate5.Size = new System.Drawing.Size(53, 35);
             this.rate5.TabIndex = 29;
             this.rate5.Text = "20%";
             this.rate5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -562,9 +617,9 @@
             this.rate4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate4.Location = new System.Drawing.Point(505, 263);
+            this.rate4.Location = new System.Drawing.Point(512, 263);
             this.rate4.Name = "rate4";
-            this.rate4.Size = new System.Drawing.Size(60, 35);
+            this.rate4.Size = new System.Drawing.Size(53, 35);
             this.rate4.TabIndex = 28;
             this.rate4.Text = "25%";
             this.rate4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -574,9 +629,9 @@
             this.rate3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate3.Location = new System.Drawing.Point(505, 221);
+            this.rate3.Location = new System.Drawing.Point(512, 221);
             this.rate3.Name = "rate3";
-            this.rate3.Size = new System.Drawing.Size(60, 35);
+            this.rate3.Size = new System.Drawing.Size(53, 35);
             this.rate3.TabIndex = 27;
             this.rate3.Text = "30%";
             this.rate3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -586,9 +641,9 @@
             this.rate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate2.Location = new System.Drawing.Point(505, 179);
+            this.rate2.Location = new System.Drawing.Point(512, 179);
             this.rate2.Name = "rate2";
-            this.rate2.Size = new System.Drawing.Size(60, 35);
+            this.rate2.Size = new System.Drawing.Size(53, 35);
             this.rate2.TabIndex = 26;
             this.rate2.Text = "45%";
             this.rate2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -598,9 +653,9 @@
             this.rate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(107)))));
             this.rate1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rate1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rate1.Location = new System.Drawing.Point(505, 138);
+            this.rate1.Location = new System.Drawing.Point(512, 138);
             this.rate1.Name = "rate1";
-            this.rate1.Size = new System.Drawing.Size(60, 35);
+            this.rate1.Size = new System.Drawing.Size(53, 35);
             this.rate1.TabIndex = 25;
             this.rate1.Text = "52%";
             this.rate1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -624,7 +679,7 @@
             this.r5c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.r5c4.Location = new System.Drawing.Point(419, 306);
             this.r5c4.Name = "r5c4";
-            this.r5c4.Size = new System.Drawing.Size(81, 35);
+            this.r5c4.Size = new System.Drawing.Size(86, 35);
             this.r5c4.TabIndex = 23;
             this.r5c4.Text = "Rs 20000";
             this.r5c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -636,7 +691,7 @@
             this.r4c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.r4c4.Location = new System.Drawing.Point(419, 263);
             this.r4c4.Name = "r4c4";
-            this.r4c4.Size = new System.Drawing.Size(81, 35);
+            this.r4c4.Size = new System.Drawing.Size(86, 35);
             this.r4c4.TabIndex = 22;
             this.r4c4.Text = "Rs 25000";
             this.r4c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -648,7 +703,7 @@
             this.r3c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.r3c4.Location = new System.Drawing.Point(419, 221);
             this.r3c4.Name = "r3c4";
-            this.r3c4.Size = new System.Drawing.Size(81, 35);
+            this.r3c4.Size = new System.Drawing.Size(86, 35);
             this.r3c4.TabIndex = 21;
             this.r3c4.Text = "Rs 30000";
             this.r3c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -660,7 +715,7 @@
             this.r2c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.r2c4.Location = new System.Drawing.Point(419, 179);
             this.r2c4.Name = "r2c4";
-            this.r2c4.Size = new System.Drawing.Size(81, 35);
+            this.r2c4.Size = new System.Drawing.Size(86, 35);
             this.r2c4.TabIndex = 20;
             this.r2c4.Text = "Rs 45000";
             this.r2c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -672,7 +727,7 @@
             this.r1c4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.r1c4.Location = new System.Drawing.Point(419, 138);
             this.r1c4.Name = "r1c4";
-            this.r1c4.Size = new System.Drawing.Size(81, 35);
+            this.r1c4.Size = new System.Drawing.Size(86, 35);
             this.r1c4.TabIndex = 19;
             this.r1c4.Text = "Rs 50000  ";
             this.r1c4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -905,32 +960,6 @@
             this.idc.Text = "ID";
             this.idc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // jmp_monthly_sell
-            // 
-            this.jmp_monthly_sell.BackgroundImage = global::C_sharp_project.Properties.Resources.payday;
-            this.jmp_monthly_sell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.jmp_monthly_sell.FlatAppearance.BorderSize = 0;
-            this.jmp_monthly_sell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_monthly_sell.Location = new System.Drawing.Point(713, 3);
-            this.jmp_monthly_sell.Name = "jmp_monthly_sell";
-            this.jmp_monthly_sell.Size = new System.Drawing.Size(75, 39);
-            this.jmp_monthly_sell.TabIndex = 5;
-            this.jmp_monthly_sell.UseVisualStyleBackColor = true;
-            this.jmp_monthly_sell.Click += new System.EventHandler(this.jmp_monthly_sell_Click);
-            // 
-            // jmp_sales
-            // 
-            this.jmp_sales.BackgroundImage = global::C_sharp_project.Properties.Resources.writing;
-            this.jmp_sales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.jmp_sales.FlatAppearance.BorderSize = 0;
-            this.jmp_sales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.jmp_sales.Location = new System.Drawing.Point(823, 3);
-            this.jmp_sales.Name = "jmp_sales";
-            this.jmp_sales.Size = new System.Drawing.Size(75, 39);
-            this.jmp_sales.TabIndex = 6;
-            this.jmp_sales.UseVisualStyleBackColor = true;
-            this.jmp_sales.Click += new System.EventHandler(this.jmp_sales_Click);
-            // 
             // ProfitNloss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -939,6 +968,7 @@
             this.ClientSize = new System.Drawing.Size(909, 505);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
+            this.Controls.Add(this.menu);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -1031,5 +1061,7 @@
         private System.Windows.Forms.Button jmp_user_reg;
         private System.Windows.Forms.Button jmp_monthly_sell;
         private System.Windows.Forms.Button jmp_sales;
+        private System.Windows.Forms.Button menu_close;
+        private System.Windows.Forms.Button menu;
     }
 }
