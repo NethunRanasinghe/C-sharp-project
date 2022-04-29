@@ -32,16 +32,6 @@ namespace C_sharp_project
 
         }
 
-        private void INFO_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EXTbtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void BCK_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -58,16 +48,23 @@ namespace C_sharp_project
             CSTother.Text = "";
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            MessageBox.Show(" Enter as (1) for purchase of new machinery, (2) for sale of old machinery and (3) for repair of machinery.");
-        }
-
         private void PRCD_Click(object sender, EventArgs e)
         {
 
             MySqlConnection connection = new MySqlConnection(connection_string);
-            string insertQuery = "INSERT INTO otransaction(Date,Service ,AboutService,EstimatedCost,TotalCost)VALUES('" + OTHERdt.Text + "','" + SRVCE.Text + "','" + INFO.Text + "','" + ESTOTHERcst.Text + "','" + CSTother.Text + "')";
+
+            string insertQuery = "INSERT INTO otransaction(`Date`,`Service` ,`AboutService`,`EstimatedCost`,`TotalCost`)VALUES('"
+                + OTHERdt.Value.ToString("yyyy-MM-dd")
+                + "','"
+                + SRVCE.Text
+                + "','"
+                + INFO.Text
+                + "','"
+                + ESTOTHERcst.Text
+                + "','"
+                + CSTother.Text
+                + "')";
+            
             connection.Open();
             MySqlCommand command = new MySqlCommand(insertQuery, connection);
             if (command.ExecuteNonQuery() == 1)
@@ -75,7 +72,7 @@ namespace C_sharp_project
                 MessageBox.Show("Added sucessfully");
 
                 OTHERdt.Text = "";
-                SRVCE.Text = "";
+                SRVCE.Text = null;
                 INFO.Text = "";
                 ESTOTHERcst.Text = "";
                 CSTother.Text = "";
