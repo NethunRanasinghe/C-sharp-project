@@ -101,7 +101,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(179, 24);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Customer name";
+            this.label4.Text = "Supplier name";
             // 
             // label5
             // 
@@ -167,7 +167,7 @@
             this.prcd.Name = "prcd";
             this.prcd.Size = new System.Drawing.Size(111, 57);
             this.prcd.TabIndex = 9;
-            this.prcd.Text = "Verify";
+            this.prcd.Text = "Submit";
             this.prcd.UseVisualStyleBackColor = false;
             this.prcd.Click += new System.EventHandler(this.prcd_Click);
             // 
