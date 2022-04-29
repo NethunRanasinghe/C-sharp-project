@@ -129,7 +129,7 @@ namespace C_sharp_project
 
         private void time_log()
         {
-            string log_query = "INSERT INTO user_details_time(`first_name`,`email`) VALUES ('" + login_txtusr.Texts + "' , '"+gmail+"')";
+            string log_query = "INSERT INTO user_details_time(`first_name`,`email`,`Time`) VALUES ('" + login_txtusr.Texts + "' , '"+gmail+"' , '"+ DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")+"')";
 
             try
             {
@@ -144,7 +144,7 @@ namespace C_sharp_project
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error :- " + ex.Message + "Unsuccessful");
+                MessageBox.Show("Error :- " + ex.Message,"Unsuccessful",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 

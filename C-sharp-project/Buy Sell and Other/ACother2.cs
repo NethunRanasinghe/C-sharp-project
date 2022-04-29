@@ -32,13 +32,6 @@ namespace C_sharp_project
 
         }
 
-        private void BCK_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var OTHERexp = new OTHERexp();
-            OTHERexp.Show();
-        }
-
         private void CLEAR_Click(object sender, EventArgs e)
         {
             OTHERdt.Text = "";
@@ -84,12 +77,12 @@ namespace C_sharp_project
             connection.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void other_btnexit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void other_btnback_Click(object sender, EventArgs e)
         {
             this.Hide();
             var form_Selectionmenu = new form_selectionmenu();

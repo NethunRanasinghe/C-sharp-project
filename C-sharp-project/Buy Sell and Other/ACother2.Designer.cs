@@ -41,11 +41,11 @@
             this.ESTOTHERcst = new System.Windows.Forms.TextBox();
             this.CSTother = new System.Windows.Forms.TextBox();
             this.INFO = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.other_btnback = new System.Windows.Forms.PictureBox();
+            this.other_btnexit = new System.Windows.Forms.PictureBox();
             this.SRVCE = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_btnback)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_btnexit)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -189,29 +189,29 @@
             this.INFO.TabIndex = 29;
             this.INFO.Text = "";
             // 
-            // pictureBox1
+            // other_btnback
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::C_sharp_project.Properties.Resources.back;
-            this.pictureBox1.Location = new System.Drawing.Point(840, 506);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.other_btnback.BackColor = System.Drawing.Color.Transparent;
+            this.other_btnback.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.other_btnback.Image = global::C_sharp_project.Properties.Resources.back;
+            this.other_btnback.Location = new System.Drawing.Point(840, 506);
+            this.other_btnback.Name = "other_btnback";
+            this.other_btnback.Size = new System.Drawing.Size(40, 40);
+            this.other_btnback.TabIndex = 30;
+            this.other_btnback.TabStop = false;
+            this.other_btnback.Click += new System.EventHandler(this.other_btnback_Click);
             // 
-            // pictureBox2
+            // other_btnexit
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::C_sharp_project.Properties.Resources.exit;
-            this.pictureBox2.Location = new System.Drawing.Point(922, 506);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.other_btnexit.BackColor = System.Drawing.Color.Transparent;
+            this.other_btnexit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.other_btnexit.Image = global::C_sharp_project.Properties.Resources.exit;
+            this.other_btnexit.Location = new System.Drawing.Point(922, 506);
+            this.other_btnexit.Name = "other_btnexit";
+            this.other_btnexit.Size = new System.Drawing.Size(40, 40);
+            this.other_btnexit.TabIndex = 31;
+            this.other_btnexit.TabStop = false;
+            this.other_btnexit.Click += new System.EventHandler(this.other_btnexit_Click);
             // 
             // SRVCE
             // 
@@ -234,8 +234,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1002, 572);
             this.Controls.Add(this.SRVCE);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.other_btnexit);
+            this.Controls.Add(this.other_btnback);
             this.Controls.Add(this.INFO);
             this.Controls.Add(this.CSTother);
             this.Controls.Add(this.ESTOTHERcst);
@@ -255,8 +255,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranasingha Saw Mills";
             this.Load += new System.EventHandler(this.ACother2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_btnback)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.other_btnexit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,8 +276,8 @@
         private System.Windows.Forms.TextBox ESTOTHERcst;
         private System.Windows.Forms.TextBox CSTother;
         private System.Windows.Forms.RichTextBox INFO;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox other_btnback;
+        private System.Windows.Forms.PictureBox other_btnexit;
         private System.Windows.Forms.ComboBox SRVCE;
     }
 }
