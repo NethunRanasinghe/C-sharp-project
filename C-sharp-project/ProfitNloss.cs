@@ -188,7 +188,7 @@ namespace C_sharp_project
                         double ytdrev = ytdsell - ytdval;
                         double tdrevrt = Math.Round(((tdrev - ytdrev) / ytdrev) * 100, 2);
                         double tdprftrt = Math.Round(((tdprft - ytdprft) / ytdprft) * 100, 2);
-                        this.DataRev.Text = "Rs " + Convert.ToString(ttlsell - ttlval);
+                        this.DataRev.Text = "Rs " + Convert.ToString(ttlsell);
                         this.DataProfit.Text = "Rs " + Convert.ToString(ttlsell - (ttlval + ttlothrcsts));
                         if(bttn!="cstm")
                         {

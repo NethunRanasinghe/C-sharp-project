@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(user_reg));
             this.label1 = new System.Windows.Forms.Label();
             this.nicno = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(214)))), ((int)(((byte)(223)))));
             this.label1.Font = new System.Drawing.Font("Roboto", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(25, 71);
@@ -89,7 +91,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(729, 57);
             this.label1.TabIndex = 0;
-            this.label1.Text = "- User Registration -";
+            this.label1.Text = "- Customer Registration -";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nicno
@@ -322,6 +324,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel1.Controls.Add(this.fname);
             this.panel1.Controls.Add(this.label2);
@@ -347,6 +351,8 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel2.Controls.Add(this.nicno);
             this.panel2.Controls.Add(this.label3);
@@ -359,6 +365,8 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel3.Controls.Add(this.adrsl1);
             this.panel3.Controls.Add(this.label4);
@@ -373,6 +381,8 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.AutoSize = true;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.phonum);
@@ -396,6 +406,8 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.AutoSize = true;
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.eml);
@@ -419,6 +431,8 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.AutoSize = true;
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel6.Controls.Add(this.prvnce);
             this.panel6.Controls.Add(this.label7);
@@ -430,6 +444,8 @@
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel7.AutoSize = true;
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel7.Controls.Add(this.rst);
             this.panel7.Controls.Add(this.sv);
@@ -602,10 +618,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "user_reg";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "user_reg";
+            this.Text = "Customer Registration";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

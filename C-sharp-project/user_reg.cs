@@ -17,6 +17,7 @@ namespace C_sharp_project
         {
             InitializeComponent();
             panel8.Visible=false;
+            this.fname.Select();
         }
 
         private void sv_Click(object sender, EventArgs e)
