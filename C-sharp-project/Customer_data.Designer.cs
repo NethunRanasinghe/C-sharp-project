@@ -105,7 +105,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(64, 86);
+            this.dataGridView1.Location = new System.Drawing.Point(61, 86);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -127,7 +127,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(699, 323);
+            this.dataGridView1.Size = new System.Drawing.Size(700, 323);
             this.dataGridView1.TabIndex = 0;
             // 
             // nictxtbox
@@ -295,9 +295,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(60)))), ((int)(((byte)(117)))));
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(64, 28);
+            this.panel2.Location = new System.Drawing.Point(61, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(699, 56);
+            this.panel2.Size = new System.Drawing.Size(700, 56);
             this.panel2.TabIndex = 2;
             // 
             // label5
@@ -305,7 +305,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(221)))), ((int)(((byte)(225)))));
-            this.label5.Location = new System.Drawing.Point(213, 10);
+            this.label5.Location = new System.Drawing.Point(212, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(276, 37);
             this.label5.TabIndex = 1;
