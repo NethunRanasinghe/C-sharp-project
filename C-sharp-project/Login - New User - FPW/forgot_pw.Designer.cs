@@ -50,6 +50,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -62,6 +63,7 @@
             // 
             // fpw_txtemail
             // 
+            this.fpw_txtemail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fpw_txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fpw_txtemail.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fpw_txtemail.ForeColor = System.Drawing.Color.SaddleBrown;
@@ -80,6 +82,7 @@
             // 
             // fpw_txtauthcode
             // 
+            this.fpw_txtauthcode.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fpw_txtauthcode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fpw_txtauthcode.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fpw_txtauthcode.ForeColor = System.Drawing.Color.SaddleBrown;
@@ -97,6 +100,7 @@
             // 
             // fpw_txtnpw
             // 
+            this.fpw_txtnpw.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fpw_txtnpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fpw_txtnpw.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fpw_txtnpw.ForeColor = System.Drawing.Color.SaddleBrown;
@@ -114,6 +118,7 @@
             // 
             // fpw_txtcpw
             // 
+            this.fpw_txtcpw.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fpw_txtcpw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fpw_txtcpw.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fpw_txtcpw.ForeColor = System.Drawing.Color.SaddleBrown;
@@ -131,6 +136,7 @@
             // 
             // fpw_btnrqcode
             // 
+            this.fpw_btnrqcode.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.fpw_btnrqcode.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.fpw_btnrqcode.ForeColor = System.Drawing.Color.SaddleBrown;
             this.fpw_btnrqcode.Location = new System.Drawing.Point(274, 110);
@@ -143,6 +149,8 @@
             // 
             // fpw_pnlfpw
             // 
+            this.fpw_pnlfpw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fpw_pnlfpw.AutoSize = true;
             this.fpw_pnlfpw.BackColor = System.Drawing.Color.LightGray;
             this.fpw_pnlfpw.Controls.Add(this.fpw_btnrqcode);
             this.fpw_pnlfpw.Controls.Add(this.fpw_txtcpw);
@@ -156,6 +164,7 @@
             // 
             // fpw_picback
             // 
+            this.fpw_picback.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.fpw_picback.BackColor = System.Drawing.Color.Transparent;
             this.fpw_picback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fpw_picback.Image = global::C_sharp_project.Properties.Resources.back;
@@ -169,6 +178,7 @@
             // 
             // fpw_pichelp
             // 
+            this.fpw_pichelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.fpw_pichelp.BackColor = System.Drawing.Color.Transparent;
             this.fpw_pichelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fpw_pichelp.Image = global::C_sharp_project.Properties.Resources.login_help;
@@ -182,13 +192,15 @@
             // 
             // fpw_btncpw
             // 
+            this.fpw_btncpw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fpw_btncpw.AutoSize = true;
             this.fpw_btncpw.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.fpw_btncpw.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fpw_btncpw.Font = new System.Drawing.Font("Baskerville Old Face", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.fpw_btncpw.ForeColor = System.Drawing.Color.Snow;
             this.fpw_btncpw.Location = new System.Drawing.Point(58, 396);
             this.fpw_btncpw.Name = "fpw_btncpw";
-            this.fpw_btncpw.Size = new System.Drawing.Size(151, 68);
+            this.fpw_btncpw.Size = new System.Drawing.Size(180, 68);
             this.fpw_btncpw.TabIndex = 9;
             this.fpw_btncpw.Text = "Change Password";
             this.fpw_btncpw.UseVisualStyleBackColor = true;
@@ -202,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(606, 514);
@@ -212,7 +225,6 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "forgot_pw";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

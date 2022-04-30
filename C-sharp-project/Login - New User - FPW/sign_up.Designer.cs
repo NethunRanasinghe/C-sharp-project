@@ -55,6 +55,7 @@
             // 
             // signup_lblsignup
             // 
+            this.signup_lblsignup.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.signup_lblsignup.AutoSize = true;
             this.signup_lblsignup.BackColor = System.Drawing.Color.Transparent;
             this.signup_lblsignup.Font = new System.Drawing.Font("Baskerville Old Face", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -67,6 +68,8 @@
             // 
             // signup_btnsignup
             // 
+            this.signup_btnsignup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.signup_btnsignup.AutoSize = true;
             this.signup_btnsignup.BackgroundImage = global::C_sharp_project.Properties.Resources.texture_background;
             this.signup_btnsignup.Font = new System.Drawing.Font("Baskerville Old Face", 12.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.signup_btnsignup.ForeColor = System.Drawing.Color.Snow;
@@ -80,6 +83,7 @@
             // 
             // signup_btnhelp
             // 
+            this.signup_btnhelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.signup_btnhelp.BackColor = System.Drawing.Color.Transparent;
             this.signup_btnhelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signup_btnhelp.Image = ((System.Drawing.Image)(resources.GetObject("signup_btnhelp.Image")));
@@ -93,6 +97,7 @@
             // 
             // signup_btnback
             // 
+            this.signup_btnback.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.signup_btnback.BackColor = System.Drawing.Color.Transparent;
             this.signup_btnback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signup_btnback.Image = ((System.Drawing.Image)(resources.GetObject("signup_btnback.Image")));
@@ -106,6 +111,7 @@
             // 
             // signup_pnlsignup
             // 
+            this.signup_pnlsignup.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.signup_pnlsignup.BackColor = System.Drawing.Color.Transparent;
             this.signup_pnlsignup.Controls.Add(this.signup_btnwarn);
             this.signup_pnlsignup.Controls.Add(this.signup_btnrequest);
@@ -284,7 +290,6 @@
             this.Controls.Add(this.signup_btnsignup);
             this.Controls.Add(this.signup_lblsignup);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "sign_up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Sign Up";

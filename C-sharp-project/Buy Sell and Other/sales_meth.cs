@@ -39,13 +39,13 @@ namespace C_sharp_project
                 + "', '"
                 + TXTBX_woodtype.Text
                 + "', '"
-                + TXTBX_estimation.Text
+                + TXTBX_extra.Text
                 + "', '"
                 + TXTBX_otherservices.Text
                 + "', '"
                 + TXTBX_other.Text
                 + "', '"
-                + TXTBX_extra.Text
+                + TXTBX_estimation.Text
                 + "');";
 
             connection.Open();
