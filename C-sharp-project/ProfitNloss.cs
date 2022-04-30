@@ -123,58 +123,59 @@ namespace C_sharp_project
                             switch (x)
                             {
                                 case 1:
-                                    val = Convert.ToDouble(reader["value"]);
+                                    val = Convert.ToDouble(reader["value"])+ Convert.ToDouble(reader["additional_charges"]);
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r1c1.Text = Convert.ToString(reader["ID"]);
                                     this.r1c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r1c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r1c4.Text = "Rs " + Convert.ToString(reader["profit"]);
-                                    this.rate1.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
+                                    this.rate1.Text = Convert.ToString(Math.Round(((sell - val) / val) * 100, 2) + "%");
+                                    MessageBox.Show(val + " " );
                                     break;
 
                                 case 2:
-                                    val = Convert.ToDouble(reader["value"]);
+                                    val = Convert.ToDouble(reader["value"]) + Convert.ToDouble(reader["additional_charges"]);
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r2c1.Text = Convert.ToString(reader["ID"]);
                                     this.r2c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r2c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r2c4.Text = "Rs "+Convert.ToString(reader["profit"]);
-                                    this.rate2.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
+                                    this.rate2.Text = Convert.ToString(Math.Round(((sell - val) / val) * 100, 2) + "%");
                                     break;
 
                                 case 3:
-                                    val = Convert.ToDouble(reader["value"]);
+                                    val = Convert.ToDouble(reader["value"]) + Convert.ToDouble(reader["additional_charges"]);
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r3c1.Text = Convert.ToString(reader["ID"]);
                                     this.r3c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r3c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r3c4.Text = "Rs " + Convert.ToString(reader["profit"]);
-                                    this.rate3.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
+                                    this.rate3.Text = Convert.ToString(Math.Round(((sell - val) / val) * 100, 2) + "%");
                                     break;
 
                                 case 4:
-                                    val = Convert.ToDouble(reader["value"]);
+                                    val = Convert.ToDouble(reader["value"]) + Convert.ToDouble(reader["additional_charges"]);
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r4c1.Text = Convert.ToString(reader["ID"]);
                                     this.r4c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r4c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r4c4.Text = "Rs " + Convert.ToString(reader["profit"]);
-                                    this.rate4.Text = Convert.ToString(((sell - val) / val) * 100 + "%");
+                                    this.rate4.Text = Convert.ToString(Math.Round(((sell - val) / val) * 100, 2) + "%");
                                     break;
 
                                 case 5:
-                                    val = Convert.ToDouble(reader["value"]);
+                                    val = Convert.ToDouble(reader["value"]) + Convert.ToDouble(reader["additional_charges"]);
                                     sell = Convert.ToDouble(reader["selling_price"]);
                                     profit = sell - val;
                                     this.r5c1.Text = Convert.ToString(reader["ID"]);
                                     this.r5c2.Text = Convert.ToString(reader["product_name"]);
                                     this.r5c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r5c4.Text = "Rs " + Convert.ToString(reader["profit"]);
-                                    this.rate5.Text = Convert.ToString(((sell - val) / val)*100 + "%");
+                                    this.rate5.Text = Convert.ToString(Math.Round(((sell - val) / val)*100,2) + "%");
                                     break;
 
                             }
@@ -190,6 +191,7 @@ namespace C_sharp_project
                         double tdprftrt = Math.Round(((tdprft - ytdprft) / ytdprft) * 100, 2);
                         this.DataRev.Text = "Rs " + Convert.ToString(ttlsell);
                         this.DataProfit.Text = "Rs " + Convert.ToString(ttlsell - (ttlval + ttlothrcsts));
+                        //MessageBox.Show(ttlsell + " " + ttlval + " " + ttlothrcsts);
                         if(bttn!="cstm")
                         {
                             if(tdrevrt>0)
