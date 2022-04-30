@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Databases\**" />
+    <EmbeddedResource Remove="Databases\**" />
+    <None Remove="Databases\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.29" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
@@ -26,11 +32,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Databases\Customer Registration\" />
-    <Folder Include="Databases\UPDATED SALESRECORDS\" />
   </ItemGroup>
 
 </Project>
