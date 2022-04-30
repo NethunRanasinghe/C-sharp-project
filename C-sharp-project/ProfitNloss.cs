@@ -131,7 +131,6 @@ namespace C_sharp_project
                                     this.r1c3.Text = Convert.ToString(reader["date"])!.Substring(0, 10);
                                     this.r1c4.Text = "Rs " + Convert.ToString(reader["profit"]);
                                     this.rate1.Text = Convert.ToString(Math.Round(((sell - val) / val) * 100, 2) + "%");
-                                    MessageBox.Show(val + " " );
                                     break;
 
                                 case 2:
@@ -191,7 +190,6 @@ namespace C_sharp_project
                         double tdprftrt = Math.Round(((tdprft - ytdprft) / ytdprft) * 100, 2);
                         this.DataRev.Text = "Rs " + Convert.ToString(ttlsell);
                         this.DataProfit.Text = "Rs " + Convert.ToString(ttlsell - (ttlval + ttlothrcsts));
-                        //MessageBox.Show(ttlsell + " " + ttlval + " " + ttlothrcsts);
                         if(bttn!="cstm")
                         {
                             if(tdrevrt>0)
