@@ -607,7 +607,7 @@
             this.rate5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rate5.Location = new System.Drawing.Point(512, 306);
             this.rate5.Name = "rate5";
-            this.rate5.Size = new System.Drawing.Size(53, 35);
+            this.rate5.Size = new System.Drawing.Size(64, 35);
             this.rate5.TabIndex = 29;
             this.rate5.Text = "20%";
             this.rate5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -619,7 +619,7 @@
             this.rate4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rate4.Location = new System.Drawing.Point(512, 263);
             this.rate4.Name = "rate4";
-            this.rate4.Size = new System.Drawing.Size(53, 35);
+            this.rate4.Size = new System.Drawing.Size(64, 35);
             this.rate4.TabIndex = 28;
             this.rate4.Text = "25%";
             this.rate4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -631,7 +631,7 @@
             this.rate3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rate3.Location = new System.Drawing.Point(512, 221);
             this.rate3.Name = "rate3";
-            this.rate3.Size = new System.Drawing.Size(53, 35);
+            this.rate3.Size = new System.Drawing.Size(64, 35);
             this.rate3.TabIndex = 27;
             this.rate3.Text = "30%";
             this.rate3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -643,7 +643,7 @@
             this.rate2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rate2.Location = new System.Drawing.Point(512, 179);
             this.rate2.Name = "rate2";
-            this.rate2.Size = new System.Drawing.Size(53, 35);
+            this.rate2.Size = new System.Drawing.Size(64, 35);
             this.rate2.TabIndex = 26;
             this.rate2.Text = "45%";
             this.rate2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -655,7 +655,7 @@
             this.rate1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rate1.Location = new System.Drawing.Point(512, 138);
             this.rate1.Name = "rate1";
-            this.rate1.Size = new System.Drawing.Size(53, 35);
+            this.rate1.Size = new System.Drawing.Size(64, 35);
             this.rate1.TabIndex = 25;
             this.rate1.Text = "52%";
             this.rate1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -667,7 +667,7 @@
             this.dsplycont.ForeColor = System.Drawing.Color.White;
             this.dsplycont.Location = new System.Drawing.Point(13, 12);
             this.dsplycont.Name = "dsplycont";
-            this.dsplycont.Size = new System.Drawing.Size(553, 45);
+            this.dsplycont.Size = new System.Drawing.Size(563, 45);
             this.dsplycont.TabIndex = 24;
             this.dsplycont.Text = "Top 5 Sales";
             this.dsplycont.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -919,7 +919,7 @@
             this.ratec.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.ratec.Location = new System.Drawing.Point(419, 72);
             this.ratec.Name = "ratec";
-            this.ratec.Size = new System.Drawing.Size(147, 45);
+            this.ratec.Size = new System.Drawing.Size(157, 45);
             this.ratec.TabIndex = 3;
             this.ratec.Text = "Profit Rate";
             this.ratec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
