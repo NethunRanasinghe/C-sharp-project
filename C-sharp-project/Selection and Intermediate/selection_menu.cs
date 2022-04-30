@@ -103,7 +103,7 @@ namespace C_sharp_project
         private void btn_list_Click(object sender, EventArgs e)
         {
 
-            //redirects to Customer records form
+            //redirects to Customer Detail records form
             this.Hide();
             cus_form objcus = new cus_form();
             objcus.Show();
