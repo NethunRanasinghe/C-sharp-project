@@ -184,8 +184,8 @@ namespace C_sharp_project
 
                         double tdprft = ttlsell - (ttlval + ttlothrcsts);
                         double ytdprft = ytdsell - (ytdval + ytdothrcsts);
-                        double tdrev = ttlsell - ttlval;
-                        double ytdrev = ytdsell - ytdval;
+                        double tdrev = ttlsell;
+                        double ytdrev = ytdsell;
                         double tdrevrt = Math.Round(((tdrev - ytdrev) / ytdrev) * 100, 2);
                         double tdprftrt = Math.Round(((tdprft - ytdprft) / ytdprft) * 100, 2);
                         this.DataRev.Text = "Rs " + Convert.ToString(ttlsell);
