@@ -67,6 +67,7 @@ namespace C_sharp_project
 
         private void btn_sales_Click(object sender, EventArgs e)
         {
+            //redirects to Sales records form
             this.Hide();
             var form_sales = new form_sales();
             form_sales.Show();
@@ -74,6 +75,8 @@ namespace C_sharp_project
 
         private void btn_buying_Click(object sender, EventArgs e)
         {
+
+            //redirects to Buying records records form
             this.Hide();
             var BUYfrm  = new BUYfrm();
             BUYfrm.Show();
@@ -81,6 +84,8 @@ namespace C_sharp_project
 
         private void btn_othersales_Click(object sender, EventArgs e)
         {
+
+            //redirects to Other sales records form
             this.Hide();
             var OTHERexp = new OTHERexp();
             OTHERexp.Show();
@@ -88,6 +93,8 @@ namespace C_sharp_project
 
         private void btn_check_Click(object sender, EventArgs e)
         {
+
+            //redirects to Account Check records form
             this.Hide();
             Acc_form objAcc_form = new Acc_form();
             objAcc_form.Show();
@@ -95,6 +102,8 @@ namespace C_sharp_project
 
         private void btn_list_Click(object sender, EventArgs e)
         {
+
+            //redirects to Customer records form
             this.Hide();
             cus_form objcus = new cus_form();
             objcus.Show();
