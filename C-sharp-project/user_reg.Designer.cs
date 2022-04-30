@@ -91,7 +91,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(729, 57);
             this.label1.TabIndex = 0;
-            this.label1.Text = "- User Registration -";
+            this.label1.Text = "- Customer Registration -";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nicno
@@ -624,7 +624,7 @@
             this.MaximizeBox = false;
             this.Name = "user_reg";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "User Registration";
+            this.Text = "Customer Registration";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
