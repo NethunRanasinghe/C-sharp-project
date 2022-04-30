@@ -296,7 +296,7 @@
             this.panel3.Controls.Add(this.lblRev);
             this.panel3.Location = new System.Drawing.Point(221, 59);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(267, 59);
+            this.panel3.Size = new System.Drawing.Size(295, 59);
             this.panel3.TabIndex = 2;
             // 
             // pictureBox2
@@ -313,9 +313,9 @@
             // 
             this.ttlrevrt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ttlrevrt.ForeColor = System.Drawing.Color.Lime;
-            this.ttlrevrt.Location = new System.Drawing.Point(171, 17);
+            this.ttlrevrt.Location = new System.Drawing.Point(232, 15);
             this.ttlrevrt.Name = "ttlrevrt";
-            this.ttlrevrt.Size = new System.Drawing.Size(94, 43);
+            this.ttlrevrt.Size = new System.Drawing.Size(61, 43);
             this.ttlrevrt.TabIndex = 8;
             this.ttlrevrt.Text = "10%";
             this.ttlrevrt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -326,7 +326,7 @@
             this.DataRev.ForeColor = System.Drawing.Color.White;
             this.DataRev.Location = new System.Drawing.Point(53, 25);
             this.DataRev.Name = "DataRev";
-            this.DataRev.Size = new System.Drawing.Size(112, 25);
+            this.DataRev.Size = new System.Drawing.Size(173, 25);
             this.DataRev.TabIndex = 5;
             this.DataRev.Text = "1000";
             // 
@@ -348,9 +348,9 @@
             this.panel4.Controls.Add(this.ttlprftrt);
             this.panel4.Controls.Add(this.DataProfit);
             this.panel4.Controls.Add(this.lblProfit);
-            this.panel4.Location = new System.Drawing.Point(505, 59);
+            this.panel4.Location = new System.Drawing.Point(531, 59);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(389, 59);
+            this.panel4.Size = new System.Drawing.Size(363, 59);
             this.panel4.TabIndex = 2;
             // 
             // pictureBox3
@@ -368,9 +368,9 @@
             this.ttlprftrt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ttlprftrt.ForeColor = System.Drawing.Color.Lime;
             this.ttlprftrt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ttlprftrt.Location = new System.Drawing.Point(244, 17);
+            this.ttlprftrt.Location = new System.Drawing.Point(247, 17);
             this.ttlprftrt.Name = "ttlprftrt";
-            this.ttlprftrt.Size = new System.Drawing.Size(140, 43);
+            this.ttlprftrt.Size = new System.Drawing.Size(114, 43);
             this.ttlprftrt.TabIndex = 7;
             this.ttlprftrt.Text = "12%";
             this.ttlprftrt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -381,7 +381,7 @@
             this.DataProfit.ForeColor = System.Drawing.Color.White;
             this.DataProfit.Location = new System.Drawing.Point(48, 25);
             this.DataProfit.Name = "DataProfit";
-            this.DataProfit.Size = new System.Drawing.Size(122, 29);
+            this.DataProfit.Size = new System.Drawing.Size(190, 29);
             this.DataProfit.TabIndex = 6;
             this.DataProfit.Text = "1000";
             // 
