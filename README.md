@@ -64,7 +64,7 @@ This is an application built to upgrade the work flow of a business that's still
   
   <tr>
     <td>Sahansa Jayawardhana</td>
-    <td><a href="">Twitter</a> | <a href="https://www.instagram.com/meth.hhhh/">Instagram</a> | <a href="mailto:methjaya252@gmail.com">Send a Mail</a></td>
+    <td><a href="https://twitter.com/sahansajay">Twitter</a> | <a href="https://www.instagram.com/meth.hhhh/">Instagram</a> | <a href="mailto:methjaya252@gmail.com">Send a Mail</a></td>
   </tr>
   
   <tr>
